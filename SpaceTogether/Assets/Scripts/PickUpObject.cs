@@ -25,7 +25,7 @@ public class PickUpObject : MonoBehaviour
         if (Physics.Raycast(l_Ray, out l_RaycastHit, pickUpDistance, objectLayerMask.value))
         {
             
-            if (Input.GetKeyDown("e") && onHand == false)
+            if (Input.GetKeyDown(KeyCode.E) && onHand == false)
             {
                 print("Press E to pick Up");
                 onHand = true;
@@ -40,7 +40,7 @@ public class PickUpObject : MonoBehaviour
             }
         }
 
-        if (onHand == true && Input.GetKeyDown("e") && (timer > 0.25))
+        if (onHand == true && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
             float dist = Vector3.Distance(handCenter.transform.position, originalPosition);
             print(dist);
