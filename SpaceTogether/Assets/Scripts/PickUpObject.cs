@@ -7,60 +7,44 @@ public class PickUpObject : MonoBehaviour
     public float pickUpDistance = 5;
     public LayerMask objectLayerMask;
     public GameObject handCenter;
-    
-    
-    
+
+
+
     GameObject objectPickUp;
+    private bool onHand = false;
 
 
-    private bool inRange = true;
- 
-
-    // Update is called once per frame
     void Update()
     {
-
-        if (inRange)
+        
+        if (onHand == true && Input.GetKeyDown("e"))
         {
-            Ray l_Ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
-            RaycastHit l_RaycastHit;
+            onHand = false;
+            objectPickUp.transform.SetParent(null);
+            objectPickUp.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        }
+
+        Ray l_Ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
+        RaycastHit l_RaycastHit;
 
 
-            if (Physics.Raycast(l_Ray, out l_RaycastHit, pickUpDistance, objectLayerMask.value))
+        if (Physics.Raycast(l_Ray, out l_RaycastHit, pickUpDistance, objectLayerMask.value))
+        {
+            print("Press E to pick Up");
+            if (Input.GetKeyDown("e") && onHand == false)
             {
-                
-                
-                print(l_RaycastHit.transform.name);
-                l_RaycastHit.transform.position = handCenter.transform.position;
-
-                l_RaycastHit.transform.parent = handCenter.transform;
-
-                if (objectPickUp != null)
-                {
-                   
-                
-                }
-
+                onHand = true;
+                objectPickUp = l_RaycastHit.transform.gameObject;
+                objectPickUp.transform.position = handCenter.transform.position;
+                objectPickUp.transform.SetParent(handCenter.transform);
+                objectPickUp.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+              
             }
         }
-        
+
+
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("ObjectPickUp"))
-        {
-            inRange = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("ObjectPickUp"))
-        {
-            inRange = false;
-        }
-    }
 
 }
