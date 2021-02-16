@@ -8,12 +8,17 @@ public class PickUpObject : MonoBehaviour
     public LayerMask objectLayerMask;
     public GameObject handCenter;
     public float leaveDistance = 3;
-
+    public GameObject UIPickUp;
 
     GameObject objectPickUp;
     private bool onHand = false;
     private Vector3 originalPosition;
     private float timer;
+    private bool seenObject;
+    private void Start()
+    {
+        UIPickUp.SetActive(false);
+    }
 
     void Update()
     {
@@ -25,9 +30,15 @@ public class PickUpObject : MonoBehaviour
         if (Physics.Raycast(l_Ray, out l_RaycastHit, pickUpDistance, objectLayerMask.value))
         {
             
+            if (onHand == false)
+            {
+                UIPickUp.SetActive(true);
+            }
+
             if (Input.GetKeyDown(KeyCode.E) && onHand == false)
             {
                 print("Press E to pick Up");
+                
                 onHand = true;
                 objectPickUp = l_RaycastHit.transform.gameObject;
 
@@ -39,9 +50,19 @@ public class PickUpObject : MonoBehaviour
                 timer = 0;
             }
         }
+        else
+        {
+            UIPickUp.SetActive(false);
+        }
+
+        if (onHand)
+        {
+            UIPickUp.SetActive(false);
+        }
 
         if (onHand == true && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
+            UIPickUp.SetActive(false);
             float dist = Vector3.Distance(handCenter.transform.position, originalPosition);
             print(dist);
             
