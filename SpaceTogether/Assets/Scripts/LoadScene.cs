@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    public int sceneToLoad;
+    public int scene;
     public GameObject LoadCanvas;
 
     private void Start()
@@ -18,18 +18,21 @@ public class LoadScene : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            StartCoroutine(LoadYourAsyncScene());
+            StartCoroutine(LoadYourAsyncScene(scene));
         }
     }
 
+    public void SceneLoad(int scene)
+    {
+        StartCoroutine(LoadYourAsyncScene(scene));
+    }
 
-    IEnumerator LoadYourAsyncScene()
+
+    IEnumerator LoadYourAsyncScene(int sceneToLoad)
     {
         GameObject canvas = Instantiate(LoadCanvas);
 
         Image loadBar = null;
-
-
 
         for (int i = 0; i < canvas.transform.GetChild(0).childCount; i++)
         {
