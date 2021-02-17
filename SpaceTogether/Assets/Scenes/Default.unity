@@ -690,7 +690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.728
+      value: -5.37
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalPosition.y
@@ -698,7 +698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.676
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1143,10 +1143,10 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: Patatat i coses
+  text: Buenos dias
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 4
+  timeUntilNextChat: 0.5
   answers: []
 --- !u!1 &581439394
 GameObject:
@@ -1166,7 +1166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &581439395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: -312, y: -104}
+  position: {x: -344, y: -104}
   ports:
     keys:
     - answers
@@ -1464,11 +1464,11 @@ MonoBehaviour:
       _dynamic: 0
   input: {fileID: 0}
   output: {fileID: 0}
-  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: HAHA
+  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
+  text: "\xBFHas dormido bien?"
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 5
+  timeUntilNextChat: 0.5
   answers: []
 --- !u!1 &856538854
 GameObject:
@@ -1792,19 +1792,123 @@ MonoBehaviour:
       _node: {fileID: 1076350988}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 1213831252}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   input: {fileID: 0}
   output: {fileID: 0}
-  character: {fileID: 0}
-  text: "La conversaci\xF3 continua"
+  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
+  text: "Si, supongo, \xBFtu?"
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
+--- !u!1 &1129180333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3101706006899847003, guid: 72fbf2225ae34814a950858fa1f7f460, type: 3}
+  m_PrefabInstance: {fileID: 3101706008360369250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1129180334
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129180333}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 5968125562234790256, guid: 3269d952cb15ade4bb5c5c48fbc42103, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 4fd0e706401b86a4aa96b0b0b71e80c8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1137275443
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2252,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193798353}
   m_CullTransparentMesh: 1
+--- !u!114 &1213831252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1513477518}
+  position: {x: 1384, y: -72}
+  ports:
+    keys:
+    - answers
+    - input
+    - output
+    values:
+    - _fieldName: answers
+      _node: {fileID: 1213831252}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 1213831252}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 1076350988}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 1213831252}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
+  text: "No... Bueno, un dia m\xE1s un dia menos..."
+  voiceClip: {fileID: 0}
+  timeBetweenChars: 0.05
+  timeUntilNextChat: 0.5
+  answers: []
 --- !u!1001 &1233741240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2859,6 +3022,7 @@ MonoBehaviour:
   - {fileID: 496191947}
   - {fileID: 655533433}
   - {fileID: 1076350988}
+  - {fileID: 1213831252}
   current: {fileID: 0}
 --- !u!1 &1530652560
 GameObject:
@@ -3128,7 +3292,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: -664, y: -104}
+  position: {x: -696, y: -104}
   ports:
     keys:
     - answers
@@ -3176,6 +3340,71 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 1
   answers: []
+--- !u!1001 &83149021957038555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 389382874, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 389382874, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8787155
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2845517
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -33.688274
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257921, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 83149022174257922, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
+      propertyPath: m_Name
+      value: MusicPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f77b010f691df474ba4eaa22670f11b2, type: 3}
 --- !u!1001 &3101706008360369250
 PrefabInstance:
   m_ObjectHideFlags: 0

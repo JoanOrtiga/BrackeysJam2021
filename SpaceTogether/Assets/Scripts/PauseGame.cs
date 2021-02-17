@@ -7,13 +7,24 @@ public class PauseGame : MonoBehaviour
 {
     public bool paused;
 
-    List<AudioSource> audioSource = new List<AudioSource>();
+    List<AudioSource> audioSources = new List<AudioSource>();
 
     public GameObject pauseCanvas;
 
+    private AudioSource pauseAudio;
+
     private void Awake()
     {
-        audioSource = FindObjectsOfType<AudioSource>().OfType<AudioSource>().ToList();
+        pauseAudio = GetComponent<AudioSource>();
+        audioSources = FindObjectsOfType<AudioSource>().OfType<AudioSource>().ToList();
+
+        audioSources.Remove(pauseAudio);
+    }
+
+    private void Start()
+    {
+        pauseAudio.Play();
+        pauseAudio.Pause();
     }
 
     private void Update()
@@ -36,13 +47,15 @@ public class PauseGame : MonoBehaviour
     {
         paused = true;
 
+        pauseAudio.UnPause();
+
         pauseCanvas.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
 
         Time.timeScale = 0;
 
-        foreach (var item in audioSource)
+        foreach (var item in audioSources)
         {
             item.Pause();
         }
@@ -52,7 +65,7 @@ public class PauseGame : MonoBehaviour
 
     public void UnPause()
     {
-        foreach (var item in audioSource)
+        foreach (var item in audioSources)
         {
             item.UnPause();
         }
@@ -62,6 +75,8 @@ public class PauseGame : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         pauseCanvas.SetActive(false);
+
+        pauseAudio.Pause();
 
         paused = false;
     }

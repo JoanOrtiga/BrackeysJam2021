@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject optionsMenu;
 
+ 
+
     public void ShowOptions()
     {
         optionsMenu.SetActive(true);
