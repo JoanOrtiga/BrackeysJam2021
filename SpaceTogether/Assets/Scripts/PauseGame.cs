@@ -9,6 +9,8 @@ public class PauseGame : MonoBehaviour
 
     List<AudioSource> audioSource = new List<AudioSource>();
 
+    public GameObject pauseCanvas;
+
     private void Awake()
     {
         audioSource = FindObjectsOfType<AudioSource>().OfType<AudioSource>().ToList();
@@ -34,6 +36,10 @@ public class PauseGame : MonoBehaviour
     {
         paused = true;
 
+        pauseCanvas.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+
         Time.timeScale = 0;
 
         foreach (var item in audioSource)
@@ -52,6 +58,10 @@ public class PauseGame : MonoBehaviour
         }
 
         Time.timeScale = 1;
+
+        Cursor.lockState = CursorLockMode.Locked;
+
+        pauseCanvas.SetActive(false);
 
         paused = false;
     }

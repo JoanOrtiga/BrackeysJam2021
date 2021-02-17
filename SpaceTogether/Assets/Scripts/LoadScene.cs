@@ -30,6 +30,8 @@ public class LoadScene : MonoBehaviour
 
     IEnumerator LoadYourAsyncScene(int sceneToLoad)
     {
+        Time.timeScale = 1;
+
         GameObject canvas = Instantiate(LoadCanvas);
 
         Image loadBar = null;
@@ -39,7 +41,6 @@ public class LoadScene : MonoBehaviour
 
             if (canvas.transform.GetChild(0).GetChild(i).CompareTag("LoadBar"))
             {
-                print("hola");
                 loadBar = canvas.transform.GetChild(0).GetChild(i).GetComponent<Image>();
             }
         }
@@ -56,7 +57,7 @@ public class LoadScene : MonoBehaviour
 
                 if (asyncLoad.progress >= 0.9f)
                 {
-                    yield return new WaitForSeconds(2f);
+                    yield return new WaitForSecondsRealtime(2f);
                     asyncLoad.allowSceneActivation = true;
                 }
 

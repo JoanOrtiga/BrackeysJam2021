@@ -18,7 +18,7 @@ public class LoadingAnim : MonoBehaviour
     {
         while (true)
         {
-            image.fillAmount = Mathf.Abs(Mathf.Sin(Time.time));
+            image.fillAmount = Mathf.Abs(Mathf.Sin(Time.unscaledTime));
 
             yield return null;
         }

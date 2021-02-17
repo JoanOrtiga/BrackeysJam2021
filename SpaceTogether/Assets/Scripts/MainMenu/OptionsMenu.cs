@@ -14,12 +14,21 @@ public class OptionsMenu : MonoBehaviour
 
     public Slider[] sliders;
 
+    public Toggle fullScreenToggle;
+    public Dropdown graphicsDropDown;
+
     private void Awake()
     {
+        
         sliders[0].onValueChanged.AddListener(SetMasterVolume);
         sliders[1].onValueChanged.AddListener(SetDialoguesVolume);
         sliders[2].onValueChanged.AddListener(SetFXVolume);
         sliders[3].onValueChanged.AddListener(SetMusicVolume);
+
+       fullScreenToggle.onValueChanged.AddListener(SetFullScreen);
+        resolutionDropDown.onValueChanged.AddListener(SetResolution);
+        graphicsDropDown.onValueChanged.AddListener(ChangeGraphics);
+
 
         float value;
         mixer.GetFloat("MasterVolume", out value);
@@ -48,13 +57,14 @@ public class OptionsMenu : MonoBehaviour
             if(resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
             {
                 resolutionDropDown.value = i;
-               
             }
         }
 
         resolutionDropDown.AddOptions(options);
 
         resolutionDropDown.RefreshShownValue();
+
+        graphicsDropDown.value = QualitySettings.GetQualityLevel();
     }
 
     public void SetResolution(int resolutionIndex)
