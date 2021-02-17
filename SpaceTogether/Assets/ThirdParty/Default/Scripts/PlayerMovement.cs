@@ -18,8 +18,9 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-    
+    public AudioManager audioManager;
 
+    float walkSoundTimer;
     Vector3 velocity;
     bool isGrounded;
 
@@ -48,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
     }
 #endif
 
+    private void Start()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -85,5 +90,22 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        walkSound(x, z);
+        
+    }
+
+    private void walkSound(float x, float z)
+    {
+        
+
+        if ((x > 0.5 || x < -0.5 || z > 0.5 || z < -0.5) && walkSoundTimer >= 0.5)
+        {
+            int randomIndex = Random.Range(1, 5);
+            walkSoundTimer = 0;
+            print(randomIndex);
+            audioManager.Play("WalkMetal" + randomIndex);
+        }
+        walkSoundTimer += Time.deltaTime;
     }
 }
