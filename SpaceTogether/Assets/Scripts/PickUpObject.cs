@@ -12,8 +12,7 @@ public class PickUpObject : MonoBehaviour
 
     GameObject objectPickUp;
     private bool onHand = false;
-    private Vector3 originalPosition;
-    private Quaternion originalRotation;
+
     private float timer;
     private bool seenObject;
     private void Start()
@@ -42,9 +41,6 @@ public class PickUpObject : MonoBehaviour
                 
                 onHand = true;
                 objectPickUp = l_RaycastHit.transform.gameObject;
-
-                originalPosition = objectPickUp.transform.position;
-                originalRotation = objectPickUp.transform.rotation;
                 objectPickUp.transform.position = handCenter.transform.position;
                 objectPickUp.transform.SetParent(handCenter.transform);
                 objectPickUp.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
@@ -65,23 +61,23 @@ public class PickUpObject : MonoBehaviour
         if (onHand == true && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
             UIPickUp.SetActive(false);
-            float dist = Vector3.Distance(handCenter.transform.position, originalPosition);
-            print(dist);
+            float dist = Vector3.Distance(handCenter.transform.position, objectPickUp.GetComponent<ObjectPlace>().initialPosition);
+
             
 
-            if (dist > leaveDistance || objectPickUp.GetComponent<ObjectPlace>().isStartPlace == false)
+            if (dist > leaveDistance)
             {
                 objectPickUp.transform.SetParent(null);
                 objectPickUp.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                objectPickUp.GetComponent<ObjectPlace>().isStartPlace = false;
+               
                 onHand = false;
             }
-            else if(objectPickUp.GetComponent<ObjectPlace>().isStartPlace == true && dist < leaveDistance)
+            else if(dist < leaveDistance)
             {
                 objectPickUp.transform.SetParent(null);
-                objectPickUp.transform.position = originalPosition;
-                objectPickUp.transform.rotation = originalRotation;
-                objectPickUp.GetComponent<ObjectPlace>().isStartPlace = true;
+                objectPickUp.transform.position = objectPickUp.GetComponent<ObjectPlace>().initialPosition;
+                objectPickUp.transform.rotation = objectPickUp.GetComponent<ObjectPlace>().initialRotation;
+                
                 onHand = false;
 
             }

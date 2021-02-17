@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class ObjectPlace : MonoBehaviour
 {
-    public bool isStartPlace = true;
+    [HideInInspector]
+    public Vector3 initialPosition;
+    [HideInInspector]
+    public Quaternion initialRotation;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        initialPosition = transform.position;
+        initialRotation = transform.rotation;
     }
 
     // Update is called once per frame
