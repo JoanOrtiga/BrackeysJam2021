@@ -30,8 +30,6 @@ namespace Dialogue
 
             for (int i = 0; i < answers.Count; i++)
             {
-                Debug.Log(conditionNumber + " " + answers[i].number);
-
                 if (conditionNumber == answers[i].number)
                 {
                     finalNumber = answers[i].number;

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 595b6e687c9383247a02ecab226a472d, type: 3}
-  m_Name: CharacterMe
+  m_Name: Fars
   m_EditorClassIdentifier: 
   color: {r: 0.5058824, g: 0.847365, b: 1, a: 0}

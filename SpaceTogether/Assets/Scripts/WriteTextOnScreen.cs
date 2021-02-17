@@ -17,6 +17,11 @@ public class WriteTextOnScreen : MonoBehaviour
 
     public bool waitInputToContinue;
 
+    public bool writeNames;
+
+    public AudioSource[] audioCharacters;
+    public string[] charNames;
+
     private void Awake()
     {
         dialogueSystem = GetComponent<DialogueSystem>();
@@ -41,15 +46,42 @@ public class WriteTextOnScreen : MonoBehaviour
         }
     }
 
-    public void WriteText(string dialogue, float timeBetweenChars, float timeUntilNextChat)
+    public void WriteText(string dialogue, AudioClip voiceClip, string name, float timeBetweenChars, float timeUntilNextChat)
     {
-        currentString = dialogue;
+        StopAllCoroutines();
+        RestartText();
 
-        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat));
+        SelectAudio(name, voiceClip);
+
+
+        if (writeNames)
+            currentString = name + ": " + dialogue;
+        else
+            currentString = dialogue;
+
+        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, false));
     }
 
-    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat)
+    public void WriteInterruption(string dialogue, AudioClip voiceClip, string name, float timeBetweenChars, float timeUntilNextChat)
     {
+        StopAllCoroutines();
+
+        RestartText();
+
+        SelectAudio(name, voiceClip);
+
+        if (writeNames)
+            currentString = name + ": " + dialogue;
+        else
+            currentString = dialogue;
+
+        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, true));
+    }
+
+    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption)
+    {
+
+
         for (int i = 0; i < currentString.Length; i++)
         {
             text.text += currentString[i];
@@ -63,7 +95,10 @@ public class WriteTextOnScreen : MonoBehaviour
 
             RestartText();
 
-            dialogueSystem.Next();
+            if (!interruption)
+                dialogueSystem.Next();
+            else
+                dialogueSystem.NextInterruption();
         }
     }
 
@@ -77,4 +112,17 @@ public class WriteTextOnScreen : MonoBehaviour
         optionText[index].color = Color.yellow;
     }
 
+    private void SelectAudio(string name, AudioClip voiceClip)
+    {
+        if (voiceClip == null)
+            return;
+
+        for (int i = 0; i < audioCharacters.Length; i++)
+        {
+            if(name == charNames[i])
+            {
+                audioCharacters[i].clip = voiceClip;
+            }
+        }
+    }
 }

@@ -18,6 +18,9 @@ public class DialoguePlayerInput : MonoBehaviour
 
     public bool selectOption = false;
 
+    public float coolDownEvents = 2f;
+    private float coolDownTimer;
+
     public bool IsInRange()
     {
         float distance = Vector3.Distance(player.position, character2.position);
@@ -39,22 +42,37 @@ public class DialoguePlayerInput : MonoBehaviour
         {
             dialogueSystem.optionSelected = GetInputOptions();
         }
+
+        if(coolDownTimer >= 0)
+        {
+            coolDownTimer -= Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            returnsZone.Invoke();
+            if(coolDownTimer <= 0)
+            {
+                returnsZone.Invoke();
+            }
+              
         }
 
     }
+
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            leavesZone.Invoke();
+            if (coolDownTimer <= 0)
+            {
+                leavesZone.Invoke();
+                coolDownTimer = coolDownEvents;
+            }
+               
         }
 
     }

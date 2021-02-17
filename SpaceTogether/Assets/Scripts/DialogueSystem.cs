@@ -15,11 +15,10 @@ public class DialogueSystem : MonoBehaviour
     public SceneGraph chatGraph;
     public SceneGraph interruptionGraph;
 
+    private DialogueGraph chatDialogue;
+    private DialogueGraph interruptionDialogue;
 
-    public DialogueGraph chatDialogue;
-    public DialogueGraph interruptionDialogue;
-
-    public int optionSelected = -1;
+    [HideInInspector] public int optionSelected = -1;
 
     private void Awake()
     {
@@ -29,31 +28,31 @@ public class DialogueSystem : MonoBehaviour
     private void Start()
     {
         chatDialogue = (DialogueGraph)chatGraph.graph;
+        interruptionDialogue = (DialogueGraph)interruptionGraph.graph;
 
         chatDialogue.Restart();
-
-        screenText.WriteText(chatDialogue.current.text, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
-    }
-
-    private void Update()
-    {
-
+        interruptionDialogue.Restart();
     }
 
     public void Next()
     {
         StartCoroutine(WaitForOption());
-       
+    }
+
+    public void NextInterruption()
+    {
+        StartCoroutine(FindNextInterruption());
     }
 
     public void LeftZone()
     {
-
+        screenText.WriteInterruption(interruptionDialogue.current.text,
+            interruptionDialogue.current.voiceClip, interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
     }
 
     public void ReturnsZone()
     {
-
+        screenText.WriteText(chatDialogue.current.text, interruptionDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
     }
 
     private IEnumerator WaitForOption()
@@ -96,11 +95,31 @@ public class DialogueSystem : MonoBehaviour
         if (!chatDialogue.current.AnswerQuestion(optionSelected))
             yield break;
 
-        screenText.WriteText(chatDialogue.current.text, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
+        screenText.WriteText(chatDialogue.current.text, interruptionDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
+    }
+
+    private IEnumerator FindNextInterruption()
+    {
+        interruptionDialogue.current.AnswerQuestion(0);
+
+        yield return null;
+
+        screenText.WriteInterruption(interruptionDialogue.current.text, interruptionDialogue.current.voiceClip,
+            interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
+
+        yield return null;
     }
 
     public bool UserChose()
     {
         return false;
+    }
+
+
+    public int GetRandomPath(int max) 
+    {
+        StopAllCoroutines();
+
+        return UnityEngine.Random.Range(0, max);
     }
 }
