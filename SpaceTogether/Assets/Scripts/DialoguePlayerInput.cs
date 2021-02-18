@@ -16,17 +16,13 @@ public class DialoguePlayerInput : MonoBehaviour
     public UnityEvent leavesZone;
     public UnityEvent returnsZone;
 
+    public bool inZone { get; private set; }
+
     public bool selectOption = false;
 
     public float coolDownEvents = 2f;
     private float coolDownTimer;
 
-    public bool IsInRange()
-    {
-        float distance = Vector3.Distance(player.position, character2.position);
-
-        return distance < range;
-    }
 
     private void Awake()
     {
@@ -55,6 +51,7 @@ public class DialoguePlayerInput : MonoBehaviour
         {
             if(coolDownTimer <= 0)
             {
+                inZone = true;
                 returnsZone.Invoke();
             }
               
@@ -69,6 +66,7 @@ public class DialoguePlayerInput : MonoBehaviour
         {
             if (coolDownTimer <= 0)
             {
+                inZone = false;
                 leavesZone.Invoke();
                 coolDownTimer = coolDownEvents;
             }

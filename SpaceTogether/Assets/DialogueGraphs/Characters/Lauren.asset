@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 595b6e687c9383247a02ecab226a472d, type: 3}
   m_Name: Lauren
   m_EditorClassIdentifier: 
-  color: {r: 0.65512466, g: 1, b: 0.5801887, a: 0}
+  color: {r: 0.63529414, g: 0.7686275, b: 0.78823537, a: 0}

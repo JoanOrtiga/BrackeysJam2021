@@ -9,6 +9,8 @@ using XNode;
 [Serializable]
 public class DialogueSystem : MonoBehaviour
 {
+    public static bool IsInAwaitBranch = false;
+
     private DialoguePlayerInput dialoguePlayerInput;
     private WriteTextOnScreen screenText;
 
@@ -57,6 +59,7 @@ public class DialogueSystem : MonoBehaviour
 
     private IEnumerator WaitForOption()
     {
+        
         optionSelected = -1;
 
         if (chatDialogue.current.answers.Count != 0)
@@ -92,8 +95,14 @@ public class DialogueSystem : MonoBehaviour
         if (noConnections)
             yield break;
 
+       
         if (!chatDialogue.current.AnswerQuestion(optionSelected))
             yield break;
+
+        while (DialogueSystem.IsInAwaitBranch)
+        {
+            yield return null;
+        }
 
         screenText.WriteText(chatDialogue.current.text, interruptionDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
     }
