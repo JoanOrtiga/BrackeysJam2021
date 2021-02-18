@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Dialogue;
 using UnityEngine;
+using UnityEngine.Events;
 using System;
 
 using XNode;
@@ -21,6 +22,14 @@ public class DialogueSystem : MonoBehaviour
     private DialogueGraph interruptionDialogue;
 
     [HideInInspector] public int optionSelected = -1;
+
+    public bool talking = false;
+
+    private bool answering = false;
+
+    private bool finishedDialogue = false;
+
+    public UnityEvent dialogueFinishedEvent;
 
     private void Awake()
     {
@@ -48,22 +57,41 @@ public class DialogueSystem : MonoBehaviour
 
     public void LeftZone()
     {
-        screenText.WriteInterruption(interruptionDialogue.current.text,
-            interruptionDialogue.current.voiceClip, interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
+        if (finishedDialogue)
+            return;
+
+        talking = false;
+
+        WriteInterruption();
     }
 
     public void ReturnsZone()
     {
-        screenText.WriteText(chatDialogue.current.text, interruptionDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
+        if (finishedDialogue)
+            return;
+
+        talking = true;
+
+        if (answering)
+        {
+            StartCoroutine(WaitForOption());
+        }
+        else
+        {
+            WriteText();
+        }
+
+        
     }
 
     private IEnumerator WaitForOption()
     {
-        
         optionSelected = -1;
 
         if (chatDialogue.current.answers.Count != 0)
         {
+            answering = true;
+
             screenText.WriteOptions(chatDialogue.current.answers);
 
             dialoguePlayerInput.selectOption = true;
@@ -75,13 +103,14 @@ public class DialogueSystem : MonoBehaviour
 
             dialoguePlayerInput.selectOption = false;
 
-             screenText.HiglightOption(optionSelected);
+            screenText.HiglightOption(optionSelected);
 
-              yield return new WaitForSeconds(0.5f);
+            answering = false;
+
+            yield return new WaitForSeconds(0.5f);
 
             screenText.ClearOptions();
-           
-        }       
+        }
 
         bool noConnections = true;
         foreach (var item in chatDialogue.current.Outputs)
@@ -93,9 +122,12 @@ public class DialogueSystem : MonoBehaviour
         }
 
         if (noConnections)
+        {
+            finishedDialogue = true;
+            dialogueFinishedEvent.Invoke();
             yield break;
+        }
 
-       
         if (!chatDialogue.current.AnswerQuestion(optionSelected))
             yield break;
 
@@ -104,7 +136,7 @@ public class DialogueSystem : MonoBehaviour
             yield return null;
         }
 
-        screenText.WriteText(chatDialogue.current.text, interruptionDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
+        WriteText();
     }
 
     private IEnumerator FindNextInterruption()
@@ -113,8 +145,7 @@ public class DialogueSystem : MonoBehaviour
 
         yield return null;
 
-        screenText.WriteInterruption(interruptionDialogue.current.text, interruptionDialogue.current.voiceClip,
-            interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
+        WriteInterruption();
 
         yield return null;
     }
@@ -125,10 +156,21 @@ public class DialogueSystem : MonoBehaviour
     }
 
 
-    public int GetRandomPath(int max) 
+    public int GetRandomPath(int max)
     {
         StopAllCoroutines();
 
         return UnityEngine.Random.Range(0, max);
+    }
+
+    public void WriteText()
+    {
+        screenText.WriteText(chatDialogue.current.text, interruptionDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
+    }
+
+    public void WriteInterruption()
+    {
+        screenText.WriteInterruption(interruptionDialogue.current.text, interruptionDialogue.current.voiceClip,
+           interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
     }
 }

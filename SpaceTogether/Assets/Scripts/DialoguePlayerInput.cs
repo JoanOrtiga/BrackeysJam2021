@@ -39,7 +39,7 @@ public class DialoguePlayerInput : MonoBehaviour
             dialogueSystem.optionSelected = GetInputOptions();
         }
 
-        if(coolDownTimer >= 0)
+        if (coolDownTimer >= 0)
         {
             coolDownTimer -= Time.deltaTime;
         }
@@ -49,16 +49,27 @@ public class DialoguePlayerInput : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if(coolDownTimer <= 0)
+            if (coolDownTimer <= 0)
             {
                 inZone = true;
                 returnsZone.Invoke();
             }
-              
+
         }
 
     }
-
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (coolDownTimer <= 0)
+                if (!dialogueSystem.talking)
+                {
+                    returnsZone.Invoke();
+                    inZone = true;
+                }
+        }
+    }
 
     private void OnTriggerExit(Collider other)
     {
@@ -70,7 +81,7 @@ public class DialoguePlayerInput : MonoBehaviour
                 leavesZone.Invoke();
                 coolDownTimer = coolDownEvents;
             }
-               
+
         }
 
     }

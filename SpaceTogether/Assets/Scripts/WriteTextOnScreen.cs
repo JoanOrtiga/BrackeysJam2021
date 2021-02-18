@@ -43,7 +43,10 @@ public class WriteTextOnScreen : MonoBehaviour
         for (int i = 0; i < optionText.Length; i++)
         {
             optionText[i].text = "";
+            optionText[i].color = Color.white;
         }
+
+        
     }
 
     public void WriteText(string dialogue, AudioClip voiceClip, string name, float timeBetweenChars, float timeUntilNextChat)
@@ -67,6 +70,7 @@ public class WriteTextOnScreen : MonoBehaviour
         StopAllCoroutines();
 
         RestartText();
+        ClearOptions();
 
         SelectAudio(name, voiceClip);
 
