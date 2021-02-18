@@ -67,15 +67,22 @@ public class PickUpObject : MonoBehaviour
 
         UIPickUp.SetActive(false);
 
-        objectPickUp = rayCastHit.transform;
 
-        objectPickUp.position = handCenter.transform.position;
-        objectPickUp.SetParent(handCenter.transform);
+
+        objectPickUp = rayCastHit.transform;
 
         objectPickUpRigidBody = objectPickUp.GetComponent<Rigidbody>();
         objectPlace = objectPickUp.GetComponent<ObjectPlace>();
 
+        objectPickUpRigidBody.isKinematic = true;
         objectPickUpRigidBody.constraints = RigidbodyConstraints.FreezeAll;
+
+        objectPickUp.SetParent(handCenter.transform);
+
+        objectPlace.InvokeDialogueEvent(true);
+
+        objectPickUp.position = handCenter.transform.position;
+        objectPickUp.localRotation = handCenter.transform.localRotation;
 
         timer = 0;
     }
@@ -86,6 +93,7 @@ public class PickUpObject : MonoBehaviour
 
         objectPickUp.SetParent(null);
         objectPickUpRigidBody.constraints = RigidbodyConstraints.None;
+        objectPickUpRigidBody.isKinematic = false;
 
         if (dist < leaveDistance)
         {
@@ -93,6 +101,8 @@ public class PickUpObject : MonoBehaviour
         }
 
         onHand = false;
+
+        objectPlace.InvokeDialogueEvent(false);
 
         timer = 0;
     }
@@ -111,8 +121,6 @@ public class PickUpObject : MonoBehaviour
         }
     }
 }
-
-
 
 /*
         Ray l_Ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
