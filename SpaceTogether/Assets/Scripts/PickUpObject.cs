@@ -12,84 +12,103 @@ public class PickUpObject : MonoBehaviour
 
     Transform objectPickUp;
     Rigidbody objectPickUpRigidBody;
-    //Rigidbody objectPickUpRigidBody;
+    ObjectPlace objectPlace;
 
     private bool onHand = false;
-    private Vector3 originalPosition;
-    private Quaternion originalRotation;
     private float timer;
-    private bool seenObject;
+
+    Ray ray;
+    RaycastHit rayCastHit;
+    bool hitted = false;
 
     private void Awake()
     {
         UIPickUp.SetActive(false);
     }
 
+    private void Start()
+    {
+        StartCoroutine(CheckForObject());
+    }
+
+
     void Update()
     {
-        Ray l_Ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
-        RaycastHit l_RaycastHit;
-
-        if (Physics.Raycast(l_Ray, out l_RaycastHit, pickUpDistance, objectLayerMask.value))
+        if (hitted)
         {
             if (!onHand)
             {
-                UIPickUp.SetActive(true);
-            }
+                if (!UIPickUp.activeSelf)
+                    UIPickUp.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.E) && !onHand)
-            {
-                onHand = true;
-
-                UIPickUp.SetActive(false);
-
-                objectPickUp = l_RaycastHit.transform;
-
-                originalPosition = objectPickUp.position;
-                originalRotation = objectPickUp.rotation;
-                objectPickUp.position = handCenter.transform.position;
-                objectPickUp.SetParent(handCenter.transform);
-
-                objectPickUpRigidBody = objectPickUp.GetComponent<Rigidbody>();
-
-                objectPickUpRigidBody.constraints = RigidbodyConstraints.FreezeAll;
-
-                timer = 0;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    TakeObject();
+                }
             }
         }
         else
         {
-            UIPickUp.SetActive(false);
+            if (UIPickUp.activeSelf)
+                UIPickUp.SetActive(false);
         }
 
-        if (onHand == true && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
+        if (onHand && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
-            UIPickUp.SetActive(false);
-            float dist = Vector3.Distance(handCenter.transform.position, originalPosition);
-            print(dist);
-
-
-            if (dist > leaveDistance || objectPickUp.GetComponent<ObjectPlace>().isStartPlace == false)
-            {
-                objectPickUp.transform.SetParent(null);
-                objectPickUp.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                objectPickUp.GetComponent<ObjectPlace>().isStartPlace = false;
-                onHand = false;
-            }
-            else if (objectPickUp.GetComponent<ObjectPlace>().isStartPlace == true && dist < leaveDistance)
-            {
-                objectPickUp.transform.SetParent(null);
-                objectPickUp.transform.position = originalPosition;
-                objectPickUp.transform.rotation = originalRotation;
-                objectPickUp.GetComponent<ObjectPlace>().isStartPlace = true;
-                onHand = false;
-
-            }
-
-            timer = 0;
+            PlaceObject();
         }
 
         timer += Time.deltaTime;
+    }
+
+    private void TakeObject()
+    {
+        onHand = true;
+
+        UIPickUp.SetActive(false);
+
+        objectPickUp = rayCastHit.transform;
+
+        objectPickUp.position = handCenter.transform.position;
+        objectPickUp.SetParent(handCenter.transform);
+
+        objectPickUpRigidBody = objectPickUp.GetComponent<Rigidbody>();
+        objectPlace = objectPickUp.GetComponent<ObjectPlace>();
+
+        objectPickUpRigidBody.constraints = RigidbodyConstraints.FreezeAll;
+
+        timer = 0;
+    }
+
+    private void PlaceObject()
+    {
+        float dist = Vector3.Distance(handCenter.transform.position, objectPlace.startPos);
+
+        objectPickUp.SetParent(null);
+        objectPickUpRigidBody.constraints = RigidbodyConstraints.None;
+
+        if (dist < leaveDistance)
+        {
+            objectPlace.ReLocate();
+        }
+
+        onHand = false;
+
+        timer = 0;
+    }
+
+    IEnumerator CheckForObject()
+    {
+        while (true)
+        {
+            ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
+            hitted = Physics.Raycast(ray, out rayCastHit, pickUpDistance, objectLayerMask.value);
+
+            for (int i = 0; i < 5; i++)
+            {
+                yield return null;
+            }
+        }
     }
 }
 

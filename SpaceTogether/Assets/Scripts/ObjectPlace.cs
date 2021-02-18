@@ -5,15 +5,19 @@ using UnityEngine;
 public class ObjectPlace : MonoBehaviour
 {
     public bool isStartPlace = true;
-    // Start is called before the first frame update
-    void Start()
+
+    public Vector3 startPos { get; private set; }
+    private Quaternion startRot;
+
+    private void Awake()
     {
-        
+        startPos = transform.position;
+        startRot = transform.rotation;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ReLocate()
     {
-        
+        transform.position = startPos;
+        transform.rotation = startRot;
     }
 }
