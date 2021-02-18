@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: -280, y: -56}
+  position: {x: -216, y: -56}
   ports:
     keys:
     - answers
@@ -2091,7 +2091,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 120, y: -56}
+  position: {x: 152, y: -56}
   ports:
     keys:
     - answers
@@ -3881,7 +3881,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 1736, y: -72}
+  position: {x: 1608, y: -56}
   ports:
     keys:
     - answers
@@ -4354,7 +4354,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 2184, y: -88}
+  position: {x: 1976, y: -56}
   ports:
     keys:
     - answers
