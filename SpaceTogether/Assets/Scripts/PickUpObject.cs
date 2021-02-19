@@ -67,8 +67,6 @@ public class PickUpObject : MonoBehaviour
 
         UIPickUp.SetActive(false);
 
-
-
         objectPickUp = rayCastHit.transform;
 
         objectPickUpRigidBody = objectPickUp.GetComponent<Rigidbody>();
