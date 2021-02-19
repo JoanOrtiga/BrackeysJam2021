@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46379352, g: 0.41509825, b: 0.49381512, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1743,7 +1743,7 @@ GameObject:
   - component: {fileID: 413382693}
   - component: {fileID: 413382692}
   m_Layer: 0
-  m_Name: StartGraph
+  m_Name: Acte1Graph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1898,11 +1898,11 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: "Ya... En realidad, supongo que estoy trat\xE1ndo de animarte porque siento
-    empat\xEDa por ti y eres mi companyera, pero yo tambi\xE9n lo estoy llevando
-    bastante mal. Aunque no creo que sean reacciones extra\xF1as, al fin y al cabo,
-    estamos tirada en el espacio y nuestra vida piende de una esperanza... Qui\xE9n
-    no se volver\xEDa medio loco encerrado esperando a ser rescatado... "
+  text: Yes... Actually, I guess I am trying to cheer you up because I feel sympathy
+    for you, you are my coworker, a team mate, but I'm not feeling that good. Anyway,
+    I don't think these are weird reactions, after all, we are left adrift in the
+    space and our lives and hopes are hanging by a thread... Who wouldn't go crazy
+    here locked down while waiting for being rescued ...
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -2132,7 +2132,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'I lived in a farm when I was young.
 
-    
+
 
     It''s not a bad plan.'
   voiceClip: {fileID: 0}
@@ -2542,13 +2542,13 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'Ah... yeah...
 
-    
 
-    In part, that''s why I accepted this mission.
-    I wanted to change my life. I needed to get out of my environment. Everything
-    reminded me of him. And everyone just spoke about him... I needed time for me,
-    time to process my son''s death. I needed silence... the silence of space...
-    that''s why I accepted... besides... well...'
+
+    In part, that''s why I accepted this mission. I wanted
+    to change my life. I needed to get out of my environment. Everything reminded
+    me of him. And everyone just spoke about him... I needed time for me, time to
+    process my son''s death. I needed silence... the silence of space... that''s
+    why I accepted... besides... well...'
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -5154,6 +5154,7 @@ MonoBehaviour:
   - {fileID: 1954530873}
   - {fileID: 245978982}
   - {fileID: 1730518546}
+  - {fileID: 1875736568}
   current: {fileID: 0}
 --- !u!114 &1524791795
 MonoBehaviour:
@@ -5297,7 +5298,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 7160, y: 1400}
+  position: {x: 7144, y: 1400}
   ports:
     keys:
     - answers
@@ -5682,10 +5683,10 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'Don''t worry about me.
 
-    
 
-    We are going to spend a long time here,
-    it will be better if we can count on each other. Or else, we''ll go crazy...'
+
+    We are going to spend a long time here, it
+    will be better if we can count on each other. Or else, we''ll go crazy...'
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -6133,10 +6134,10 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'I hate it too.
 
-    
 
-    I only daydream about the day that we get back
-    to Earth and have a normal life again... '
+
+    I only daydream about the day that we get back to
+    Earth and have a normal life again... '
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -6452,6 +6453,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -1.082, z: 0}
+--- !u!114 &1875736568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1513477518}
+  position: {x: 11432, y: 1544}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 1875736568}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 1892846430}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 1875736568}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  trigger: []
 --- !u!114 &1877553676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6560,7 +6604,10 @@ MonoBehaviour:
       _node: {fileID: 1892846430}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 1875736568}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0

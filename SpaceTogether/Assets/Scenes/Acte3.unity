@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.75952566, g: 0.681618, b: 0.8097712, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2044,7 +2044,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'Yeah...
 
-    
+
 
     I will be in the control panel, in case you need something.'
   voiceClip: {fileID: 0}
@@ -2893,7 +2893,7 @@ MonoBehaviour:
       - boolValue: 0
         intValue: 0
         floatValue: 0
-        stringValue: 
+        stringValue: CodeGiven
         objectValue: {fileID: 0}
         argType: 4
       _dynamic: 0
@@ -3063,10 +3063,10 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'Don''t be so pessimistic Alice for God''s sake!
 
-    
 
-    I go to my
-    room in case you need me'
+
+    I go to my room in
+    case you need me'
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -3745,9 +3745,13 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: "Because I'm already psyched that we're not going to get out of this.\r\n\r\n
-    Also, on second thought, I don't think that that code was enough for them to
-    calculate our travel path."
+  text: 'Because I''m already psyched that we''re not going to get out of this.
+
+    
+
+    Also,
+    on second thought, I don''t think that that code was enough for them to calculate
+    our travel path.'
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -5636,7 +5640,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'Fuck ... fuck fuck FUCK ...
 
-    
+
 
     I can not believe it...'
   voiceClip: {fileID: 0}
@@ -6270,9 +6274,13 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: "Because I'm already psyched that we're not going to get out of this.\r\n\r\n
-    Also, on second thought, I don't think that that code was enough for them to
-    calculate our travel path."
+  text: 'Because I''m already psyched that we''re not going to get out of this.
+
+    
+
+    Also,
+    on second thought, I don''t think that that code was enough for them to calculate
+    our travel path.'
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5

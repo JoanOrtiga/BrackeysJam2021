@@ -44,6 +44,12 @@ public class PickUpObject : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     TakeObject();
+
+                    if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
+                    {
+                       
+                        rayCastHit.transform.GetComponent<Tablet>().onHand = true;
+                    }
                 }
             }
         }
@@ -56,6 +62,12 @@ public class PickUpObject : MonoBehaviour
         if (onHand && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
             PlaceObject();
+
+            if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
+            {
+               
+                rayCastHit.transform.GetComponent<Tablet>().onHand = false;
+            }
         }
 
         timer += Time.deltaTime;
@@ -83,6 +95,8 @@ public class PickUpObject : MonoBehaviour
         objectPickUp.localRotation = handCenter.transform.localRotation;
 
         timer = 0;
+
+      
     }
 
     private void PlaceObject()
@@ -95,6 +109,8 @@ public class PickUpObject : MonoBehaviour
 
         if (dist < leaveDistance)
         {
+           
+
             objectPlace.ReLocate();
         }
 
@@ -103,6 +119,8 @@ public class PickUpObject : MonoBehaviour
         objectPlace.InvokeDialogueEvent(false);
 
         timer = 0;
+
+       
     }
 
     IEnumerator CheckForObject()
@@ -112,12 +130,15 @@ public class PickUpObject : MonoBehaviour
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
             hitted = Physics.Raycast(ray, out rayCastHit, pickUpDistance, objectLayerMask.value);
 
+           
+
             for (int i = 0; i < 5; i++)
             {
                 yield return null;
             }
         }
     }
+
 }
 
 /*
