@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUpObject : MonoBehaviour
 {
+    public enum Interaction
+    {
+        pickUp, interact, none
+    }
+
+
     public float pickUpDistance = 5;
     public LayerMask objectLayerMask;
     public GameObject handCenter;
@@ -21,9 +28,18 @@ public class PickUpObject : MonoBehaviour
     RaycastHit rayCastHit;
     bool hitted = false;
 
+    Interaction interaction;
+
+    public Image pickUpIcon;
+    public Image interactIcon;
+
+    private int objectLayer;
+    private int interactLayer;
+
     private void Awake()
     {
-        UIPickUp.SetActive(false);
+        objectLayer = LayerMask.NameToLayer("Object");
+        interactLayer = LayerMask.NameToLayer("Interactable");
     }
 
     private void Start()
@@ -31,15 +47,27 @@ public class PickUpObject : MonoBehaviour
         StartCoroutine(CheckForObject());
     }
 
-
     void Update()
     {
         if (hitted)
         {
-            if (!onHand)
+            if (interaction == Interaction.interact)
             {
-                if (!UIPickUp.activeSelf)
-                    UIPickUp.SetActive(true);
+                if (!interactIcon.gameObject.activeSelf)
+                    interactIcon.gameObject.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    print("pressed e");
+
+                    rayCastHit.transform.GetComponent<InteractableObject>().Interact(); 
+                }
+                    
+            }
+            else if (interaction == Interaction.pickUp)
+            {
+                if (!pickUpIcon.gameObject.activeSelf)
+                    pickUpIcon.gameObject.SetActive(true);
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -47,7 +75,6 @@ public class PickUpObject : MonoBehaviour
 
                     if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
                     {
-                       
                         rayCastHit.transform.GetComponent<Tablet>().onHand = true;
                     }
                 }
@@ -55,8 +82,11 @@ public class PickUpObject : MonoBehaviour
         }
         else
         {
-            if (UIPickUp.activeSelf)
-                UIPickUp.SetActive(false);
+            if (pickUpIcon.gameObject.activeSelf)
+                pickUpIcon.gameObject.SetActive(false);
+
+            if (interactIcon.gameObject.activeSelf)
+                interactIcon.gameObject.SetActive(false);
         }
 
         if (onHand && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
@@ -65,7 +95,6 @@ public class PickUpObject : MonoBehaviour
 
             if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
             {
-               
                 rayCastHit.transform.GetComponent<Tablet>().onHand = false;
             }
         }
@@ -95,8 +124,6 @@ public class PickUpObject : MonoBehaviour
         objectPickUp.localRotation = handCenter.transform.localRotation;
 
         timer = 0;
-
-      
     }
 
     private void PlaceObject()
@@ -109,8 +136,6 @@ public class PickUpObject : MonoBehaviour
 
         if (dist < leaveDistance)
         {
-           
-
             objectPlace.ReLocate();
         }
 
@@ -119,8 +144,6 @@ public class PickUpObject : MonoBehaviour
         objectPlace.InvokeDialogueEvent(false);
 
         timer = 0;
-
-       
     }
 
     IEnumerator CheckForObject()
@@ -130,7 +153,21 @@ public class PickUpObject : MonoBehaviour
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
             hitted = Physics.Raycast(ray, out rayCastHit, pickUpDistance, objectLayerMask.value);
 
-           
+            if (hitted)
+            {
+                if (rayCastHit.transform.gameObject.layer == objectLayer)
+                {
+                    interaction = Interaction.pickUp;
+                }
+                else if (rayCastHit.transform.gameObject.layer == interactLayer)
+                {
+                    interaction = Interaction.interact;
+                }
+            }
+            else
+            {
+                interaction = Interaction.none;
+            }
 
             for (int i = 0; i < 5; i++)
             {

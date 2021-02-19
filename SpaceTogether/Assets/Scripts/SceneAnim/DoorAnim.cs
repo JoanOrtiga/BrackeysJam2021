@@ -11,6 +11,14 @@ public class DoorAnim : MonoBehaviour
     public Transform endPos;
     public Transform end2Pos;
 
+    public Material openMMaterial;
+    public Material openFMaterial;
+    public Material closedMMaterial;
+    public Material closedFMaterial;
+
+    public Renderer rendererM;
+    public Renderer rendererF;
+
     public float speed = 3f;
 
     public bool opening;
@@ -42,12 +50,24 @@ public class DoorAnim : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
+            rendererF.material = openFMaterial;
+            rendererM.material = openMMaterial;
+
             opening = true;
+        }
+           
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
             opening = false;
+
+            rendererF.material = closedFMaterial;
+            rendererM.material = closedMMaterial;
+        }
+            
     }
 }
