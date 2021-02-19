@@ -22,4 +22,16 @@ public class GreenHouseDoor : MonoBehaviour
             item.SetBool("DoorEnabled", false);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            EnableDoorStem();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            DisableDoorStem();
+    }
 }
