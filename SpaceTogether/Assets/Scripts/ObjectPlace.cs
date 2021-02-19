@@ -34,3 +34,5 @@ public class ObjectPlace : MonoBehaviour
 
     }
 }
+
+FindObjectOfType<DialogueEvents>().ChangeValue("readCode", true);
