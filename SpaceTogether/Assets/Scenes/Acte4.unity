@@ -123,50 +123,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &20015338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 20015339}
-  - component: {fileID: 20015340}
-  m_Layer: 0
-  m_Name: InterruptionGraph
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &20015339
+--- !u!4 &20015339 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+  m_PrefabInstance: {fileID: 1820339895119842602}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20015338}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 288310135}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20015340
+--- !u!114 &20015340 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1820339895104071110, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+  m_PrefabInstance: {fileID: 1820339895119842602}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20015338}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7915171fc13472a40a0162003052d2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
 --- !u!114 &38114835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2175,68 +2147,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &624599924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: -344, y: -104}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 624599924}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 624599924}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1982571228}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 624599924}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: Sin problema
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
 --- !u!114 &639378825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2754,10 +2664,8 @@ MonoBehaviour:
   m_Name: InterruptionGraph-graph
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 1982571228}
   - {fileID: 1419948072}
   - {fileID: 1021549542}
-  - {fileID: 624599924}
   - {fileID: 239660581}
   - {fileID: 38114835}
   - {fileID: 1951420509}
@@ -4952,9 +4860,6 @@ MonoBehaviour:
         node: {fileID: 1905522616}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: 624599924}
-        reroutePoints: []
-      - fieldName: output
         node: {fileID: 1160252659}
         reroutePoints: []
       - fieldName: output
@@ -6104,67 +6009,6 @@ MonoBehaviour:
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
-  answers: []
---- !u!114 &1982571228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: -696, y: -104}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1982571228}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1982571228}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1982571228}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 624599924}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'Ahora vuelvo
-
-'
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 1
   answers: []
 --- !u!114 &2131790771
 MonoBehaviour:
@@ -9280,6 +9124,67 @@ Transform:
   m_Father: {fileID: 2938918849129363217}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1820339895119842602
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 288310135}
+    m_Modifications:
+    - target: {fileID: 1820339895104071104, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_Name
+      value: InterruptionGraphActe4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071110, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: graph
+      value: 
+      objectReference: {fileID: 883389214}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
 --- !u!33 &1830080158724997154
 MeshFilter:
   m_ObjectHideFlags: 0

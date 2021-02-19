@@ -185,50 +185,6 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
---- !u!1 &20015338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 20015339}
-  - component: {fileID: 20015340}
-  m_Layer: 0
-  m_Name: InterruptionGraph
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &20015339
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20015338}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 288310135}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20015340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20015338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7915171fc13472a40a0162003052d2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
 --- !u!114 &43721684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1064,68 +1020,6 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
---- !u!114 &239660581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: 456, y: 424}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 239660581}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 239660581}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: answers 3
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 239660581}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: Printet
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
 --- !u!114 &245978982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,7 +1236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413382693}
-  - {fileID: 20015339}
+  - {fileID: 924976572}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1380,7 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatGraph: {fileID: 413382692}
-  interruptionGraph: {fileID: 20015340}
+  interruptionGraph: {fileID: 0}
   optionSelected: 0
   talking: 0
   dialogueFinishedEvent:
@@ -1483,7 +1377,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 2504, y: 600}
+  position: {x: 2936, y: -168}
   ports:
     keys:
     - answers
@@ -1527,9 +1421,9 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: And we would watch together our happy girl blowing the candles and making
-    a wish.   Seven. My daughter is going to be seven years old. I left when she
-    was just 5. I'm a miserable thing...
+  text: I was selfish. I had it all, and still didn't feel fullfilled?... I don't
+    deserve anything. I don't deserve the life that I had anymore. The people I had
+    by my side. My man, my daughter.
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -1681,7 +1575,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 2952, y: -168}
+  position: {x: 2936, y: 88}
   ports:
     keys:
     - answers
@@ -1725,9 +1619,10 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: 'I was selfish. I had it all, and still didn''t feel fullfilled?... I don''t
-    deserve anything. I don''t deserve the life that I had anymore. The people I
-    had by my side. My man, my daughter. '
+  text: ' It''s been half a year since we are here left on our own. Here. In the
+    damn space. FUCK. I hate being locked, I hate these four walls, I hate being
+    here while I can''t be celebrating my kid''s birthday. All because of me, I hate
+    myself...'
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -2135,68 +2030,6 @@ MonoBehaviour:
 
 
     It''s not a bad plan.'
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
---- !u!114 &624599924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: -344, y: -104}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 624599924}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 624599924}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1982571228}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 624599924}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: Sin problema
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -2618,6 +2451,21 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
+--- !u!114 &839375756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a171cd762148104283954f9fc937950, type: 3}
+  m_Name: InterruptionGraphAct1-graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1337778269}
+  current: {fileID: 0}
 --- !u!1 &856538854
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,27 +2594,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &883389214
-MonoBehaviour:
+--- !u!1001 &924976571
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 288310135}
+    m_Modifications:
+    - target: {fileID: 1820339895104071104, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_Name
+      value: InterruptionGraphAct1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+--- !u!4 &924976572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
+  m_PrefabInstance: {fileID: 924976571}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a171cd762148104283954f9fc937950, type: 3}
-  m_Name: InterruptionGraph-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1982571228}
-  - {fileID: 1419948072}
-  - {fileID: 1007315575}
-  - {fileID: 1021549542}
-  - {fileID: 624599924}
-  - {fileID: 1685652057}
-  - {fileID: 239660581}
-  current: {fileID: 0}
 --- !u!114 &930118890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3025,70 +2914,6 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
---- !u!114 &1007315575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: 456, y: -440}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1007315575}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1007315575}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: answers 0
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1007315575}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'jaaj ME VOY
-
-'
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
 --- !u!1 &1021047184
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,70 +2944,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1021549542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: 792, y: 136}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1021549542}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1021549542}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: answers 2
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1021549542}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'jaaj ME VOY AUN MAS
-
-'
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
 --- !u!114 &1063223304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4283,6 +4044,181 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
+--- !u!114 &1337778269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d183b592ab9a0749a8e3f5d2fce34df, type: 3}
+  m_Name: Branch Number
+  m_EditorClassIdentifier: 
+  graph: {fileID: 839375756}
+  position: {x: 504, y: -104}
+  ports:
+    keys:
+    - answers
+    - input
+    - output
+    - answers 0
+    - answers 1
+    - answers 2
+    - answers 3
+    - answers 4
+    - answers 5
+    - answers 6
+    - answers 7
+    - answers 8
+    - answers 9
+    values:
+    - _fieldName: answers
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.BranchNumber+NumberCondition,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answers 0
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 1
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 2
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 3
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 4
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 5
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 6
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 7
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 8
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: answers 9
+      _node: {fileID: 1337778269}
+      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  input: {fileID: 0}
+  output: {fileID: 0}
+  condition:
+    _target: {fileID: 288310137}
+    _methodName: GetRandomPath
+    _args:
+    - boolValue: 0
+      intValue: 9
+      floatValue: 0
+      stringValue: 
+      objectValue: {fileID: 0}
+      argType: 2
+    _dynamic: 0
+    _typeName: Dialogue.ConditionNumber, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
+  answers:
+  - number: 0
+  - number: 0
+  - number: 0
+  - number: 0
+  - number: 0
+  - number: 0
+  - number: 0
+  - number: 0
+  - number: 0
+  - number: 0
 --- !u!1 &1338729809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,142 +4686,6 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
---- !u!114 &1419948072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d183b592ab9a0749a8e3f5d2fce34df, type: 3}
-  m_Name: Branch Number
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: 72, y: -88}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    - answers 0
-    - answers 1
-    - answers 2
-    - answers 3
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1419948072}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.BranchNumber+NumberCondition,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1419948072}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 624599924}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 1007315575}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 1021549542}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 239660581}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 1685652057}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1419948072}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: answers 0
-      _node: {fileID: 1419948072}
-      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1007315575}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: answers 1
-      _node: {fileID: 1419948072}
-      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1685652057}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: answers 2
-      _node: {fileID: 1419948072}
-      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1021549542}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: answers 3
-      _node: {fileID: 1419948072}
-      _typeQualifiedName: Dialogue.BranchNumber+NumberCondition, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 239660581}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  input: {fileID: 0}
-  output: {fileID: 0}
-  condition:
-    _target: {fileID: 288310137}
-    _methodName: GetRandomPath
-    _args:
-    - boolValue: 0
-      intValue: 4
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 2
-    _dynamic: 0
-    _typeName: Dialogue.ConditionNumber, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
-  answers:
-  - number: 0
-  - number: 1
-  - number: 2
-  - number: 3
 --- !u!1 &1442556962
 GameObject:
   m_ObjectHideFlags: 1
@@ -5142,8 +4942,6 @@ MonoBehaviour:
   - {fileID: 302466626}
   - {fileID: 385707192}
   - {fileID: 1554701520}
-  - {fileID: 1696496875}
-  - {fileID: 1722374661}
   - {fileID: 1607320173}
   - {fileID: 1828378141}
   - {fileID: 1268517982}
@@ -5360,7 +5158,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 2952, y: 88}
+  position: {x: 2936, y: 344}
   ports:
     keys:
     - answers
@@ -5395,7 +5193,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1696496875}
+        node: {fileID: 1877553676}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -5404,9 +5202,9 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: 'It''s been half a year since we are here left on our own. Here. In the damn
-    space. FUCK. I hate being locked, I hate these four walls, I hate being here
-    while I can''t be celebrating my kid''s birthday. All because of me, I hate myself...  '
+  text: We don't even have any hope to get back. All for a damn dream inculcated
+    by... for what? I don't even know. I guess we are always looking for a better
+    social status. An astronaut! I'm going to space! What a pile of crap!
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -5949,132 +5747,6 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
---- !u!114 &1685652057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: 792, y: -152}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1685652057}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1685652057}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: answers 1
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1685652057}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1419948072}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: me voy xdd
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
---- !u!114 &1696496875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1513477518}
-  position: {x: 2952, y: 344}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1696496875}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1696496875}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1554701520}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1696496875}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1877553676}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: 'We don''t even have any hope to get back. All for a damn dream inculcated
-    by... for what? I don''t even know. I guess we are always looking for a better
-    social status. An astronaut! I''m going to space! What a pile of crap! '
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
 --- !u!114 &1707297105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6138,64 +5810,6 @@ MonoBehaviour:
 
     I only daydream about the day that we get back to
     Earth and have a normal life again... '
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
---- !u!114 &1722374661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1513477518}
-  position: {x: 2952, y: 88}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1722374661}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1722374661}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1722374661}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: 'It''s been half a year since we are here left on our own. Here. In the damn
-    space. FUCK. I hate being locked, I hate these four walls, I hate being here
-    while I can''t be celebrating my kid''s birthday. All because of me, I hate myself...  '
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -6509,7 +6123,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 3352, y: -168}
+  position: {x: 3336, y: -168}
   ports:
     keys:
     - answers
@@ -6532,7 +6146,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 1696496875}
+        node: {fileID: 1554701520}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -6937,67 +6551,6 @@ MonoBehaviour:
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
-  answers: []
---- !u!114 &1982571228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 883389214}
-  position: {x: -696, y: -104}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1982571228}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1982571228}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1982571228}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 624599924}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'Ahora vuelvo
-
-'
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 1
   answers: []
 --- !u!1 &2059897705
 GameObject:
