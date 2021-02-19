@@ -16,14 +16,13 @@ public class DialoguePlayerInput : MonoBehaviour
     public UnityEvent leavesZone;
     public UnityEvent returnsZone;
 
+    public bool inZone { get; private set; }
+
     public bool selectOption = false;
 
-    public bool IsInRange()
-    {
-        float distance = Vector3.Distance(player.position, character2.position);
+    public float coolDownEvents = 2f;
+    private float coolDownTimer;
 
-        return distance < range;
-    }
 
     private void Awake()
     {
@@ -39,22 +38,50 @@ public class DialoguePlayerInput : MonoBehaviour
         {
             dialogueSystem.optionSelected = GetInputOptions();
         }
+
+        if (coolDownTimer >= 0)
+        {
+            coolDownTimer -= Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            returnsZone.Invoke();
+            if (coolDownTimer <= 0)
+            {
+                inZone = true;
+                returnsZone.Invoke();
+            }
+
         }
 
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (coolDownTimer <= 0)
+                if (!dialogueSystem.talking)
+                {
+                    returnsZone.Invoke();
+                    inZone = true;
+                }
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            leavesZone.Invoke();
+            if (coolDownTimer <= 0)
+            {
+                inZone = false;
+                leavesZone.Invoke();
+                coolDownTimer = coolDownEvents;
+            }
+
         }
 
     }

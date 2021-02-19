@@ -8,7 +8,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public CharacterController controller;
 
     public float speed = 12f;
@@ -18,11 +17,12 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-    public AudioManager audioManager;
 
     float walkSoundTimer;
     Vector3 velocity;
     bool isGrounded;
+
+    AudioPlayer audioPlayer;
 
 #if ENABLE_INPUT_SYSTEM
     InputAction movement;
@@ -49,11 +49,12 @@ public class PlayerMovement : MonoBehaviour
     }
 #endif
 
-    private void Start()
+    private void Awake()
     {
-        audioManager = FindObjectOfType<AudioManager>();
+        audioPlayer = GetComponent<AudioPlayer>();
     }
-    // Update is called once per frame
+
+
     void Update()
     {
         float x;
@@ -91,21 +92,19 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        walkSound(x, z);
+        WalkSound(x, z);
         
     }
 
-    private void walkSound(float x, float z)
+    private void WalkSound(float x, float z)
     {
-        
-
         if ((x > 0.5 || x < -0.5 || z > 0.5 || z < -0.5) && walkSoundTimer >= 0.5)
         {
-            int randomIndex = Random.Range(1, 5);
             walkSoundTimer = 0;
-            print(randomIndex);
-            audioManager.Play("WalkMetal" + randomIndex);
+            audioPlayer.PlaySteps();
+
         }
+
         walkSoundTimer += Time.deltaTime;
     }
 }

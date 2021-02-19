@@ -4,22 +4,33 @@ using UnityEngine;
 
 public class ObjectPlace : MonoBehaviour
 {
-    [HideInInspector]
-    public Vector3 initialPosition;
-    [HideInInspector]
-    public Quaternion initialRotation;
+    public bool isStartPlace = true;
 
+    public string callEventWhenPickedUp;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        initialPosition = transform.position;
-        initialRotation = transform.rotation;
-    }
+    public Vector3 startPos { get; private set; }
+    private Quaternion startRot;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
         
+
+        startPos = transform.position;
+        startRot = transform.rotation;
+    }
+
+    public void ReLocate()
+    {
+        transform.position = startPos;
+        transform.rotation = startRot;
+    }
+
+    public void InvokeDialogueEvent(bool value)
+    {
+        if(callEventWhenPickedUp != "")
+        {
+            FindObjectOfType<DialogueEvents>().ChangeValue(callEventWhenPickedUp, value);
+        }
+
     }
 }

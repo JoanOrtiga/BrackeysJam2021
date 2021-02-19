@@ -10,26 +10,124 @@ public class PickUpObject : MonoBehaviour
     public float leaveDistance = 3;
     public GameObject UIPickUp;
 
-    GameObject objectPickUp;
-    private bool onHand = false;
+    Transform objectPickUp;
+    Rigidbody objectPickUpRigidBody;
+    ObjectPlace objectPlace;
 
+    private bool onHand = false;
     private float timer;
-    private bool seenObject;
-    private void Start()
+
+    Ray ray;
+    RaycastHit rayCastHit;
+    bool hitted = false;
+
+    private void Awake()
     {
         UIPickUp.SetActive(false);
     }
 
+    private void Start()
+    {
+        StartCoroutine(CheckForObject());
+    }
+
+
     void Update()
     {
+        if (hitted)
+        {
+            if (!onHand)
+            {
+                if (!UIPickUp.activeSelf)
+                    UIPickUp.SetActive(true);
 
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    TakeObject();
+                }
+            }
+        }
+        else
+        {
+            if (UIPickUp.activeSelf)
+                UIPickUp.SetActive(false);
+        }
+
+        if (onHand && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
+        {
+            PlaceObject();
+        }
+
+        timer += Time.deltaTime;
+    }
+
+    private void TakeObject()
+    {
+        onHand = true;
+
+        UIPickUp.SetActive(false);
+
+
+
+        objectPickUp = rayCastHit.transform;
+
+        objectPickUpRigidBody = objectPickUp.GetComponent<Rigidbody>();
+        objectPlace = objectPickUp.GetComponent<ObjectPlace>();
+
+        objectPickUpRigidBody.isKinematic = true;
+        objectPickUpRigidBody.constraints = RigidbodyConstraints.FreezeAll;
+
+        objectPickUp.SetParent(handCenter.transform);
+
+        objectPlace.InvokeDialogueEvent(true);
+
+        objectPickUp.position = handCenter.transform.position;
+        objectPickUp.localRotation = handCenter.transform.localRotation;
+
+        timer = 0;
+    }
+
+    private void PlaceObject()
+    {
+        float dist = Vector3.Distance(handCenter.transform.position, objectPlace.startPos);
+
+        objectPickUp.SetParent(null);
+        objectPickUpRigidBody.constraints = RigidbodyConstraints.None;
+        objectPickUpRigidBody.isKinematic = false;
+
+        if (dist < leaveDistance)
+        {
+            objectPlace.ReLocate();
+        }
+
+        onHand = false;
+
+        objectPlace.InvokeDialogueEvent(false);
+
+        timer = 0;
+    }
+
+    IEnumerator CheckForObject()
+    {
+        while (true)
+        {
+            ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
+            hitted = Physics.Raycast(ray, out rayCastHit, pickUpDistance, objectLayerMask.value);
+
+            for (int i = 0; i < 5; i++)
+            {
+                yield return null;
+            }
+        }
+    }
+}
+
+/*
         Ray l_Ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
         RaycastHit l_RaycastHit;
 
-
         if (Physics.Raycast(l_Ray, out l_RaycastHit, pickUpDistance, objectLayerMask.value))
         {
-            
             if (onHand == false)
             {
                 UIPickUp.SetActive(true);
@@ -41,6 +139,9 @@ public class PickUpObject : MonoBehaviour
                 
                 onHand = true;
                 objectPickUp = l_RaycastHit.transform.gameObject;
+
+                originalPosition = objectPickUp.transform.position;
+                originalRotation = objectPickUp.transform.rotation;
                 objectPickUp.transform.position = handCenter.transform.position;
                 objectPickUp.transform.SetParent(handCenter.transform);
                 objectPickUp.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
@@ -61,34 +162,28 @@ public class PickUpObject : MonoBehaviour
         if (onHand == true && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
             UIPickUp.SetActive(false);
-            float dist = Vector3.Distance(handCenter.transform.position, objectPickUp.GetComponent<ObjectPlace>().initialPosition);
-
+            float dist = Vector3.Distance(handCenter.transform.position, originalPosition);
+            print(dist);
             
 
-            if (dist > leaveDistance)
+            if (dist > leaveDistance || objectPickUp.GetComponent<ObjectPlace>().isStartPlace == false)
             {
                 objectPickUp.transform.SetParent(null);
                 objectPickUp.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-               
+                objectPickUp.GetComponent<ObjectPlace>().isStartPlace = false;
                 onHand = false;
             }
-            else if(dist < leaveDistance)
+            else if(objectPickUp.GetComponent<ObjectPlace>().isStartPlace == true && dist < leaveDistance)
             {
                 objectPickUp.transform.SetParent(null);
-                objectPickUp.transform.position = objectPickUp.GetComponent<ObjectPlace>().initialPosition;
-                objectPickUp.transform.rotation = objectPickUp.GetComponent<ObjectPlace>().initialRotation;
-                
+                objectPickUp.transform.position = originalPosition;
+                objectPickUp.transform.rotation = originalRotation;
+                objectPickUp.GetComponent<ObjectPlace>().isStartPlace = true;
                 onHand = false;
 
             }
+
             timer = 0;
-           
         }
 
-        timer += Time.deltaTime;
-
-    }
-
-
-
-}
+        timer += Time.deltaTime;*/

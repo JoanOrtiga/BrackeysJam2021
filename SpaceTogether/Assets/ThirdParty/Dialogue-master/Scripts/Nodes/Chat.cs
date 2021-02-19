@@ -11,6 +11,7 @@ namespace Dialogue
 
         public CharacterInfo character;
         [TextArea] public string text;
+        public AudioClip voiceClip;
         public float timeBetweenChars = 0.05f;
         public float timeUntilNextChat = 0.5f;
         [Output(dynamicPortList = true)] public List<Answer> answers = new List<Answer>();
@@ -19,12 +20,11 @@ namespace Dialogue
         public class Answer
         {
             public string text;
-            public AudioClip voiceClip;
+            //public AudioClip voiceClip;
         }
 
         public bool AnswerQuestion(int index)
         {
-
             NodePort port = null;
 
             if (answers.Count == 0)

@@ -25,7 +25,7 @@ namespace Dialogue {
 
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("text"), GUIContent.none);
 
-            
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("voiceClip"), GUIContent.none);
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("timeBetweenChars"), new GUIContent("Time Between Chars","Delay between writting one character or another"));
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("timeUntilNextChat"), new GUIContent("Time Until next Chat", "Delay between writting next chat or options"));
             NodeEditorGUILayout.InstancePortList("answers", typeof(DialogueBaseNode), serializedObject, NodePort.IO.Output, Node.ConnectionType.Override);
