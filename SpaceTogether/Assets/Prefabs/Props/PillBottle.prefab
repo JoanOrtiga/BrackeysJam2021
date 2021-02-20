@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2954710451863430533}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.017, y: 0.118, z: 0.017}
+  m_LocalPosition: {x: -0.0026, y: 0.0304, z: -0}
   m_LocalScale: {x: 1.6064312, y: 1.6064312, z: 0.16941078}
   m_Children: []
   m_Father: {fileID: 5738480631964403223}
@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 5199850823308022276}
   - component: {fileID: 5199850823308022299}
   - component: {fileID: 5199850823308022298}
+  - component: {fileID: 764335634}
   m_Layer: 10
   m_Name: PillBottle
   m_TagString: PickUpObject
@@ -140,11 +141,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4965496867489242285}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0817848, y: 0.08429988, z: 0.07007914}
-  m_Center: {x: -0.017901909, y: 0.099822395, z: 0.015288533}
+  m_Size: {x: 0.09095307, y: 0.073769815, z: 0.08085936}
+  m_Center: {x: 0.00090639025, y: 0.03906847, z: -0.007953288}
 --- !u!114 &5199850823308022298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +159,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStartPlace: 1
+  callEventWhenPickedUp: havePills
+  falseWhenDropped: 1
+--- !u!136 &764335634
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965496867489242285}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.014989962
+  m_Height: 0.06794115
+  m_Direction: 1
+  m_Center: {x: -0.0014999993, y: 0.006029417, z: 2.5434217e-11}
 --- !u!1 &5011714113361244283
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5011714113361244283}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -6.1587334, y: -4.4418507, z: 7.7771697}
+  m_LocalPosition: {x: -6.1426, y: -4.5296, z: 7.76}
   m_LocalScale: {x: 45.82603, y: 45.82603, z: 70.62191}
   m_Children: []
   m_Father: {fileID: 5738480631964403223}
