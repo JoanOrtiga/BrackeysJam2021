@@ -1630,7 +1630,7 @@ GameObject:
   - component: {fileID: 413382693}
   - component: {fileID: 413382692}
   m_Layer: 0
-  m_Name: Acte2Graph
+  m_Name: Act2Graph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

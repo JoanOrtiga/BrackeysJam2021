@@ -1698,7 +1698,7 @@ GameObject:
   - component: {fileID: 413382693}
   - component: {fileID: 413382692}
   m_Layer: 0
-  m_Name: Acte3Graph
+  m_Name: Act3Graph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
