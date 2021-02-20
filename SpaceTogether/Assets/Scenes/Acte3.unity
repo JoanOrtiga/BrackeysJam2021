@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4624598, g: 0.41393936, b: 0.49285567, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -225,7 +225,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Yes yes just one moment
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1e130a77829b4e24ebae03499d3ad346, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -825,7 +825,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: I'm coming back in a sec!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: cfa49e8cc29fd7845b2d42749e96be2d, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -987,7 +987,7 @@ MonoBehaviour:
   text: "I'm not going to lie to you, I got very angry.\r Even tough I've been thinking
     about it. Actually, I was already psyched to die ... talking to them is... is
     still a light at the end of the tunnel..."
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c0362649d1171da4ba5ec8adc63dda1a, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   text: Don't blame yourself for something that hasn't happened yet. Perhaps when
     they have contacted us, they have been able to find out our location and they
     will be able to find us.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 0303bb2e4eb5998448de017ffbdfd5ce, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Hey! We are talking!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 408135073077f1046895724e638de947, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1556,7 +1556,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: But what are you saying? Are you crazy? Alice, you won't be thinking of staying
     the rest of your life here?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 704eecdb77050a4419353ced3e7ec613, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1618,7 +1618,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Were are you going?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ef9a4445a05623b439bad9c7eb037f2d, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1832,7 +1832,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Leave me please...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5e712a9fff0885e43882ac1dd2d5080f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   text: Because I'm already psyched that we're not going to get out of this. The
     day of my daughter's birthday, after talking to you, I realized when you said
     that life is the only thing we have
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b66fb620b1df9194cacefd44e531fbfb, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2344,7 +2344,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: I will be in my room, organizing my things.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: f552d22ddc40b3a489cfd8a8f2673ecf, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2535,7 +2535,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Coming back in a minute
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: f6ec6ff9202005043bc3ad7d31d10230, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2808,7 +2808,7 @@ MonoBehaviour:
 
     I go to my room in
     case you need me'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: fde0bbb39498e1740829163f891d5b7b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3311,7 +3311,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Okey
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7c4b6e396bb6d914ba07dedb72934fc5, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3450,7 +3450,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Okey...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ed4ec8b00148c9b4a90c0b4740a01080, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3613,7 +3613,6 @@ MonoBehaviour:
   - {fileID: 1732210581}
   - {fileID: 1541383876}
   - {fileID: 1733043055}
-  - {fileID: 1098853413}
   - {fileID: 753048193}
   - {fileID: 1870361605}
   - {fileID: 657036144}
@@ -3728,7 +3727,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Alice
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 736c9cc6e4e97364a91fcb4f584e0e61, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3951,72 +3950,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Yes yes I remembered that I had to do something first
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
---- !u!114 &1098853413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1017221046}
-  position: {x: 9176, y: 1976}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 1098853413}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1098853413}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: fail
-        node: {fileID: 1168474613}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1098853413}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: 'Because I''m already psyched that we''re not going to get out of this.
-
-
-
-    Also,
-    on second thought, I don''t think that that code was enough for them to calculate
-    our travel path.'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 754173bae484fe141a6145ec39ad4c88, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4204,7 +4138,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: You're right...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 64ef6e8f5deced24ab7998321f5f50dc, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4266,7 +4200,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Laure, sorry, just a moment
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 77ef9962e1d66fb4da871b9307120462, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4430,7 +4364,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: That is better now. I'm not going to lie to you, I got very angry. It is
     possible that because of that mistake we will not return home ...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7a60206855b587349bb0790a998a8a5c, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4473,7 +4407,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1098853413}
+        node: {fileID: 1661828904}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4712,7 +4646,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: And what less! They know we're alive Alcie! They're coming for us!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ee16da2a4e2b9834184499b19ebe167f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers:
@@ -4883,8 +4817,8 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: Yes sorry, I'm back in a sec
-  voiceClip: {fileID: 0}
+  text: Yes I'm sorry, I will be back in a sec
+  voiceClip: {fileID: 8300000, guid: 8be8fa55cf1482d49b3b991a95049530, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4946,7 +4880,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: One second, I'll be back
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5075c6903f4f8f44ab5dec5df6398516, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5019,7 +4953,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Alice!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2f3bbfb407228694bbc578ea8c0da8a9, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5250,7 +5184,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Good morning!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 876a951d8d15b564fb286403f4b3c402, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5312,7 +5246,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Alright...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: fe51c2a136741bf4390791cc5a8cdb62, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5378,7 +5312,7 @@ MonoBehaviour:
 
 
     I can not believe it...'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7534f5fa7d308784daea270781487c2b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5496,7 +5430,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Stop being so pessimistic Alice! You undermine my morale hahaha
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 8d1f7d2506a04f54aa87faed8376f52a, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5751,7 +5685,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: I guess it's the best, being mentalized that this is what we have to live
     and keep calm. The line that separates sanity from madness is very fine..
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 57200b441bde93a40bbe74fd2cfbc319, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5877,7 +5811,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Alice everything is okey?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 6aedd518616b10f40bb7fbbc49468883, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5978,7 +5912,10 @@ MonoBehaviour:
       _node: {fileID: 1661828904}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: fail
+        node: {fileID: 1168474613}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -6005,7 +5942,7 @@ MonoBehaviour:
     Also,
     on second thought, I don''t think that that code was enough for them to calculate
     our travel path.'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 838a13550ff20aa409b7f0817769439a, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6067,7 +6004,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Understand that I'm angry... It was our only chance ...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 18f94ce804d02644fb7697c6bbc68aed, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6129,7 +6066,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: I'll be right back
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7cd9982bf6356404780a031993909687, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6383,7 +6320,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: All I needed was an apology. Maybe we stay here until the end of our days
     and you haven't even dared to tell me anything
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 8d0f07afc637913478b4f4b8708100dd, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6446,7 +6383,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Don't worry... I appreciate your apologies although... it is possible that
     because of your mistake they will never find us...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 754a443aa928d424ba51f34cdba2b75b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6645,7 +6582,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: What... what did you said?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3becf0a3d3d04ab468c16f9adc9c3c1b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6770,7 +6707,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: I was waiting for an apology from you. Maybe we stay here until the end of
     our days and you still haven't even dared to tell me anything
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b24cecca54b8b734ebb803d6c23342fd, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6872,7 +6809,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Hey Alice, do you think it will take them a long time to arrive? I think
     that in a couple of weeks they will arrive
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 43ee36f73e55a2046a21b4e4158c0ce1, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers:
@@ -6968,7 +6905,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Have you called me?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: f7914bb377c9f84459f20f40848a41e3, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7030,7 +6967,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: First I deserve an apology.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: e281478da2fdb5140a98acd4b95232b9, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7094,7 +7031,7 @@ MonoBehaviour:
   text: It seems to me a very childish attitude ... as you said, we are the only
     ones in kilometers. If you are not able to apologize to your partner and admit
     that you made a mistake, I don't know what you expect from me.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: d2e2dd1060344824ea73ec860df70365, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7158,7 +7095,7 @@ MonoBehaviour:
   text: But why are you thinking about that now? You have had too much free time
     ... Alice, they're fucking coming for us! Stop scratching your head and have
     a little faith!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3c0ef117feb7a4848979b3c03c492c38, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7225,7 +7162,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: Alice I'm talking to you
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 9cbed8d3119329e4492706c4df05116e, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7350,7 +7287,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'But why are you thinking about that now? Alice they''re fucking coming for
     us! Stop scratching your head and have a little faith! '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: fd64bbcdf6777a84b986d8f26b36788c, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
