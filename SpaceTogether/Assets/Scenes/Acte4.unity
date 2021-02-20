@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.46316457, g: 0.41451573, b: 0.49366975, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -769,7 +769,7 @@ MonoBehaviour:
     ship will never come. We'll stay adrift in the middle of the fucking nowhere.
     \r\n\r\nLet's face the truth. You couldn't give them the damn code and they lost
     comms with the other ship.. No one is coming for us. "
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 19ac2d5e8e3fafc47ae87995a5ef1e4f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     let's face the truth... it's been two months since we contacted with the base...
     No one is coming for us...  We are going to die here all alone, in the middle
     of the fucking nowhere.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1fe9f3fbbf7b1ae40a73178c7891d6a2, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2313,7 +2313,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 785581303}
+        node: {fileID: 1634248350}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2337,68 +2337,6 @@ MonoBehaviour:
   text: 'Why not thinking about the way your husband will kiss you when you  get
     back home? I really believe these are the things that you should comfort in,
     for that''s what is worthy in life... '
-  voiceClip: {fileID: 0}
-  timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
-  answers: []
---- !u!114 &785581303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
-  m_Name: Chat
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1017221046}
-  position: {x: 3848, y: 136}
-  ports:
-    keys:
-    - answers
-    - input
-    - output
-    values:
-    - _fieldName: answers
-      _node: {fileID: 785581303}
-      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 785581303}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 785581303}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 667054773}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'I would say you to try to comfort yourself in to your life... Right now,
-    those memories are the most valuable possession. Living them is a magic moment.
-    And why not think about the trip you will go on with your family? Or think about
-    the next birthday parties of your daughter? '
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -2747,7 +2685,7 @@ MonoBehaviour:
     who I am. The typical questions that you ask yourself in the 30s' crisis, although
     I should have thought about them a few years before... The point is that... DAMN,
     WE ARE ASTRONAUTS.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: acd33174803df6240b555e6cdaaef1c8, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2811,7 +2749,7 @@ MonoBehaviour:
   text: "That was the best part indeed hahahaha \r\n\r\nThose moments have been the
     best in my life... Since I entered until... well, not today, but until a few
     months ago. I had wonderful times..."
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: cc45174dd9740ae48b6cf574534f415d, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2909,7 +2847,6 @@ MonoBehaviour:
   - {fileID: 1733556773}
   - {fileID: 1336332557}
   - {fileID: 1634248350}
-  - {fileID: 785581303}
   - {fileID: 667054773}
   - {fileID: 793806699}
   - {fileID: 1386064783}
@@ -3144,7 +3081,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Of course you've got. You have got a husband and a beautiful daughter waiting
     for you at home...I bet you want to get back to that amusement park.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ec6fa1caa52046247927de8d98807d32, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3571,7 +3508,7 @@ MonoBehaviour:
   text: 'I can''t... This has no sense... Our lives don''t make sense anymore...
     Alice, let''s face the truth... it''s been two months since we contacted with
     the base... No one is coming for us... AND IT''S ALL BECAUSE OF YOU! '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: da7d53423b6a7374fbef5f796baea17d, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4739,7 +4676,7 @@ MonoBehaviour:
     have much to loose. Anyway, I want to go back to Earth and tell the boy I''ve
     been dating that I love him. And then get lost in any place of the World while
     living in an RV. '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: da933559a96213c48ab8abdd471ba947, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5286,7 +5223,10 @@ MonoBehaviour:
       _node: {fileID: 1634248350}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 667054773}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -5298,7 +5238,7 @@ MonoBehaviour:
     those memories are the most valuable possession. Living them is a magic moment.
     And why not think about the trip you will go on with your family? Or think about
     the next birthday parties of your daughter? '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7144d9f90395e5a40ba6a123789757b0, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5429,7 +5369,7 @@ MonoBehaviour:
     Fucking
     hell Lauren... How I wish we were trained for this situation... girl...I don''t
     know... Is there any thing that I can do for you?'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 24148008ea56d7444bd87bb520bab446, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5556,7 +5496,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Lauren...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 078d71bf6cb4e034f81b0c7b5cfb9f2b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5627,7 +5567,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Hey hey Lauren please you need to calm down... oh God Lauren...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 914ce680b17bb074bb62ca6412c7e860, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5755,7 +5695,7 @@ MonoBehaviour:
     \r\n\nWhat difference does it make if it will come or not... It doesn't matter...
     I just want to end this... I want to end this suffering once and for all...\r\nIf
     I was just braver... But I'm not even brave for that... God...GOD! Please..."
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 9e953e0fe6c5f114e9267f4fecf35779, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []

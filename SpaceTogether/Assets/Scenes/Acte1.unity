@@ -1422,7 +1422,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: You only have one daughter?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7620cff1dd11cf148942e84941c09968, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Hey... I've seen the picture on your nightstand... May I ask you...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b3b17f4bb3c92cd42badf8e14c7e1f4e, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1956,7 +1956,7 @@ MonoBehaviour:
     I don't think these are weird reactions, after all, we are left adrift in the
     space and our lives and hopes are hanging by a thread... Who wouldn't go crazy
     here locked down while waiting for being rescued ...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3744e09161f10144cb687ca019a35cd4, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2230,8 +2230,7 @@ MonoBehaviour:
   text: 'I lived in a farm when I was young.
 
 
-
-    It''s not a bad plan.'
+    Actually It''s not a bad plan.'
   voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -2867,7 +2866,7 @@ MonoBehaviour:
     But we can't forget that the human mind works by psychology.  The more negative
     you  act, the worst you will feel. And you can tell me off right now by saying
     this, well I would do it...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7d7bcd9d73ce3534098382692af96c37, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3708,7 +3707,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: I slept well, I guess. What about you?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 914688aabc499a04dac2d082121cadd8, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4814,7 +4813,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Yeah, it happened the same to me..  It's not so easy to confront ourselves
     for so long...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c3e6b55e85e3a3a4ab513d0b29ed3950, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5462,7 +5461,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: What did you say?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7a23b675c78c88f4e89b71a0305245d4, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5526,7 +5525,7 @@ MonoBehaviour:
   text: That's not true...  don't think like that... You're having a mental breakdown,
     and it's completely normal. We can't act like everything is okay in these circumstances
     that we are living. Reacting like that only can mean that you are still sane.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: d856eff11d41f7b4cb836a290036e52b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5720,7 +5719,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Well I will go to my room
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c33973fa11ebb8c419625e3d5a4b92b5, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6237,7 +6236,7 @@ MonoBehaviour:
   text: 'I know it''s being so hard... it''s frustratingto to be locked in this ship
     for that long. It''s been almost six month adrift, but we have almost fixed the
     trasmitter. '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 78ee8d3767064874080ec1643f40e506, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6583,7 +6582,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'There''s no need to tell me if you don''t want to, it must be really hard... '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b0d03efb52396524f9fc8e31e16c12f0, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6646,7 +6645,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'We must keep high hopes for getting rescued. It''s been almost six month
     adrift, but we have almost fixed the transmitter. '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 113ad4bb03ef4f14898860c22fea4155, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6775,10 +6774,9 @@ MonoBehaviour:
   text: 'I hate it too.
 
 
-
-    I only daydream about the day that we get back to
-    Earth and have a normal life again... '
-  voiceClip: {fileID: 0}
+    I only daydream about the day that we get back to Earth
+    and have a normal life again... '
+  voiceClip: {fileID: 8300000, guid: 2042bfc90628e954e866ed967eb84699, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7260,7 +7258,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: I'm so sorry, I didn't know...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1b823b4218b43da4eb48c17d6bf2dbbc, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7322,7 +7320,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: No problem.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 4afef809ff6b46647a2b267b0fe6162f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7451,7 +7449,7 @@ MonoBehaviour:
     if we will go back home or not.  It''s completely normal to feel weak. And with
     that, we get inside an infinite loop that''s bringing us down. The weaker you
     are, you''ll feel more wrong, and the more wrong you feel, you''ll be weaker. '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: a44c562b16d8f4847bfb985fee2c6c42, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7702,7 +7700,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: What
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: dc18c2b628b9908409f46b735c641401, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7947,6 +7945,7 @@ MonoBehaviour:
     - answers
     - input
     - output
+    - answers 0
     values:
     - _fieldName: answers
       _node: {fileID: 2087616689}
@@ -7982,14 +7981,24 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: answers 0
+      _node: {fileID: 2087616689}
+      _typeQualifiedName: Dialogue.Chat+Answer, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: That's beautiful...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 9fa9792de86b764478c731d52c0ea795, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
-  answers: []
+  answers:
+  - text: 
 --- !u!1001 &2117102964
 PrefabInstance:
   m_ObjectHideFlags: 0

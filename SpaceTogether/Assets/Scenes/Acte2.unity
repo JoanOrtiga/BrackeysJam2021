@@ -532,7 +532,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: I'm sure she will be glad to see you again
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 9ed8886ae9043f24781113ecba806a32, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: uh yes, the code is  799.1    801.3
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2fd07bd0349f82c419e9719e2f5c5c9a, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2467,7 +2467,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: I'm going to look for it!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 8d25c7042a0d60b49b8e9bac57d14680, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2653,7 +2653,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: She will be waiting for you with her open arms
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 9f23002824478734ea49af84f9e3efbf, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3036,9 +3036,9 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: Don't play the martyr... I'm sure your husband is so proud of you. And he
-    is happy for you for keep chasing your dreams...
-  voiceClip: {fileID: 0}
+  text: ' I''m sure your husband is so proud of you. And he is happy for you for
+    keep chasing your dreams...'
+  voiceClip: {fileID: 8300000, guid: 132631e32a24ebd468f9c1095c9b0913, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4054,7 +4054,7 @@ MonoBehaviour:
   text: 'This is something that lately I have been thinking about a lot... It''s
     not easy to convince yourself that you are making your dream coming true with
     no hope of surviving it. But... I think I definitely don''t regret it. '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7743ae052287075499eedc93c473a757, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4485,7 +4485,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Umm... no, I don't.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3d4da29b9248f4c4792c5d4e426f4b29, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5063,7 +5063,7 @@ MonoBehaviour:
     of events in her life. But you will see that she won''t take so long to remember
     you. Besides, kids have a really good thing, they don''t judge and usually don''t
     resent. And if she is as sweet as you say, she will treat you very well. '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 9677eaf774fa4fe419c3db28f8878a6b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5802,8 +5802,8 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: I'm going to look for it!
-  voiceClip: {fileID: 0}
+  text: uh yes, the code is  799.1    801.3
+  voiceClip: {fileID: 8300000, guid: 2fd07bd0349f82c419e9719e2f5c5c9a, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5972,7 +5972,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: hahaha You are not dreaming! At last we'll be able to go home. We'll go back
     to Earth! These days ago seemed impossible.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1cd3a5fcb98a2e94e84f955d2e4798a6, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6720,7 +6720,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: "That's what it looks like...\r\n\r\nThank goodness! This place started to
     be small for us... \r\n\r\nIsn't it ironic? Surrounded by infinite space..."
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: a61489d03d439a54fa209c4ebcdebe29, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
