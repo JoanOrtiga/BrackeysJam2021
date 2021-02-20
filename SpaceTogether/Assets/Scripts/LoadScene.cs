@@ -66,4 +66,16 @@ public class LoadScene : MonoBehaviour
 
         }
     }
+
+    public void LoadNextSceneIn(float seconds)
+    {
+        StartCoroutine(LoadIn(seconds));
+    }
+
+    IEnumerator LoadIn(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
+        StartCoroutine(LoadYourAsyncScene(SceneManager.GetActiveScene().buildIndex + 1));
+    }
 }
