@@ -2020,7 +2020,7 @@ MonoBehaviour:
   text: "Everyone dies. \r\n\r\nAfter all, our life is all we have. I always think
     about seize it, 'cause later we'll turn to dust...  Even the toughest times make
     me feel that I'm alive. "
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: eff6ce29a4cfd9c46ade22225669a849, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2231,7 +2231,7 @@ MonoBehaviour:
 
 
     Actually It''s not a bad plan.'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 70866df4f2bb1594f86d9de5e8bca4b5, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6449,10 +6449,9 @@ MonoBehaviour:
   text: 'Don''t worry about me.
 
 
-
     We are going to spend a long time here, it
     will be better if we can count on each other. Or else, we''ll go crazy...'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3659c178e0211a14ba2197d26d80729a, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
