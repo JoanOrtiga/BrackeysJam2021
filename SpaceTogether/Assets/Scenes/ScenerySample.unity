@@ -456,81 +456,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: fc90441696b851743a117a92d587c930, type: 3}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 2733961c437fe1147987541c8404b232, type: 3}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[2].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: abcc9bce9bbca4540827fb946cdf2858, type: 3}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 172e1686eb28c4b4e8f3d84fa60dc9da, type: 3}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[4].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 89a8c6b2ba0ee1247a4ed88653d6de1c, type: 3}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[0].isSFX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[0].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[1].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[2].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[3].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[4].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[0].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[1].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[2].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[3].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541905410, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: footSteps.Array.data[4].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738646681595172699, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 738646681744756154, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_Name
       value: PlayerControllerFPS
-      objectReference: {fileID: 0}
-    - target: {fileID: 738646681744756155, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: m_StepOffset
-      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_RootOrder
@@ -576,18 +504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 738646681744756157, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: jumpHeight
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3812322447460237592, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: UIPickUp
       value: 
       objectReference: {fileID: 235834405}
-    - target: {fileID: 3812322447460237592, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3812322447460237592, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: pickUpIcon
       value: 
@@ -596,10 +516,6 @@ PrefabInstance:
       propertyPath: interactIcon
       value: 
       objectReference: {fileID: 316117653}
-    - target: {fileID: 3812322447460237592, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: objectLayerMask.m_Bits
-      value: 9216
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
 --- !u!1001 &235834404

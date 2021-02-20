@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6370309388690786868
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 11
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
@@ -7,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StorageWall
+  m_Name: Estanteria2
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _MASKMAP _NORMALMAP _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
@@ -30,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 5aa8dbd6cf4f3344a9a68f6bfd35c9ed, type: 3}
+        m_Texture: {fileID: 2800000, guid: ba57737ac04878c4daeef3f3de14c4af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -70,15 +83,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5aa8dbd6cf4f3344a9a68f6bfd35c9ed, type: 3}
+        m_Texture: {fileID: 2800000, guid: ba57737ac04878c4daeef3f3de14c4af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: 2d9baefe129bcda4fbe8f976e8866df6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2dd6bb8b4d3f68643b1f9f7c63a57261, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 8f4f872da524f8d42aa7451604803f2d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8dff46ece50ea2e4aaf5676938498e65, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -195,7 +208,7 @@ Material:
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _NormalMapSpace: 0
-    - _NormalScale: 1.15
+    - _NormalScale: 1
     - _OpaqueCullMode: 2
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
@@ -248,9 +261,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -265,16 +278,3 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &7383460054286540276
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 11
