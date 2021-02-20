@@ -12,7 +12,6 @@ public class DialogueEvents : MonoBehaviour
     private float timeToEvent = 0.0f;
     private string timerKeyName;
 
-
     [Header("ONLY FOR TEST")]
     public bool valueChangeTest = false;
     public bool valueTest = false;
@@ -59,7 +58,6 @@ public class DialogueEvents : MonoBehaviour
     {
         if (events.ContainsKey(key))
         {
-
             events[key] = value;
         }
         else

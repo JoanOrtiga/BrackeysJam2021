@@ -11,6 +11,7 @@ public class Tablet : MonoBehaviour
     public GameObject screen;
 
     int clicks = 0;
+
     private void Start()
     {
         screen.GetComponent<MeshRenderer>().material = MainMenuTexture;
@@ -57,7 +58,6 @@ public class Tablet : MonoBehaviour
                 
                
             }
-     
         }
     }
 }
