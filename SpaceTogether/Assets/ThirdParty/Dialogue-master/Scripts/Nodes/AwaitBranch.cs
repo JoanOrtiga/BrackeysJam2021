@@ -49,7 +49,6 @@ namespace Dialogue
                     {
                         success = false;
                         break;
-
                     }
                 }
 
@@ -68,13 +67,15 @@ namespace Dialogue
                 return;
             }
 
-            DialogueSystem.IsInAwaitBranch = false;
+            
 
             for (int i = 0; i < port.ConnectionCount; i++)
             {
                 NodePort connection = port.GetConnection(i);
                 (connection.node as DialogueBaseNode).Trigger();
             }
+
+            DialogueSystem.IsInAwaitBranch = false;
         }
     }
 }

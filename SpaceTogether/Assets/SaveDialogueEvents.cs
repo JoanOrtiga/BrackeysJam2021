@@ -9,7 +9,7 @@ public class SaveDialogueEvents : MonoBehaviour
     public static SaveDialogueEvents Instance { get { return _instance; } }
 
 
-    public string[] eventKey;
+    public List<string> eventKey;
 
     public Dictionary<string, bool> events = new Dictionary<string, bool>();
 

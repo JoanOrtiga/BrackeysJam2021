@@ -704,7 +704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &288310135
 Transform:
   m_ObjectHideFlags: 0
@@ -1817,9 +1817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74e744f6a09750b458dcfb323dd22638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  character2: {fileID: 0}
-  range: 0
   leavesZone:
     m_PersistentCalls:
       m_Calls: []
@@ -2253,6 +2250,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2214554859860476949, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -8358795288433480617, guid: 6852ea0357a931d448fdaa2a3d61e9d6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
 --- !u!1001 &3101706008360369250
