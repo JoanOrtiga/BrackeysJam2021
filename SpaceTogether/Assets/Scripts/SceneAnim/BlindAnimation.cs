@@ -42,7 +42,7 @@ public class BlindAnimation : MonoBehaviour
         if ((door.position - startPos.position).sqrMagnitude < margin * margin)
         {
             moving = false;
-            Destroy(gameObject);
+            
         }
     }
 
