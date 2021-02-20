@@ -2004,7 +2004,7 @@ MonoBehaviour:
   text: "Yeah\u2026 hope\u2026 last thing to get lost, right? I'm not sure if anything
     is worthy... It's not easy. I don't know if I am more afraid of living than dying.
     After all, It will arrive."
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 690be3e77061d48408aaafad14cfec47, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers:
@@ -4657,7 +4657,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: I had that mentality. I saw the life in my daughter's face. Pure energy...
     How life can treat us to loose this joy...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ebe1e2707b5831343ab497d5a0b9933c, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []

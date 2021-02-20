@@ -1506,7 +1506,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: SO?
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b258c32b53df74842859ff007142ec33, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers:
