@@ -165,7 +165,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void WriteText()
     {
-        screenText.WriteText(chatDialogue.current.text, interruptionDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
+        screenText.WriteText(chatDialogue.current.text, chatDialogue.current.voiceClip, chatDialogue.current.character.name, chatDialogue.current.timeBetweenChars, chatDialogue.current.timeUntilNextChat);
     }
 
     public void WriteInterruption()
