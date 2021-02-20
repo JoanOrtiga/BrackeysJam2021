@@ -20,23 +20,44 @@ public class DoorAnim : MonoBehaviour
     public Renderer rendererF;
 
     public float speed = 3f;
+    public float margin = 0.001f;
 
     public bool opening;
+    public bool moving = true;
+
+    private void Awake()
+    {
+        rendererF.material = closedFMaterial;
+        rendererM.material = closedMMaterial;
+    }
 
     public void Open()
     {
         door.position = Vector3.Lerp(door.position, startPos.position, speed * Time.deltaTime);
         door2.position = Vector3.Lerp(door2.position, start2Pos.position, speed * Time.deltaTime);
+
+        if ((door2.position - start2Pos.position).sqrMagnitude < margin * margin)
+        {
+            moving = false;
+        }
     }
 
     public void Close()
     {
         door.position = Vector3.Lerp(door.position, endPos.position, speed * Time.deltaTime);
         door2.position = Vector3.Lerp(door2.position, end2Pos.position, speed * Time.deltaTime);
+
+        if ((door2.position - end2Pos.position).sqrMagnitude < margin * margin)
+        {
+            moving = false;
+        }
     }
 
     private void Update()
     {
+        if (!moving)
+            return;
+
         if (opening)
         {
             Open();
@@ -55,6 +76,7 @@ public class DoorAnim : MonoBehaviour
             rendererM.material = openMMaterial;
 
             opening = true;
+            moving = true;
         }
            
     }
@@ -64,6 +86,7 @@ public class DoorAnim : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             opening = false;
+            moving = true;
 
             rendererF.material = closedFMaterial;
             rendererM.material = closedMMaterial;

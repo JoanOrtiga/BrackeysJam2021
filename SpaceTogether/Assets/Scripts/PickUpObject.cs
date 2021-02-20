@@ -58,7 +58,7 @@ public class PickUpObject : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    print("pressed e");
+                    print(rayCastHit.transform.name);
 
                     rayCastHit.transform.GetComponent<InteractableObject>().Interact(); 
                 }

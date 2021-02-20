@@ -15,8 +15,10 @@ public class GreenHouseDoor : MonoBehaviour
     public Transform end2Pos;
 
     public float speed = 3f;
+    private float margin = 0.002f;
 
     public bool opening;
+    public bool moving = true;
 
     public void DisableDoorStem()
     {
@@ -38,7 +40,7 @@ public class GreenHouseDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
+            moving = true;
             opening = true;
             EnableDoorStem();
         }
@@ -51,6 +53,7 @@ public class GreenHouseDoor : MonoBehaviour
         {
             DisableDoorStem();
             opening = false;
+            moving = true;
         }
             
     }
@@ -71,11 +74,21 @@ public class GreenHouseDoor : MonoBehaviour
     {
         door.position = Vector3.Lerp(door.position, startPos.position, speed * Time.deltaTime);
         door2.position = Vector3.Lerp(door2.position, start2Pos.position, speed * Time.deltaTime);
+
+        if ((door2.position - start2Pos.position).sqrMagnitude < margin * margin)
+        {
+            moving = false;
+        }
     }
 
     public void Close()
     {
         door.position = Vector3.Lerp(door.position, endPos.position, speed * Time.deltaTime);
         door2.position = Vector3.Lerp(door2.position, end2Pos.position, speed * Time.deltaTime);
+
+        if ((door2.position - end2Pos.position).sqrMagnitude < margin * margin)
+        {
+            moving = false;
+        }
     }
 }

@@ -255,7 +255,9 @@ MonoBehaviour:
   rendererM: {fileID: 6472866419929391507}
   rendererF: {fileID: 7163166417470660747}
   speed: 3
+  margin: 0.002
   opening: 0
+  moving: 1
 --- !u!65 &5295022151111072240
 BoxCollider:
   m_ObjectHideFlags: 0
