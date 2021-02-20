@@ -1696,7 +1696,7 @@ GameObject:
   - component: {fileID: 413382693}
   - component: {fileID: 413382692}
   m_Layer: 0
-  m_Name: Acte4Graph
+  m_Name: Act4Graph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9133,7 +9133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1820339895104071104, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
       propertyPath: m_Name
-      value: InterruptionGraphActe4
+      value: InterruptionGraphAct4
       objectReference: {fileID: 0}
     - target: {fileID: 1820339895104071105, guid: 5784335d4f87bcb4682a927240ecc732, type: 3}
       propertyPath: m_RootOrder
