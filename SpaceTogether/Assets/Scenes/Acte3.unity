@@ -344,7 +344,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Maybe they can't find us ... I don't want to get excited yet.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: dfcf7d46778a926419a195163fa560cc, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -415,7 +415,7 @@ MonoBehaviour:
 
     I will be in the transmissor panel,
     in case you need something.'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: e67bba24d57ed3541ad72fefbee76f5b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1193,8 +1193,8 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: How energetic I see you!
-  voiceClip: {fileID: 0}
+  text: I see you very energetic today!
+  voiceClip: {fileID: 8300000, guid: fd66c94e882526a4f9ec62f632c3b9f8, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1321,7 +1321,7 @@ MonoBehaviour:
     be able to trust you, and it is the worst situation in which we can be lying
     in space. So we should fix it, at least restore the professional relationship
     we had before.
-  voiceClip: {fileID: 8300000, guid: 905b69abb59f08d45a98f7bc8a1163b6, type: 3}
+  voiceClip: {fileID: 0}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1493,7 +1493,7 @@ MonoBehaviour:
 
 
     I will be in the transmissor panel, in case you need something.'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5f20fad694fd3fd49bab4fd6405507e8, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2411,7 +2411,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: I... I don't know Lauren ...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 8d975cc5dbc6bbf4ca95f348a8d4ffdf, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2473,7 +2473,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: "\rNo no nothing ..."
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3421469b1af400d4ab69cad71c1607a2, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2640,7 +2640,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: "\xA1HEY LAU!... ren..."
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 19bd029a1fe69e5458747d112d9c798e, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3152,7 +3152,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Yes, I'm sure the rescue ship will arrive in a few weeks ... Although it's
     not so bad here either...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5b2ae3e8fb85eb84fb78a791709a0719, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4510,7 +4510,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'Lauren... '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 43b51f2532dd16243b505b2508533d0b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4711,7 +4711,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: There was a message on the retransmitter ... They've lost contact with the
     rescue ship. They don't know what happened or where he is...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3e893720d844b5144a57fa947f51135b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5620,9 +5620,9 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: Alice... I don't know if they're going to make it. They have lost contact
+  text: Alice... I don't know how you will take this but... they have lost contact
     with the ship...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 120af5ac74a77c74e9a094f3503fbb2b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -5874,7 +5874,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: No, but what if we get stuck? With the greenhouse and the resources we have
     we can live for about ten years
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: f985d2a05cdc1494c91c936de416eff4, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6257,7 +6257,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Is there ... a message ...?!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5c24c81183b9ab34d989685fe125ea82, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7224,7 +7224,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Yes! What a joy!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: e4666b85ba228c14f8c52c5964bd4f03, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7359,9 +7359,9 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: Scheme Lauren ... What if they don't show up? Get excited about something
-    that may not happen...
-  voiceClip: {fileID: 0}
+  text: But Lauren ... What if they don't show up? Are we going to get excited for
+    something that maight not happen?
+  voiceClip: {fileID: 8300000, guid: 7c8c570916353a8479f032ca2c5fa2f0, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
