@@ -11,9 +11,13 @@ public class ObjectPlace : MonoBehaviour
     public Vector3 startPos { get; private set; }
     private Quaternion startRot;
 
+    public bool falseWhenDropped = true;
+
+    private DialogueEvents dialogueEvents;
+
     private void Awake()
     {
-        
+        dialogueEvents = FindObjectOfType<DialogueEvents>();
 
         startPos = transform.position;
         startRot = transform.rotation;
@@ -27,10 +31,22 @@ public class ObjectPlace : MonoBehaviour
 
     public void InvokeDialogueEvent(bool value)
     {
-        if(callEventWhenPickedUp != "")
+        if (falseWhenDropped)
         {
-            FindObjectOfType<DialogueEvents>().ChangeValue(callEventWhenPickedUp, value);
+            if (callEventWhenPickedUp != "")
+            {
+                dialogueEvents.ChangeValue(callEventWhenPickedUp, value);
+            }
+        }
+        else
+        {
+            if (callEventWhenPickedUp != "")
+            {
+                dialogueEvents.ChangeValue(callEventWhenPickedUp, true);
+            }
         }
 
+       
+        
     }
 }

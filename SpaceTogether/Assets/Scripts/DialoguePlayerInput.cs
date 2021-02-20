@@ -8,11 +8,6 @@ public class DialoguePlayerInput : MonoBehaviour
 {
     private DialogueSystem dialogueSystem;
 
-    public Transform player;
-    public Transform character2;
-
-    public float range;
-
     public UnityEvent leavesZone;
     public UnityEvent returnsZone;
 

@@ -15,7 +15,6 @@ public class PickUpObject : MonoBehaviour
     public LayerMask objectLayerMask;
     public GameObject handCenter;
     public float leaveDistance = 3;
-    public GameObject UIPickUp;
 
     Transform objectPickUp;
     Rigidbody objectPickUpRigidBody;
@@ -58,8 +57,6 @@ public class PickUpObject : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    print(rayCastHit.transform.name);
-
                     rayCastHit.transform.GetComponent<InteractableObject>().Interact(); 
                 }
                     
@@ -91,12 +88,7 @@ public class PickUpObject : MonoBehaviour
 
         if (onHand && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
-            PlaceObject();
-
-            if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
-            {
-                rayCastHit.transform.GetComponent<Tablet>().onHand = false;
-            }
+            DropObject();
         }
 
         timer += Time.deltaTime;
@@ -105,8 +97,6 @@ public class PickUpObject : MonoBehaviour
     private void TakeObject()
     {
         onHand = true;
-
-        UIPickUp.SetActive(false);
 
         objectPickUp = rayCastHit.transform;
 
@@ -130,18 +120,21 @@ public class PickUpObject : MonoBehaviour
     {
         float dist = Vector3.Distance(handCenter.transform.position, objectPlace.startPos);
 
-        objectPickUp.SetParent(null);
-        objectPickUpRigidBody.constraints = RigidbodyConstraints.None;
-        objectPickUpRigidBody.isKinematic = false;
-
-        if (dist < leaveDistance)
+        if(objectPickUp != null)
         {
-            objectPlace.ReLocate();
+            objectPickUp.SetParent(null);
+            objectPickUpRigidBody.constraints = RigidbodyConstraints.None;
+            objectPickUpRigidBody.isKinematic = false;
+
+            if (dist < leaveDistance)
+            {
+                objectPlace.ReLocate();
+            }
+
+            objectPlace.InvokeDialogueEvent(false);
         }
 
         onHand = false;
-
-        objectPlace.InvokeDialogueEvent(false);
 
         timer = 0;
     }
@@ -176,6 +169,24 @@ public class PickUpObject : MonoBehaviour
         }
     }
 
+    public void DropObject()
+    {
+        PlaceObject();
+
+        if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
+        {
+            rayCastHit.transform.GetComponent<Tablet>().onHand = false;
+        }
+    }
+
+    public void Eliminate(int x)
+    {
+        print("HOLA");
+
+        Destroy(objectPickUp.gameObject);
+
+        DropObject();
+    }
 }
 
 /*

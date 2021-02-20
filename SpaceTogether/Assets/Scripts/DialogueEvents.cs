@@ -20,14 +20,25 @@ public class DialogueEvents : MonoBehaviour
 
     private void Awake()
     {
-        events = SaveDialogueEvents.Instance.events;
+        foreach (var item in SaveDialogueEvents.Instance.events)
+        {
+            if (!events.ContainsKey(item.Key))
+            {
+                events.Add(item.Key, item.Value);
+            }
+        }
 
         foreach (var item in eventKey)
         {
-            if (events.ContainsKey(item))
+            if (!events.ContainsKey(item))
             {
                 events.Add(item, false);
             }
+        }
+
+        foreach (var item in events)
+        {
+            print(item.Key);
         }
     }
 
@@ -92,6 +103,7 @@ public class DialogueEvents : MonoBehaviour
             if (!SaveDialogueEvents.Instance.events.ContainsKey(item.Key))
             {
                 SaveDialogueEvents.Instance.events.Add(item.Key, item.Value);
+                SaveDialogueEvents.Instance.eventKey.Add(item.Key);
             }
         }
     }
