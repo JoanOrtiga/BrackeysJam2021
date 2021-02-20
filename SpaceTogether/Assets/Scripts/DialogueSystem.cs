@@ -62,7 +62,10 @@ public class DialogueSystem : MonoBehaviour
 
         talking = false;
 
-        WriteInterruption();
+        if (!DialogueSystem.IsInAwaitBranch)
+        {
+            WriteInterruption();
+        }
     }
 
     public void ReturnsZone()
@@ -76,12 +79,14 @@ public class DialogueSystem : MonoBehaviour
         {
             StartCoroutine(WaitForOption());
         }
+        else if (DialogueSystem.IsInAwaitBranch)
+        {
+            StartCoroutine(WaitForAwaitBranch());
+        }
         else
         {
             WriteText();
         }
-
-        
     }
 
     private IEnumerator WaitForOption()
@@ -131,6 +136,16 @@ public class DialogueSystem : MonoBehaviour
         if (!chatDialogue.current.AnswerQuestion(optionSelected))
             yield break;
 
+        while (DialogueSystem.IsInAwaitBranch)
+        {
+            yield return null;
+        }
+
+        WriteText();
+    }
+
+    IEnumerator WaitForAwaitBranch()
+    {
         while (DialogueSystem.IsInAwaitBranch)
         {
             yield return null;
