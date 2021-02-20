@@ -1321,7 +1321,7 @@ MonoBehaviour:
     be able to trust you, and it is the worst situation in which we can be lying
     in space. So we should fix it, at least restore the professional relationship
     we had before.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3453a049716aaf6469bf50dc29db30a1, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
