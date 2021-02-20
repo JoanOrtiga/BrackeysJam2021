@@ -1333,7 +1333,6 @@ MonoBehaviour:
   - {fileID: 166037840}
   - {fileID: 1137275445}
   - {fileID: 337036318}
-  waitInputToContinue: 0
   writeNames: 1
   audioCharacters:
   - {fileID: 148977934}
@@ -4518,7 +4517,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 952, y: -72}
+  position: {x: 936, y: -120}
   ports:
     keys:
     - answers
