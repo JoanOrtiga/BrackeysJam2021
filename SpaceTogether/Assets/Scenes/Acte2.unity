@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 824, y: -584}
+  position: {x: 792, y: -424}
   ports:
     keys:
     - answers
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 1608, y: -232}
+  position: {x: 1608, y: -24}
   ports:
     keys:
     - answers
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 1224, y: -568}
+  position: {x: 1224, y: -360}
   ports:
     keys:
     - answers
@@ -2484,7 +2484,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 824, y: -328}
+  position: {x: 792, y: -168}
   ports:
     keys:
     - answers
@@ -2546,7 +2546,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 1992, y: -248}
+  position: {x: 2008, y: -72}
   ports:
     keys:
     - answers
@@ -2897,7 +2897,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 1224, y: -312}
+  position: {x: 1224, y: -104}
   ports:
     keys:
     - answers
@@ -3521,7 +3521,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 424, y: -360}
+  position: {x: 376, y: -200}
   ports:
     keys:
     - answers
@@ -5989,7 +5989,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 1608, y: -488}
+  position: {x: 1608, y: -280}
   ports:
     keys:
     - answers
@@ -6612,7 +6612,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 1992, y: 8}
+  position: {x: 2008, y: 184}
   ports:
     keys:
     - answers
@@ -6810,7 +6810,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 883389214}
-  position: {x: 424, y: -616}
+  position: {x: 376, y: -456}
   ports:
     keys:
     - answers
