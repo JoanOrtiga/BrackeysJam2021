@@ -39,8 +39,8 @@ public class DialoguePlayerInput : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-                inZone = true;
-                returnsZone.Invoke();
+            inZone = true;
+            returnsZone.Invoke();
 
         }
 
@@ -49,11 +49,11 @@ public class DialoguePlayerInput : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-                if (!dialogueSystem.talking)
-                {
-                    returnsZone.Invoke();
-                    inZone = true;
-                }
+            if (!dialogueSystem.talking)
+            {
+                returnsZone.Invoke();
+                inZone = true;
+            }
         }
     }
 
@@ -61,8 +61,8 @@ public class DialoguePlayerInput : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-                inZone = false;
-                leavesZone.Invoke();
+            inZone = false;
+            leavesZone.Invoke();
         }
 
     }
@@ -87,5 +87,11 @@ public class DialoguePlayerInput : MonoBehaviour
         }
 
         return -1;
+    }
+
+    public void ForceZone(int x)
+    {
+        inZone = true;
+        returnsZone.Invoke();
     }
 }

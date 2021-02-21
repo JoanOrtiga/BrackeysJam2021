@@ -32,18 +32,5 @@ public class SaveDialogueEvents : MonoBehaviour
                 events.Add(item, false);
             }
         }
-
-        SceneManager.sceneLoaded += CheckReset;
-    }
-
-    public void CheckReset(Scene scene, LoadSceneMode mode)
-    {
-        if(scene.buildIndex == 0)
-        {
-            foreach (var item in events)
-            {
-                events[item.Key] = false;
-            }
-        }
     }
 }
