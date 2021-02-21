@@ -2655,23 +2655,6 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
---- !u!1 &1055600105 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4373171762033647241, guid: 19e31791fc424d948b491c7f21796cf6, type: 3}
-  m_PrefabInstance: {fileID: 6066443436027410802}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1055600106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055600105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b14fa7e83b0814aa5d34b79ffd4c92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1071682153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5296,6 +5279,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7085348849448151276, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 152.30908
+      objectReference: {fileID: 0}
     - target: {fileID: 7085348850044210584, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5383,6 +5370,10 @@ PrefabInstance:
     - target: {fileID: 7085348850044210588, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7085348850745781666, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 122.79492
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
