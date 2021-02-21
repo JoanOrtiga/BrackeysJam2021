@@ -5,14 +5,16 @@ using UnityEngine;
 public class Tablet : MonoBehaviour
 {
    
-    public bool onHand = true;
 
+    public PickUpObject player;
     public Material MainMenuTexture,case1Texture, case2Texture, case3Texture, case4Texture;
     public GameObject screen;
+    public bool onHand;
 
     int clicks = 0;
     private void Start()
     {
+        player = FindObjectOfType<PickUpObject>();
         screen.GetComponent<MeshRenderer>().material = MainMenuTexture;
         onHand = false;
     }
@@ -21,7 +23,7 @@ public class Tablet : MonoBehaviour
     void Update()
     {
        
-        if (onHand == true)
+        if (player.onHand == true)
         {
            
             if (Input.GetMouseButtonDown(0))

@@ -20,7 +20,8 @@ public class PickUpObject : MonoBehaviour
     Rigidbody objectPickUpRigidBody;
     ObjectPlace objectPlace;
 
-    private bool onHand = false;
+   [HideInInspector] 
+    public bool onHand = false;
     private float timer;
 
     Ray ray;
@@ -48,7 +49,7 @@ public class PickUpObject : MonoBehaviour
 
     void Update()
     {
-        if (hitted)
+        if (hitted && onHand == false)
         {
             if (interaction == Interaction.interact)
             {
@@ -57,6 +58,8 @@ public class PickUpObject : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                   
+
                     rayCastHit.transform.GetComponent<InteractableObject>().Interact(); 
                 }
                     
@@ -70,10 +73,7 @@ public class PickUpObject : MonoBehaviour
                 {
                     TakeObject();
 
-                    if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
-                    {
-                        rayCastHit.transform.GetComponent<Tablet>().onHand = true;
-                    }
+                   
                 }
             }
         }
@@ -89,6 +89,7 @@ public class PickUpObject : MonoBehaviour
         if (onHand && Input.GetKeyDown(KeyCode.E) && (timer > 0.25))
         {
             DropObject();
+           
         }
 
         timer += Time.deltaTime;
@@ -111,7 +112,7 @@ public class PickUpObject : MonoBehaviour
         objectPlace.InvokeDialogueEvent(true);
 
         objectPickUp.position = handCenter.transform.position;
-        objectPickUp.localRotation = handCenter.transform.localRotation;
+       //objectPickUp.localRotation = handCenter.transform.localRotation;
 
         timer = 0;
     }
