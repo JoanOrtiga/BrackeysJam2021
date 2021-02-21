@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4624598, g: 0.41393936, b: 0.49285567, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -691,7 +691,7 @@ MonoBehaviour:
   text: "\rCan't believe it... I CAN'T believe it... THIS IS THE ONLY HOPE THAT WE
     HAVE HAD IN MONTHS AND YOU WEREN'T PREPARED. WHATS WRONG WITH YOU? YOU DIDN'T
     HAVE ENOUGH TIME TO READ THE DAMN MANUALS? "
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3f75e21a340611b4a822fc38f63c8209, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   text: "\xBFARE YOU KIDDING ME ALICE? IT WAS YOUR FUCKING JOB KNOWING WHAT TO DO
     IN CASE OF EMERGENCY AND THAT IMPLIES KNOWING THE CODES OF THE SHIP DEPENDING
     ON THE EMERGENCY.."
-  voiceClip: {fileID: 8300000, guid: 6134916989db1124f85fc4e5c9d24abc, type: 3}
+  voiceClip: {fileID: 8300000, guid: fd58c57b74607d44dac9de83b71e6443, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2730,7 +2730,7 @@ MonoBehaviour:
     to do? are we going to be forever stuck because of that fucking crappy code?
     I swear by God Alice, if they don''t come for us because of the damn code I''m
     going to kill you. GET OUT OF HERE! '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5d80870ee2396fe49a87b829139c0831, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4499,7 +4499,7 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: "Maybe...\r\n\r\nAnd what if she sees me as a stranger? And what if she doesn't
+  text: "Maybe...\r\n\rAnd what if she sees me as a stranger? And what if she doesn't
     recognize me and feels that I invade her space?\r"
   voiceClip: {fileID: 8300000, guid: eae449078c44dec46b9050dc30898389, type: 3}
   timeBetweenChars: 0.05
@@ -6081,7 +6081,6 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'Yes, surely...
-
 
     May I ask you something? Do you regret accepting this
     mission?'
