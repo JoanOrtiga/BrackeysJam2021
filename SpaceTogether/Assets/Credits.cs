@@ -19,8 +19,8 @@ public class Credits : MonoBehaviour
 
         if ((credits.position - target.position).sqrMagnitude < margin * margin)
         {
-            print("ya");
-            //loadScene.SceneLoad(0);
+           
+            loadScene.SceneLoad(0);
         }
     }
 }
