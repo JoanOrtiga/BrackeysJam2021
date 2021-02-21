@@ -1977,7 +1977,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 2133304546}
+        node: {fileID: 1449462730}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4352,7 +4352,10 @@ MonoBehaviour:
       _node: {fileID: 1449462730}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 655533433}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -7024,9 +7027,6 @@ MonoBehaviour:
       - fieldName: output
         node: {fileID: 1607320173}
         reroutePoints: []
-      - fieldName: output
-        node: {fileID: 655533433}
-        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -7044,6 +7044,15 @@ MonoBehaviour:
   output: {fileID: 0}
   conditions:
   - condition:
+      _target: {fileID: 1382998740}
+      _methodName: get_inZone
+      _args: []
+      _dynamic: 0
+      _typeName: Dialogue.Condition, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      dirty: 0
+    check: 1
+  - condition:
       _target: {fileID: 288310136}
       _methodName: CheckValue
       _args:
@@ -7053,15 +7062,6 @@ MonoBehaviour:
         stringValue: havePills
         objectValue: {fileID: 0}
         argType: 4
-      _dynamic: 0
-      _typeName: Dialogue.Condition, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      dirty: 0
-    check: 1
-  - condition:
-      _target: {fileID: 1382998740}
-      _methodName: get_inZone
-      _args: []
       _dynamic: 0
       _typeName: Dialogue.Condition, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
