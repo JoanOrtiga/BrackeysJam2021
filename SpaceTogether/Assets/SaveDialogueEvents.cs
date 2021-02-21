@@ -38,7 +38,7 @@ public class SaveDialogueEvents : MonoBehaviour
 
     public void CheckReset(Scene scene, LoadSceneMode mode)
     {
-        if(scene.buildIndex == 1)
+        if(scene.buildIndex == 0)
         {
             foreach (var item in events)
             {

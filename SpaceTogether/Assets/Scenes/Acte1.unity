@@ -1999,7 +1999,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: -120, y: -120}
+  position: {x: -360, y: -40}
   ports:
     keys:
     - answers
@@ -2923,6 +2923,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &979075617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1513477518}
+  position: {x: 14328, y: 504}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 979075617}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 1892846430}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 979075617}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  trigger:
+  - _target: {fileID: 288310137}
+    _methodName: FinishScene
+    _args:
+    - boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      objectValue: {fileID: 0}
+      argType: 2
+    _dynamic: 0
+    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
+  - _target: {fileID: 1280717022}
+    _methodName: LoadNextSceneIn
+    _args:
+    - boolValue: 0
+      intValue: 0
+      floatValue: 5
+      stringValue: 
+      objectValue: {fileID: 0}
+      argType: 3
+    _dynamic: 0
+    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
 --- !u!1 &985921713
 GameObject:
   m_ObjectHideFlags: 0
@@ -4784,7 +4853,6 @@ MonoBehaviour:
   - {fileID: 1954530873}
   - {fileID: 245978982}
   - {fileID: 1730518546}
-  - {fileID: 1875736568}
   - {fileID: 654592929}
   - {fileID: 1252411333}
   - {fileID: 1479720534}
@@ -4792,6 +4860,7 @@ MonoBehaviour:
   - {fileID: 1449462730}
   - {fileID: 1795868884}
   - {fileID: 178827206}
+  - {fileID: 979075617}
   current: {fileID: 0}
 --- !u!114 &1520238203
 MonoBehaviour:
@@ -6183,62 +6252,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1875736568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
-  m_Name: Event
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1513477518}
-  position: {x: 14264, y: 504}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1875736568}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1892846430}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1875736568}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  trigger:
-  - _target: {fileID: 1280717022}
-    _methodName: LoadNextSceneIn
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 5
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 3
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
 --- !u!114 &1877553676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6349,7 +6362,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1875736568}
+        node: {fileID: 979075617}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
