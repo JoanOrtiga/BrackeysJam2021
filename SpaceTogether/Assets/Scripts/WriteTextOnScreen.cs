@@ -46,8 +46,10 @@ public class WriteTextOnScreen : MonoBehaviour
 
         }
 
-        audioCharacters[0].Stop();
-        audioCharacters[1].Stop();
+        foreach (var item in audioCharacters)
+        {
+            item.Stop();
+        }
     }
 
     public void WriteText(string dialogue, AudioClip voiceClip, string name, float timeBetweenChars, float timeUntilNextChat)
@@ -136,8 +138,10 @@ public class WriteTextOnScreen : MonoBehaviour
     {
         text.text = "";
 
-        audioCharacters[0].Stop();
-        audioCharacters[1].Stop();
+        foreach (var item in audioCharacters)
+        {
+            item.Stop();
+        }
     }
 
     public void HiglightOption(int index)

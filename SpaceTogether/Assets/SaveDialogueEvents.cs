@@ -27,7 +27,10 @@ public class SaveDialogueEvents : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(this);
 
-            events.Add(eventKey[0], false);
+            foreach (var item in eventKey)
+            {
+                events.Add(item, false);
+            }
         }
 
         SceneManager.sceneLoaded += CheckReset;
