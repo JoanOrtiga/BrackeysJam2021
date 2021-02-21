@@ -1932,68 +1932,6 @@ MonoBehaviour:
   timeBetweenChars: 0.08
   timeUntilNextChat: 0
   answers: []
---- !u!114 &654592929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
-  m_Name: Event
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1513477518}
-  position: {x: 1336, y: -312}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 654592929}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1213831252}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 654592929}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  trigger:
-  - _target: {fileID: 288310136}
-    _methodName: CreateTimer
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 2
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 3
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: wait2Second
-      objectValue: {fileID: 0}
-      argType: 4
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
 --- !u!114 &655533433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3229,7 +3167,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 584, y: -120}
+  position: {x: 504, y: -120}
   ports:
     keys:
     - answers
@@ -3436,7 +3374,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 936, y: -120}
+  position: {x: 904, y: -120}
   ports:
     keys:
     - answers
@@ -3471,10 +3409,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 654592929}
-        reroutePoints: []
-      - fieldName: input
-        node: {fileID: 1252411333}
+        node: {fileID: 1300811249}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3614,89 +3549,6 @@ MonoBehaviour:
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
---- !u!114 &1252411333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c40f73d1b4e13a4418b591dceb02b2db, type: 3}
-  m_Name: Await Branch
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1513477518}
-  position: {x: 1336, y: -56}
-  ports:
-    keys:
-    - pass
-    - fail
-    - input
-    - output
-    values:
-    - _fieldName: pass
-      _node: {fileID: 1252411333}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1300811249}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: fail
-      _node: {fileID: 1252411333}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: input
-      _node: {fileID: 1252411333}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1213831252}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1252411333}
-      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: {fileID: 0}
-  output: {fileID: 0}
-  conditions:
-  - condition:
-      _target: {fileID: 288310136}
-      _methodName: CheckValue
-      _args:
-      - boolValue: 0
-        intValue: 0
-        floatValue: 0
-        stringValue: wait2Second
-        objectValue: {fileID: 0}
-        argType: 4
-      _dynamic: 0
-      _typeName: Dialogue.Condition, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      dirty: 0
-    check: 1
-  pass: {fileID: 0}
-  fail: {fileID: 0}
 --- !u!114 &1275836081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3902,8 +3754,8 @@ MonoBehaviour:
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: pass
-        node: {fileID: 1252411333}
+      - fieldName: output
+        node: {fileID: 1213831252}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -4310,7 +4162,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 232, y: -120}
+  position: {x: 136, y: -120}
   ports:
     keys:
     - answers
@@ -4649,8 +4501,6 @@ MonoBehaviour:
   - {fileID: 1954530873}
   - {fileID: 245978982}
   - {fileID: 1730518546}
-  - {fileID: 654592929}
-  - {fileID: 1252411333}
   - {fileID: 1479720534}
   - {fileID: 1096250800}
   - {fileID: 1449462730}
