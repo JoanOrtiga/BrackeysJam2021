@@ -31,8 +31,7 @@ public class ActTwo : MonoBehaviour
         if (time > 4)
         {
             //LOAD SCENE
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+           
         }
         
     }
