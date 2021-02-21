@@ -475,6 +475,11 @@ PrefabInstance:
       objectReference: {fileID: 1541878119}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+--- !u!82 &210852476 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 148977934, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+  m_PrefabInstance: {fileID: 210852475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &272981927
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,8 +603,12 @@ MonoBehaviour:
   - {fileID: 920365153}
   - {fileID: 920365152}
   writeNames: 1
-  audioCharacters: []
-  charNames: []
+  audioCharacters:
+  - {fileID: 210852476}
+  - {fileID: 887590284}
+  charNames:
+  - Alice
+  - Lauren
 --- !u!114 &295666824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1502,6 +1511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+--- !u!82 &887590284 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7435378831638304372, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+  m_PrefabInstance: {fileID: 887590283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &920365151
 PrefabInstance:
   m_ObjectHideFlags: 0
