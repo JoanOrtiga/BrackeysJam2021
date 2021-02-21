@@ -406,10 +406,10 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: "I can't... This has no sense... Our lives don't make sense anymore... The
     ship will never come. We'll stay adrift in the middle of the fucking nowhere.
-    \r\n\rLet's face the truth. You couldn't give them the damn code and they lost
-    comms with the other ship.. No one is coming for us. "
-  voiceClip: {fileID: 8300000, guid: 6ebed19295226464286630ee4d2f7bd9, type: 3}
-  timeBetweenChars: 0.05
+    \rLet's face the truth. You couldn't give them the damn code and they lost comms
+    with the other ship.. No one is coming for us. "
+  voiceClip: {fileID: 8300000, guid: 9c70dd4aa661d6945a1cd181f3f2efb9, type: 3}
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1001 &210852475
@@ -493,7 +493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.924
+      value: -4.240997
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalPosition.y
@@ -501,11 +501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.994
+      value: -17.22
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.010309118
+      value: -0.7233508
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalRotation.x
@@ -513,7 +513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9999469
+      value: 0.69048077
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalRotation.z
@@ -525,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 181.181
+      value: 272.664
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -612,7 +612,7 @@ MonoBehaviour:
     No one is coming for us...  We are going to die here all alone, in the middle
     of the fucking nowhere.
   voiceClip: {fileID: 8300000, guid: 5d496b9ef66ca3146b7ed6c85c1ef93b, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &236913857
@@ -672,13 +672,13 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: "The universe won't care about you living or not... so fuck off. You are
-    going to live. And I can't promise you that we will arrive to Earth and you will
-    see again your daughter, but you are going to have more time to think about these
-    moments, to think about them and remember that smile that you are always telling
-    about. And maybe, with a bit of luck, you will see her again with your own  eyes.\r"
-  voiceClip: {fileID: 8300000, guid: 2b6dfd14a28eb6545812401d8cac5b08, type: 3}
-  timeBetweenChars: 0.05
+  text: 'The universe won''t care about you living or not... so fuck off. You are
+    going to live. And I can''t promise you that we will arrive to Earth and you
+    will see again your daughter, but you are going to have more time to think about
+    these moments, to think about them and remember that smile that you are always
+    telling about. '
+  voiceClip: {fileID: 8300000, guid: 1d9bbf7bbc0edbd4eb6ca99339ae7d0a, type: 3}
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &239660581
@@ -810,21 +810,9 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3362099891104797691, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.699
-      objectReference: {fileID: 0}
-    - target: {fileID: 3583040555983550271, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.944
-      objectReference: {fileID: 0}
-    - target: {fileID: 6480285660305386456, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 6480285660305386456, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.55
+    - target: {fileID: 1585372391722601708, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
@@ -1036,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7435378831638304376, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.28
+      value: 17.055
       objectReference: {fileID: 0}
     - target: {fileID: 7435378831638304376, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1044,7 +1032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7435378831638304376, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.92
+      value: -18.648
       objectReference: {fileID: 0}
     - target: {fileID: 7435378831638304376, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1072,6 +1060,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7435378831638304376, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435378831638304378, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1311,6 +1303,56 @@ Transform:
   m_Father: {fileID: 288310135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423504219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1017221046}
+  position: {x: 2056, y: -136}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 423504219}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 1776803646}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 423504219}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  trigger:
+  - _target: {fileID: 5874744568185138996}
+    _methodName: SittingDown
+    _args: []
+    _dynamic: 0
+    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
 --- !u!114 &452209387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1368,15 +1410,12 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'It''s been a dream to me...since I was a little girl I wanted to be here,
-    where I am right now. I also wanted to deal with E.T. and spacial monsters, not
-    gonna lie, but luckily it didn''t happen haha... okay, the point is that I fighted
-    so much to be here, and you too, and I''m feeling proud to have put effort and
-    finally have reached my goals. After all, this contributed to my personal growth.
-    I have faced many issues and I have solved them, I have lived an experience that
-    not so many people can. I''ve met great people... just like you... '
-  voiceClip: {fileID: 8300000, guid: 7bc88b67501263e48afebb15d2088654, type: 3}
-  timeBetweenChars: 0.05
+  text: 'Although I should have thought about them a few years before... The point
+    is that... DAMN, WE ARE ASTRONAUTS.It''s been a dream to me...since I was a little
+    girl I wanted to be here, where I am right now. I also wanted to deal with E.T.
+    and spacial monsters, not gonna lie, but luckily it didn''t happen haha... '
+  voiceClip: {fileID: 8300000, guid: 1be815a87743acc4da0b5c4d2c6d861a, type: 3}
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &458856437
@@ -1439,6 +1478,70 @@ MonoBehaviour:
   text: Laure, sorry, just a moment
   voiceClip: {fileID: 8300000, guid: 77ef9962e1d66fb4da871b9307120462, type: 3}
   timeBetweenChars: 0.05
+  timeUntilNextChat: 0.5
+  answers: []
+--- !u!114 &510332399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1017221046}
+  position: {x: 5272, y: 1160}
+  ports:
+    keys:
+    - answers
+    - input
+    - output
+    values:
+    - _fieldName: answers
+      _node: {fileID: 510332399}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 510332399}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 1900011565}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 510332399}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 1376101866}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
+  text: Do you remember our team during the first time at physical training? James
+    was always cursing everything and Charles made fun of him telling him that was
+    not the right attitude to go to the space...
+  voiceClip: {fileID: 8300000, guid: 894674e25d647d54196394a713f30399, type: 3}
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &530428957
@@ -1749,8 +1852,6 @@ MonoBehaviour:
   text: 'I''ve been able to bear all this time locked down in here thanks to you,
     basically. You have already done so much. I don''t want to be a burden anymore.
 
-
-
     Living
     now makes no sense... I got nothing else to comfort in...'
   voiceClip: {fileID: 8300000, guid: 278893e4a9c518f4ead3f3fafe0d7b58, type: 3}
@@ -1818,7 +1919,7 @@ MonoBehaviour:
     back home? I really believe these are the things that you should comfort in,
     for that''s what is worthy in life... '
   voiceClip: {fileID: 8300000, guid: 2faf29857cc6e904ebd2f8a41a8a0adc, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &793806699
@@ -1957,6 +2058,9 @@ MonoBehaviour:
       - fieldName: output
         node: {fileID: 530428957}
         reroutePoints: []
+      - fieldName: output
+        node: {fileID: 1738426752}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1978,10 +2082,74 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Well in fact, I guess I try to hold on what I got left to do... I've been
     thinking about my life during these months. What I have done, what I have achieved,
-    who I am. The typical questions that you ask yourself in the 30s' crisis, although
-    I should have thought about them a few years before... The point is that... DAMN,
-    WE ARE ASTRONAUTS.
-  voiceClip: {fileID: 8300000, guid: 447c9df4bd5cbf54e950e3723e93bd91, type: 3}
+    who I am. The typical questions that you ask yourself in the 30s' crisis.
+  voiceClip: {fileID: 8300000, guid: b00bcb5c9153fe241ada64e914cca575, type: 3}
+  timeBetweenChars: 0.04
+  timeUntilNextChat: 0.5
+  answers: []
+--- !u!114 &895237203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1017221046}
+  position: {x: 1048, y: -616}
+  ports:
+    keys:
+    - answers
+    - input
+    - output
+    values:
+    - _fieldName: answers
+      _node: {fileID: 895237203}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 895237203}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 1832704601}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 895237203}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 1776803646}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
+  text: 'It doesn''t matter... I just want to end this... I want to end this suffering
+    once and for all...
+
+    If I was just braver... But I''m not even brave for
+    that... God...GOD! Please...'
+  voiceClip: {fileID: 8300000, guid: 7dd2bc936f5a3634c9742ca073496bb8, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2045,7 +2213,7 @@ MonoBehaviour:
   text: "That was the best part indeed hahahaha \r\n\rThose moments have been the
     best in my life... Since I entered until... well, not today, but until a few
     months ago. I had wonderful times..."
-  voiceClip: {fileID: 8300000, guid: e1504ef2fd1ecfb4db45d80d8163cd1c, type: 3}
+  voiceClip: {fileID: 8300000, guid: 9203ca418e8160244a20c3f5ad7c63cd, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2083,10 +2251,7 @@ MonoBehaviour:
       _node: {fileID: 960247646}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1146776263}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -2160,10 +2325,7 @@ MonoBehaviour:
       _node: {fileID: 1008599854}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 1738426752}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -2241,6 +2403,11 @@ MonoBehaviour:
   - {fileID: 1008599854}
   - {fileID: 50660822}
   - {fileID: 1371871117}
+  - {fileID: 895237203}
+  - {fileID: 510332399}
+  - {fileID: 1376101866}
+  - {fileID: 1900011565}
+  - {fileID: 423504219}
   current: {fileID: 0}
 --- !u!1 &1021047184
 GameObject:
@@ -2396,8 +2563,8 @@ MonoBehaviour:
 
     If
     I was just braver... But I''m not even brave for that... God...GOD! Please...'
-  voiceClip: {fileID: 8300000, guid: 7dd2bc936f5a3634c9742ca073496bb8, type: 3}
-  timeBetweenChars: 0.05
+  voiceClip: {fileID: 8300000, guid: d0c13aac7a1f532469c3724d71856943, type: 3}
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1125054236
@@ -2460,7 +2627,7 @@ MonoBehaviour:
   text: Of course you've got. You have got a husband and a beautiful daughter waiting
     for you at home...I bet you want to get back to that amusement park.
   voiceClip: {fileID: 8300000, guid: ec6fa1caa52046247927de8d98807d32, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1 &1129180333 stripped
@@ -2674,7 +2841,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 960247646}
+        node: {fileID: 1900011565}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2683,13 +2850,11 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: Do you remember our team during the first time at physical training? James
-    was always cursing everything and Charles made fun of him telling him that was
-    not the right attitude to go to the space...Do you remember that time when Charlotte
-    complained about the training and they made her run 1 hour more? Hahaha, the
-    way she moved the rest of the week was so funny hahahaha
-  voiceClip: {fileID: 8300000, guid: bf976a7b636e4254eb93cde1e3a3aace, type: 3}
-  timeBetweenChars: 0.05
+  text: 'okay, the point is that I fighted so much to be here, and you too, and I''m
+    feeling proud to have put effort and finally have reached my goals. After all,
+    this contributed to my personal growth. '
+  voiceClip: {fileID: 8300000, guid: 205dfa225fed1df4d82d070f412d40c6, type: 3}
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1153104964
@@ -2742,6 +2907,9 @@ MonoBehaviour:
       - fieldName: input
         node: {fileID: 2131790771}
         reroutePoints: []
+      - fieldName: input
+        node: {fileID: 1776803646}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -2753,7 +2921,7 @@ MonoBehaviour:
     Alice, let''s face the truth... it''s been two months since we contacted with
     the base... No one is coming for us... AND IT''S ALL BECAUSE OF YOU! '
   voiceClip: {fileID: 8300000, guid: 04afe9cc1c8b43e4b850dd7761dbce60, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1160252659
@@ -2878,8 +3046,8 @@ MonoBehaviour:
   text: Look right in front of you. We have this spacial sight just for the two of
     us. You can feel all the power of the nature and the mysteries of the universe...
     There is a lot of work for science...hahaha
-  voiceClip: {fileID: 8300000, guid: 709090333e5cfcf47b8ef2d82f0627ec, type: 3}
-  timeBetweenChars: 0.05
+  voiceClip: {fileID: 8300000, guid: 38f7ede919a0d3a449f970e9eaaf13c4, type: 3}
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1209694770
@@ -3047,12 +3215,12 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'all of that inmensity... Makes you feel like nothing. That you are not going
+  text: 'All of that inmensity... Makes you feel like nothing. That you are not going
     to make any difference... and then...why? Why are we existing in first place?
     which is our main purpose? Just ourselves. You must live your own life, because
     this is your moment. It''s now, or never. '
-  voiceClip: {fileID: 8300000, guid: e8b8a3120bc34804c92c90d1dcde46ea, type: 3}
-  timeBetweenChars: 0.05
+  voiceClip: {fileID: 8300000, guid: d1c378f540e200f44987a934f05a0c31, type: 3}
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1314297054
@@ -3179,7 +3347,7 @@ MonoBehaviour:
     Alice... I don''t know what to do...
     I can''t stand this no more...'
   voiceClip: {fileID: 8300000, guid: 19446cd883d0ac647b56c5b76cfc0771, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1371871117
@@ -3266,6 +3434,67 @@ MonoBehaviour:
     dirty: 0
   pass: {fileID: 0}
   fail: {fileID: 0}
+--- !u!114 &1376101866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1017221046}
+  position: {x: 5272, y: 1416}
+  ports:
+    keys:
+    - answers
+    - input
+    - output
+    values:
+    - _fieldName: answers
+      _node: {fileID: 1376101866}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 1376101866}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 510332399}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 1376101866}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
+  text: Do you remember that time when Charlotte complained about the training and
+    they made her run 1 hour more? Hahaha, the way she moved the rest of the week
+    was so funny hahahaha
+  voiceClip: {fileID: 8300000, guid: a5246558cce678542b277042f668f6ef, type: 3}
+  timeBetweenChars: 0.03
+  timeUntilNextChat: 0.5
+  answers: []
 --- !u!114 &1386064783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3329,7 +3558,7 @@ MonoBehaviour:
     been dating that I love him. And then get lost in any place of the World while
     living in an RV. '
   voiceClip: {fileID: 8300000, guid: da933559a96213c48ab8abdd471ba947, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1419948072
@@ -3777,12 +4006,10 @@ MonoBehaviour:
   text: 'It doesn''t matter... I just want to end this... I want to end this suffering
     once and for all...
 
-
-
     If I was just braver... But I''m not even brave for
     that... God...GOD! Please...'
   voiceClip: {fileID: 8300000, guid: 2853e5384afd0f440950fcd1980e7038, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1634248350
@@ -3847,7 +4074,7 @@ MonoBehaviour:
     And why not think about the trip you will go on with your family? Or think about
     the next birthday parties of your daughter? '
   voiceClip: {fileID: 8300000, guid: 0fea27fc2fc628e47bc184dcb57d78e0, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1644303911
@@ -3907,10 +4134,11 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: 'Whatever it takes, you can count on me. We are going to overcome this together
-    Lauren. '
-  voiceClip: {fileID: 8300000, guid: 4b415279683c1444d83b7be9549bd4b1, type: 3}
-  timeBetweenChars: 0.05
+  text: "And maybe, with a bit of luck, you will see her again with your own  eyes.\r
+    Whatever it takes, you can count on me. We are going to overcome this together
+    Lauren. "
+  voiceClip: {fileID: 8300000, guid: 6a60f197e7d98d54183fd6d5d721fdda, type: 3}
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1645401584
@@ -3972,13 +4200,11 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'Well... I''m glad that I''m here to prevent you from doing stupid things...
 
-
-
     Fucking
     hell Lauren... How I wish we were trained for this situation... girl...I don''t
     know... Is there any thing that I can do for you?'
   voiceClip: {fileID: 8300000, guid: 24148008ea56d7444bd87bb520bab446, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1001 &1651472593
@@ -4165,11 +4391,11 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: 'Ooh... that amusement park... *sad laugh* haha... We had lots of fun on
-    that day...
+  text: 'Ooh... that amusement park... haha... We had lots of fun on that day...
 
-    We dressed our daughter with a Batman costume, and she went
-    around with the mask drooping all the time... haha'
+    We
+    dressed our daughter with a Batman costume, and she went around with the mask
+    drooping all the time... haha'
   voiceClip: {fileID: 8300000, guid: f20c8ed6afd021d42939dd0d7300668f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -4219,7 +4445,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1008599854}
+        node: {fileID: 891752284}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4269,16 +4495,16 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 2131790771}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 1587177243}
+        node: {fileID: 895237203}
         reroutePoints: []
       - fieldName: output
         node: {fileID: 1079439135}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: 1832704601}
+        node: {fileID: 1587177243}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: 1153104964}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -4289,6 +4515,9 @@ MonoBehaviour:
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
+      - fieldName: input
+        node: {fileID: 423504219}
+        reroutePoints: []
       - fieldName: input
         node: {fileID: 1209694770}
         reroutePoints: []
@@ -4379,7 +4608,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1017221046}
-  position: {x: 1048, y: -600}
+  position: {x: 1048, y: -872}
   ports:
     keys:
     - answers
@@ -4414,7 +4643,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1776803646}
+        node: {fileID: 895237203}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4425,10 +4654,8 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: "I can't... This has no sense... Our lives don't make sense anymore... The
     ship will never come. We'll stay adrift in the middle of the fucking nowhere.
-    \r\nWhat difference does it make if it will come or not... It doesn't matter...
-    I just want to end this... I want to end this suffering once and for all...\r\nIf
-    I was just braver... But I'm not even brave for that... God...GOD! Please..."
-  voiceClip: {fileID: 8300000, guid: 19ac2d5e8e3fafc47ae87995a5ef1e4f, type: 3}
+    \rWhat difference does it make if it will come or not... "
+  voiceClip: {fileID: 8300000, guid: 6ebed19295226464286630ee4d2f7bd9, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4463,6 +4690,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900011565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1017221046}
+  position: {x: 5272, y: 904}
+  ports:
+    keys:
+    - answers
+    - input
+    - output
+    values:
+    - _fieldName: answers
+      _node: {fileID: 1900011565}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Dialogue.Chat+Answer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: 1900011565}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: 1146776263}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 1900011565}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 510332399}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
+  text: 'I have faced many issues and I have solved them, I have lived an experience
+    that not so many people can. I''ve met great people... just like you... '
+  voiceClip: {fileID: 8300000, guid: 9c76a8687dc187e49aa1623c42d1b614, type: 3}
+  timeBetweenChars: 0.03
+  timeUntilNextChat: 0.5
+  answers: []
 --- !u!114 &1905522616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4768,7 +5058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1998135772
 MonoBehaviour:
@@ -4832,10 +5122,7 @@ MonoBehaviour:
       _node: {fileID: 2131790771}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: input
-        node: {fileID: 1776803646}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -4849,7 +5136,7 @@ MonoBehaviour:
     If I was just braver... But I''m not even brave for
     that... God...GOD! Please...'
   voiceClip: {fileID: 8300000, guid: b1d34a3b781c6294487ff576bd490c78, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.04
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1001 &83149021957038555
@@ -5200,3 +5487,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5ef82c389d624418adee78ae8b0e51, type: 3}
+--- !u!114 &5874744568185138996 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 986670111, guid: 1f5ef82c389d624418adee78ae8b0e51, type: 3}
+  m_PrefabInstance: {fileID: 5874744568185138995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41603bc120c48c04bad3c63a1feeb97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

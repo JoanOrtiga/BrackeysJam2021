@@ -141,7 +141,8 @@ public class DialogueSystem : MonoBehaviour
             yield return null;
         }
 
-        WriteText();
+        if (!finishedDialogue)
+            WriteText();
     }
 
     IEnumerator WaitForAwaitBranch()
@@ -187,5 +188,11 @@ public class DialogueSystem : MonoBehaviour
     {
         screenText.WriteInterruption(interruptionDialogue.current.text, interruptionDialogue.current.voiceClip,
            interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
+    }
+
+    public void FinishScene(int x)
+    {
+        finishedDialogue = true;
+        dialogueFinishedEvent.Invoke();
     }
 }
