@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Dialogue;
+using System.Diagnostics;
 
 public class WriteTextOnScreen : MonoBehaviour
 {
@@ -45,8 +46,10 @@ public class WriteTextOnScreen : MonoBehaviour
 
         }
 
-        audioCharacters[0].Stop();
-        audioCharacters[1].Stop();
+        foreach (var item in audioCharacters)
+        {
+            item.Stop();
+        }
     }
 
     public void WriteText(string dialogue, AudioClip voiceClip, string name, float timeBetweenChars, float timeUntilNextChat)
@@ -54,15 +57,13 @@ public class WriteTextOnScreen : MonoBehaviour
         StopAllCoroutines();
         RestartText();
 
-        SelectAudio(name, voiceClip);
-
-
         if (writeNames)
             currentString = name + ": " + dialogue;
         else
             currentString = dialogue;
 
-        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, false, voiceClip.length));
+        SelectAudio(name, voiceClip);
+        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, false));
     }
 
     public void WriteInterruption(string dialogue, AudioClip voiceClip, string name, float timeBetweenChars, float timeUntilNextChat)
@@ -72,27 +73,55 @@ public class WriteTextOnScreen : MonoBehaviour
         RestartText();
         ClearOptions();
 
-        SelectAudio(name, voiceClip);
+
 
         if (writeNames)
             currentString = name + ": " + dialogue;
         else
             currentString = dialogue;
 
-        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, true, voiceClip.length));
+        SelectAudio(name, voiceClip);
+        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, true));
     }
 
-    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption, float voiceLength)
+    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption)
     {
-        float time = (voiceLength - 1.2f) / currentString.Length;
-        print(voiceLength + " " + time + " " + currentString.Length);
-
         for (int i = 0; i < currentString.Length; i++)
         {
             text.text += currentString[i];
 
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(timeBetweenChars);
+            /*         timer = timeBetweenChrs;
+
+                     while (timer > 0)
+            {
+                         stopwatch.Start();
+
+                         yield return null;
+
+                         timer -= stopwatch.Elapsed.TotalSeconds;
+
+                         stopwatch.Reset();
+            }*/
         }
+
+        bool x;
+
+        do
+        {
+            yield return null;
+
+            x = false;
+
+            foreach (var item in audioCharacters)
+            {
+                if (item.isPlaying)
+                    x = true;
+            }
+        }
+        while (x);
+
+        
 
         yield return new WaitForSeconds(timeUntilNextChat);
 
@@ -109,8 +138,10 @@ public class WriteTextOnScreen : MonoBehaviour
     {
         text.text = "";
 
-        audioCharacters[0].Stop();
-        audioCharacters[1].Stop();
+        foreach (var item in audioCharacters)
+        {
+            item.Stop();
+        }
     }
 
     public void HiglightOption(int index)
