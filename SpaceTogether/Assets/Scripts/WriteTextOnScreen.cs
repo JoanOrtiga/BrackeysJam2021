@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Dialogue;
+using System.Diagnostics;
 
 public class WriteTextOnScreen : MonoBehaviour
 {
@@ -54,14 +55,12 @@ public class WriteTextOnScreen : MonoBehaviour
         StopAllCoroutines();
         RestartText();
 
-        SelectAudio(name, voiceClip);
-
-
         if (writeNames)
             currentString = name + ": " + dialogue;
         else
             currentString = dialogue;
 
+        SelectAudio(name, voiceClip);
         StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, false, voiceClip.length));
     }
 
@@ -72,26 +71,36 @@ public class WriteTextOnScreen : MonoBehaviour
         RestartText();
         ClearOptions();
 
-        SelectAudio(name, voiceClip);
+
 
         if (writeNames)
             currentString = name + ": " + dialogue;
         else
             currentString = dialogue;
 
+        SelectAudio(name, voiceClip);
         StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, true, voiceClip.length));
     }
 
     IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption, float voiceLength)
     {
-        float time = (voiceLength - 1.2f) / currentString.Length;
-        print(voiceLength + " " + time + " " + currentString.Length);
-
         for (int i = 0; i < currentString.Length; i++)
         {
             text.text += currentString[i];
 
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(timeBetweenChars);
+            /*         timer = timeBetweenChrs;
+
+                     while (timer > 0)
+            {
+                         stopwatch.Start();
+
+                         yield return null;
+
+                         timer -= stopwatch.Elapsed.TotalSeconds;
+
+                         stopwatch.Reset();
+            }*/
         }
 
         yield return new WaitForSeconds(timeUntilNextChat);
