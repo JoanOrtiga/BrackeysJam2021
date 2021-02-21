@@ -12,14 +12,12 @@ public class Credits : MonoBehaviour
 
     private float margin = 0.03f;
 
-    // Update is called once per frame
     void Update()
     {
         credits.position = Vector2.MoveTowards(credits.position, target.position, speed * Time.deltaTime);
 
         if ((credits.position - target.position).sqrMagnitude < margin * margin)
         {
-           
             loadScene.SceneLoad(0);
         }
     }
