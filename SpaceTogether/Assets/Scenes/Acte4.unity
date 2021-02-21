@@ -3693,7 +3693,20 @@ MonoBehaviour:
       _dynamic: 0
   input: {fileID: 0}
   output: {fileID: 0}
-  trigger: []
+  trigger:
+  - _target: {fileID: 1280717022}
+    _methodName: LoadNextSceneIn
+    _args:
+    - boolValue: 0
+      intValue: 0
+      floatValue: 5
+      stringValue: 
+      objectValue: {fileID: 0}
+      argType: 3
+    _dynamic: 0
+    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
 --- !u!114 &1587177243
 MonoBehaviour:
   m_ObjectHideFlags: 0
