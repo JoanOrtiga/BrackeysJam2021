@@ -19,6 +19,8 @@ public class DoorAnim : MonoBehaviour
     public Renderer rendererM;
     public Renderer rendererF;
 
+    public AudioSource audioSource;
+
     public float speed = 3f;
     public float margin = 0.001f;
 
@@ -27,6 +29,8 @@ public class DoorAnim : MonoBehaviour
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
+
         rendererF.material = closedFMaterial;
         rendererM.material = closedMMaterial;
     }
@@ -75,6 +79,8 @@ public class DoorAnim : MonoBehaviour
             rendererF.material = openFMaterial;
             rendererM.material = openMMaterial;
 
+            audioSource.Play();
+
             opening = true;
             moving = true;
         }
@@ -87,6 +93,8 @@ public class DoorAnim : MonoBehaviour
         {
             opening = false;
             moving = true;
+
+            audioSource.Play();
 
             rendererF.material = closedFMaterial;
             rendererM.material = closedMMaterial;

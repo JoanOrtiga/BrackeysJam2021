@@ -11,8 +11,11 @@ public class ChairAnim : MonoBehaviour , InteractableObject
     public string unfold = "Chair";
     public string fold = "ChairFold";
 
+    AudioSource audioSource;
+
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         animation = GetComponent<Animation>();
     }
 
@@ -20,11 +23,13 @@ public class ChairAnim : MonoBehaviour , InteractableObject
     {
         if (folded)
         {
+            audioSource.Play();
             PlayAnim(unfold);
             folded = false;
         }
         else
         {
+            audioSource.Play();
             PlayAnim(fold);
             folded = true;
         }
