@@ -991,7 +991,7 @@ MonoBehaviour:
     by my side. My man, my daughter.
   voiceClip: {fileID: 8300000, guid: e47704635cba3e74cac571c6ad7d063f, type: 3}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
+  timeUntilNextChat: 0
   answers: []
 --- !u!114 &314131421
 MonoBehaviour:
@@ -1164,7 +1164,7 @@ MonoBehaviour:
     myself...'
   voiceClip: {fileID: 8300000, guid: 15072dc338bac7b4d968c3f930319131, type: 3}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
+  timeUntilNextChat: 0
   answers: []
 --- !u!1 &413382691
 GameObject:
@@ -1859,7 +1859,7 @@ MonoBehaviour:
     was just 5. I'm a miserable thing...
   voiceClip: {fileID: 8300000, guid: 7f94269177d6abf42b219d110568a66e, type: 3}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
+  timeUntilNextChat: 0
   answers: []
 --- !u!114 &654592929
 MonoBehaviour:
@@ -1968,7 +1968,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1449462730}
+        node: {fileID: 713797004}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2202,6 +2202,9 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
+        node: {fileID: 655533433}
+        reroutePoints: []
+      - fieldName: output
         node: {fileID: 1403171628}
         reroutePoints: []
       _direction: 0
@@ -2228,7 +2231,7 @@ MonoBehaviour:
     as a present for her birthday.  Today is her birthday\u2026"
   voiceClip: {fileID: 8300000, guid: cdc5788b0db2a4149a5b5e51a34a5bbf, type: 3}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
+  timeUntilNextChat: 0
   answers: []
 --- !u!114 &723990192
 MonoBehaviour:
@@ -3551,7 +3554,6 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'I didn''t...
 
-
     Well, one day less to go'
   voiceClip: {fileID: 8300000, guid: 07be85dfa5324bd46853def0f5cdcf66, type: 3}
   timeBetweenChars: 0.05
@@ -4071,7 +4073,7 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: I won't be able to give her my present...
+  text: You don't know what I would give to see my daughter blow those candles today...
   voiceClip: {fileID: 8300000, guid: 9fecf51c482586448aee573d04c6559a, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -4478,10 +4480,7 @@ MonoBehaviour:
       _node: {fileID: 1449462730}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 655533433}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -5124,7 +5123,7 @@ MonoBehaviour:
     social status. An astronaut! I'm going to space! What a pile of crap!
   voiceClip: {fileID: 8300000, guid: 5cba1eaa874ba834f9d8a6adeefa7e03, type: 3}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
+  timeUntilNextChat: 0
   answers: []
 --- !u!1001 &1576643146
 PrefabInstance:
@@ -6921,7 +6920,7 @@ MonoBehaviour:
     cake and flamming numbers.
   voiceClip: {fileID: 8300000, guid: 68471fbacda00b740a797cae2f18c170, type: 3}
   timeBetweenChars: 0.05
-  timeUntilNextChat: 0.5
+  timeUntilNextChat: 0
   answers: []
 --- !u!114 &2087616689
 MonoBehaviour:
@@ -7235,15 +7234,6 @@ MonoBehaviour:
         stringValue: havePills
         objectValue: {fileID: 0}
         argType: 4
-      _dynamic: 0
-      _typeName: Dialogue.Condition, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      dirty: 0
-    check: 1
-  - condition:
-      _target: {fileID: 1382998740}
-      _methodName: get_inZone
-      _args: []
       _dynamic: 0
       _typeName: Dialogue.Condition, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
