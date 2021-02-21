@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ending : MonoBehaviour
 {
     Animation spaceShip;
+    public GameObject credits;
 
     public void End()
     {
