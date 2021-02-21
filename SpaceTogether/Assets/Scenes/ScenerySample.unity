@@ -1234,6 +1234,14 @@ PrefabInstance:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 663876094, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 663876094, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.72
+      objectReference: {fileID: 0}
     - target: {fileID: 738646681744756154, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_Name
       value: PlayerControllerFPS
@@ -13136,7 +13144,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5513024899533400492, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
   m_PrefabInstance: {fileID: 430516494084322777}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1759150742
+--- !u!82 &1759150745
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13147,7 +13155,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7609143498651551220, guid: 3269d952cb15ade4bb5c5c48fbc42103, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5c21bbcfdc8dc394bbff0e6fcf631b6a, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
