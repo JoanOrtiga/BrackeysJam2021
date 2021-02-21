@@ -73,7 +73,10 @@ public class PickUpObject : MonoBehaviour
                 {
                     TakeObject();
 
-                   
+                    if (rayCastHit.transform.GetComponent<Tablet>() != null)
+                    {
+                        rayCastHit.transform.GetComponent<Tablet>().onHand = true;
+                    }
                 }
             }
         }

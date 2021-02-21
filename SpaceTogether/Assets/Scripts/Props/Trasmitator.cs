@@ -4,25 +4,31 @@ using UnityEngine;
 
 public class Trasmitator : MonoBehaviour
 {
-
     public Material EmisiveOn;
     public Material EmisiveOff;
     public Material MessageOff;
 
+    private DialogueEvents dialogueEvents;
+
     public MeshRenderer render;
-    // Start is called before the first frame update
+
     private bool act4;
     private bool enter; 
 
     float time = 0;
     float timeEmesive;
 
-    // Update is called once per frame
+    public string dialogueEvent = "InTheTransmissor";
+
+    private void Awake()
+    {
+        dialogueEvents = FindObjectOfType<DialogueEvents>();
+    }
+
     void Update()
     {
         changeMat();
         timeEmesive += Time.deltaTime;
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,7 +36,7 @@ public class Trasmitator : MonoBehaviour
         if (other.CompareTag("Player") && act4 == true)
         {
             enter = true;
-            //ADD OPTION
+            dialogueEvents.ChangeValue(dialogueEvent, true);
         }
     }
 

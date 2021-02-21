@@ -12,6 +12,7 @@ public class Tablet : MonoBehaviour
     public bool onHand;
 
     int clicks = 0;
+
     private void Start()
     {
         player = FindObjectOfType<PickUpObject>();
@@ -59,7 +60,6 @@ public class Tablet : MonoBehaviour
                 
                
             }
-     
         }
     }
 }
