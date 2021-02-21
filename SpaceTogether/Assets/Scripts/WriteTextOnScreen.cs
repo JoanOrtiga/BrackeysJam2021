@@ -82,9 +82,10 @@ public class WriteTextOnScreen : MonoBehaviour
         StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, true, voiceClip.length));
     }
 
-    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption, float length)
+    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption, float voiceLength)
     {
-        float time = (length - 0.6f) / currentString.Length;
+        float time = (voiceLength - 1.2f) / currentString.Length;
+        print(voiceLength + " " + time + " " + currentString.Length);
 
         for (int i = 0; i < currentString.Length; i++)
         {
