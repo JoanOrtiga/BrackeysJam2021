@@ -14,16 +14,7 @@ public class BlindAnimation : MonoBehaviour
     public bool opening;
     public bool moving = true;
 
-    AudioSource audioSource;
-
-    private void Awake()
-    {
-        if(GetComponentInChildren<AudioSource>() != null)
-        {
-            audioSource = GetComponentInChildren<AudioSource>();
-        }
-
-    }
+    public AudioSource audioSource;
 
     public void Open()
     {
@@ -32,6 +23,7 @@ public class BlindAnimation : MonoBehaviour
         if ((door.position - endPos.position).sqrMagnitude < margin * margin)
         {
             moving = false;
+            audioSource.Stop();
         }
     }
 
@@ -42,7 +34,9 @@ public class BlindAnimation : MonoBehaviour
         if ((door.position - startPos.position).sqrMagnitude < margin * margin)
         {
             moving = false;
-            
+
+            audioSource.Stop();
+
         }
     }
 
@@ -65,8 +59,7 @@ public class BlindAnimation : MonoBehaviour
     {
         if (other.CompareTag("Player") && !moving)
         {
-            if (audioSource != null)
-                audioSource.Play();
+            audioSource.Play();
 
             opening = true;
             moving = true;

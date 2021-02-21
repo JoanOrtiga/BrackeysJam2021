@@ -14,11 +14,18 @@ public class GreenHouseDoor : MonoBehaviour
     public Transform endPos;
     public Transform end2Pos;
 
+    AudioSource audioSource;
+
     public float speed = 3f;
     private float margin = 0.002f;
 
     public bool opening;
     public bool moving = true;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void DisableDoorStem()
     {
@@ -43,6 +50,8 @@ public class GreenHouseDoor : MonoBehaviour
             moving = true;
             opening = true;
             EnableDoorStem();
+
+            audioSource.Play();
         }
            
     }
@@ -54,6 +63,8 @@ public class GreenHouseDoor : MonoBehaviour
             DisableDoorStem();
             opening = false;
             moving = true;
+
+            audioSource.Play();
         }
             
     }
