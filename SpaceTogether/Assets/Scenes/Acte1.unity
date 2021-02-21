@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756156, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_LocalPosition.x
@@ -678,7 +678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &275851705
 MonoBehaviour:
@@ -989,7 +989,7 @@ MonoBehaviour:
   text: I was selfish. I had it all, and still didn't feel fullfilled?... I don't
     deserve anything. I don't deserve the life that I had anymore. The people I had
     by my side. My man, my daughter.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: e47704635cba3e74cac571c6ad7d063f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     damn space. FUCK. I hate being locked, I hate these four walls, I hate being
     here while I can''t be celebrating my kid''s birthday. All because of me, I hate
     myself...'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 15072dc338bac7b4d968c3f930319131, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1790,7 +1790,7 @@ MonoBehaviour:
   text: And we would watch together our happy girl blowing the candles and making
     a wish.   Seven. My daughter is going to be seven years old. I left when she
     was just 5. I'm a miserable thing...
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7f94269177d6abf42b219d110568a66e, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   text: "Remember when we were at the training? I asked our senior manager for an
     extra jacket and you asked me why. I told you I would give it to my daughter
     as a present for her birthday.  Today is her birthday\u2026"
-  voiceClip: {fileID: 8300000, guid: 2ca0fcc9d2103f242b895f0fa9d8e072, type: 3}
+  voiceClip: {fileID: 8300000, guid: cdc5788b0db2a4149a5b5e51a34a5bbf, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2862,7 +2862,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1060893664
 MonoBehaviour:
@@ -2939,7 +2939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5738480631964403223, guid: 145a46a5f3d85bd4d910b006e050dc3e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5738480631964403223, guid: 145a46a5f3d85bd4d910b006e050dc3e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4143,7 +4143,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1449462730
 MonoBehaviour:
@@ -4818,7 +4818,7 @@ MonoBehaviour:
   text: We don't even have any hope to get back. All for a damn dream inculcated
     by... for what? I don't even know. I guess we are always looking for a better
     social status. An astronaut! I'm going to space! What a pile of crap!
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5cba1eaa874ba834f9d8a6adeefa7e03, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -6417,7 +6417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1995587064
 MonoBehaviour:
@@ -6556,7 +6556,7 @@ MonoBehaviour:
     around me. I should be telling other moms funny things that my daughter had made
     that week. Then, my husband would come out of the house with a big glittered
     cake and flamming numbers.
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 68471fbacda00b740a797cae2f18c170, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -7040,7 +7040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7085348850044210584, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7085348850044210584, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
       propertyPath: m_AnchorMax.x
