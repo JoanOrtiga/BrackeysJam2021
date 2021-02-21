@@ -62,7 +62,7 @@ public class WriteTextOnScreen : MonoBehaviour
         else
             currentString = dialogue;
 
-        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, false));
+        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, false, voiceClip.length));
     }
 
     public void WriteInterruption(string dialogue, AudioClip voiceClip, string name, float timeBetweenChars, float timeUntilNextChat)
@@ -79,16 +79,18 @@ public class WriteTextOnScreen : MonoBehaviour
         else
             currentString = dialogue;
 
-        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, true));
+        StartCoroutine(CharByChar(timeBetweenChars, timeUntilNextChat, true, voiceClip.length));
     }
 
-    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption)
+    IEnumerator CharByChar(float timeBetweenChars, float timeUntilNextChat, bool interruption, float length)
     {
+        float time = (length - 0.6f) / currentString.Length;
+
         for (int i = 0; i < currentString.Length; i++)
         {
             text.text += currentString[i];
 
-            yield return new WaitForSeconds(timeBetweenChars);
+            yield return new WaitForSeconds(time);
         }
 
         yield return new WaitForSeconds(timeUntilNextChat);
