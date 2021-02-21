@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4624598, g: 0.41393936, b: 0.49285567, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -545,6 +545,11 @@ PrefabInstance:
       objectReference: {fileID: 1651472594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+--- !u!82 &210852476 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 148977934, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+  m_PrefabInstance: {fileID: 210852475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &229091810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,15 +944,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee068b12c0c81124795c17b974ee59a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 1920678571}
   optionText:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1920678570}
+  - {fileID: 1920678569}
+  - {fileID: 1920678568}
+  - {fileID: 1920678567}
   writeNames: 1
-  audioCharacters: []
-  charNames: []
+  audioCharacters:
+  - {fileID: 210852476}
+  - {fileID: 345516581}
+  charNames:
+  - Alice
+  - Lauren
 --- !u!114 &299875354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,6 +1076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+--- !u!82 &345516581 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7435378831638304372, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+  m_PrefabInstance: {fileID: 345516580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &350525211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4608,6 +4622,61 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+--- !u!114 &1920678567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085348850808210976, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+  m_PrefabInstance: {fileID: 1920678566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1920678568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085348849530368011, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+  m_PrefabInstance: {fileID: 1920678566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1920678569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085348850769464174, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+  m_PrefabInstance: {fileID: 1920678566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1920678570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085348849484101112, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+  m_PrefabInstance: {fileID: 1920678566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1920678571 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7085348850745781667, guid: 61cd254754bd4a94baa185e362a14168, type: 3}
+  m_PrefabInstance: {fileID: 1920678566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1951420509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4715,6 +4784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventKey:
   - controlKey
+  - TellAboutMessage
+  - codeGiven
 --- !u!114 &2131790771
 MonoBehaviour:
   m_ObjectHideFlags: 0
