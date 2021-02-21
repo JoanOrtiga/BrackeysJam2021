@@ -188,4 +188,10 @@ public class DialogueSystem : MonoBehaviour
         screenText.WriteInterruption(interruptionDialogue.current.text, interruptionDialogue.current.voiceClip,
            interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
     }
+
+    public void FinishScene()
+    {
+        finishedDialogue = true;
+        dialogueFinishedEvent.Invoke();
+    }
 }
