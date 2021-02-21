@@ -1977,7 +1977,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: input
-        node: {fileID: 1449462730}
+        node: {fileID: 2133304546}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2093,6 +2093,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 430516492880892045, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4052057
+      objectReference: {fileID: 0}
+    - target: {fileID: 430516492880892045, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.62522805
+      objectReference: {fileID: 0}
+    - target: {fileID: 430516492880892045, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5081945
+      objectReference: {fileID: 0}
+    - target: {fileID: 430516492880892045, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.43201473
+      objectReference: {fileID: 0}
+    - target: {fileID: 430516492880892045, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 98.943
+      objectReference: {fileID: 0}
     - target: {fileID: 430516493725413200, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3523,7 +3543,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 1513477518}
-  position: {x: 904, y: -120}
+  position: {x: 920, y: -120}
   ports:
     keys:
     - answers
@@ -4332,10 +4352,7 @@ MonoBehaviour:
       _node: {fileID: 1449462730}
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 655533433}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -7005,6 +7022,9 @@ MonoBehaviour:
       connections:
       - fieldName: output
         node: {fileID: 1607320173}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: 655533433}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
