@@ -6551,6 +6551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventKey:
   - controlKey
+  - havePills
 --- !u!114 &2011694241
 MonoBehaviour:
   m_ObjectHideFlags: 0

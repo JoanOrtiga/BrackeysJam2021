@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DialogueEvents : MonoBehaviour
@@ -19,7 +20,7 @@ public class DialogueEvents : MonoBehaviour
 
     private void Awake()
     {
-        foreach (var item in SaveDialogueEvents.Instance.events)
+        foreach (var item in SaveDialogueEvents.Instance.events.ToList())
         {
             if (!events.ContainsKey(item.Key))
             {
@@ -91,7 +92,7 @@ public class DialogueEvents : MonoBehaviour
 
     private void OnDestroy()
     {
-        foreach (var item in events)
+        foreach (var item in events.ToList())
         {
             if (!SaveDialogueEvents.Instance.events.ContainsKey(item.Key))
             {

@@ -290,6 +290,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+--- !u!114 &109808169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7435378832189803079, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+  m_PrefabInstance: {fileID: 109808168}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e744f6a09750b458dcfb323dd22638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &127889174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1660,6 +1671,9 @@ MonoBehaviour:
       _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
+      - fieldName: input
+        node: {fileID: 1952823002}
+        reroutePoints: []
       - fieldName: input
         node: {fileID: 1733043055}
         reroutePoints: []
@@ -3505,6 +3519,7 @@ MonoBehaviour:
   - {fileID: 1168474613}
   - {fileID: 513808691}
   - {fileID: 1823639113}
+  - {fileID: 1952823002}
   current: {fileID: 0}
 --- !u!1 &1021047184
 GameObject:
@@ -6993,6 +7008,62 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 7435378831638304372, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
   m_PrefabInstance: {fileID: 109808168}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1952823002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1017221046}
+  position: {x: 5768, y: 2472}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 1952823002}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: pass
+        node: {fileID: 513808691}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 1952823002}
+      _typeQualifiedName: Dialogue.DialogueBaseNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {fileID: 0}
+  output: {fileID: 0}
+  trigger:
+  - _target: {fileID: 109808169}
+    _methodName: ForceZone
+    _args:
+    - boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      objectValue: {fileID: 0}
+      argType: 2
+    _dynamic: 0
+    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
 --- !u!114 &1980852751
 MonoBehaviour:
   m_ObjectHideFlags: 0
