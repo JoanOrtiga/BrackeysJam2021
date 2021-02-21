@@ -70,7 +70,7 @@ public class PickUpObject : MonoBehaviour
                 {
                     TakeObject();
 
-                    if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
+                    if (rayCastHit.transform.GetComponent<Tablet>() != null)
                     {
                         rayCastHit.transform.GetComponent<Tablet>().onHand = true;
                     }
@@ -173,7 +173,7 @@ public class PickUpObject : MonoBehaviour
     {
         PlaceObject();
 
-        if (hitted && rayCastHit.transform.GetComponent<Tablet>() != null)
+        if (rayCastHit.transform.GetComponent<Tablet>() != null)
         {
             rayCastHit.transform.GetComponent<Tablet>().onHand = false;
         }

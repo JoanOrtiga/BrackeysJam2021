@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class SaveDialogueEvents : MonoBehaviour
 {
@@ -26,6 +28,19 @@ public class SaveDialogueEvents : MonoBehaviour
             DontDestroyOnLoad(this);
 
             events.Add(eventKey[0], false);
+        }
+
+        SceneManager.sceneLoaded += CheckReset;
+    }
+
+    public void CheckReset(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.buildIndex == 1)
+        {
+            foreach (var item in events)
+            {
+                events[item.Key] = false;
+            }
         }
     }
 }
