@@ -6,16 +6,13 @@ public class AudioPlayer : MonoBehaviour
 {
     public AudioSource foot;
   //  public AudioClip[] footSteps;
-    public Sound[] footSteps;
+    public AudioClip[] footSteps;
 
     public void PlaySteps()
     {
-        int randomIndex = Random.Range(0, 5);
+        int randomIndex = Random.Range(0, footSteps.Length);
 
-        foot.clip = footSteps[randomIndex].clip;
-        foot.pitch = footSteps[randomIndex].pitch;
-        foot.volume = footSteps[randomIndex].volume;
-
+        foot.clip = footSteps[randomIndex];
         foot.Play();
     }
 }
