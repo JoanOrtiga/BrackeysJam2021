@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4624598, g: 0.41393936, b: 0.49285567, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -666,10 +666,10 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: "yeah... we are going home... \r\n\r\nAlice... I wouldn't be here if it wasn't
+  text: "yeah... we are going home... \r\n\rAlice... I wouldn't be here if it wasn't
     because of you. "
   voiceClip: {fileID: 8300000, guid: da9b0c6947eb1f74e82901bace84962f, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &336810365
@@ -837,7 +837,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Lauren, I wouldn't have made it alone...
   voiceClip: {fileID: 8300000, guid: 081755155f6217842b5eb59a175f280f, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &505918462
@@ -899,7 +899,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: FUCK OFF ALICE, YES I HAVE SEEN IT
   voiceClip: {fileID: 8300000, guid: c105e0ce62846674499498344cb71d9b, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1001 &545597800
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Are you sure of what you have seen?
   voiceClip: {fileID: 8300000, guid: 89e2d93ecea452c4eb9343eabd41e886, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &601784047
@@ -1290,7 +1290,7 @@ MonoBehaviour:
   text: "That... \xA1THAT WAS A FUCKING SPACESHIP! DAMN ALICE, A SPACESHIP! AAAALICE
     ALICE I'VE SEEN IT! ALICE A SPACESHIP! THEY ARE COMING FOR US! DAMN ALICE!!! "
   voiceClip: {fileID: 8300000, guid: 659dc88441da39748b4ef0275fb2bf12, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.01
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &737810586
@@ -1792,7 +1792,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'don''t fuck with me... WE ARE GETTING OUT OF HERE '
   voiceClip: {fileID: 8300000, guid: f23c325439c676e45bae2955bdbfc93d, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1069158835
@@ -1854,7 +1854,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'After three months... can''t believe it.... Lauren... we are going home... '
   voiceClip: {fileID: 8300000, guid: 1f02874f8be49a64a85cdd06c72493b1, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1105046108
@@ -2079,7 +2079,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Lauren...
   voiceClip: {fileID: 8300000, guid: 2bf3b8b7622b01545a5bd2a09b9217a3, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1246588509
@@ -2203,7 +2203,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'I just... I can''t believe it... They are here. '
   voiceClip: {fileID: 8300000, guid: 861adf880ebe93f4f8fa50e09dca586a, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1 &1280717020
@@ -3126,12 +3126,9 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'I SWEAR ALICE, FOR GOD''S SAKE, THEY''VE FOUND US!
 
-
-
-    LOOK, THERE IT
-    IS'
+    LOOK, THERE IT IS'
   voiceClip: {fileID: 8300000, guid: 9d5088489afa36a4e9d85c8bf8e0356c, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1645060728
