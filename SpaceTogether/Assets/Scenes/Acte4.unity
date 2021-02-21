@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4624598, g: 0.41393936, b: 0.49285567, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -406,9 +406,9 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: "I can't... This has no sense... Our lives don't make sense anymore... The
     ship will never come. We'll stay adrift in the middle of the fucking nowhere.
-    \r\n\r\nLet's face the truth. You couldn't give them the damn code and they lost
+    \r\n\rLet's face the truth. You couldn't give them the damn code and they lost
     comms with the other ship.. No one is coming for us. "
-  voiceClip: {fileID: 8300000, guid: 19ac2d5e8e3fafc47ae87995a5ef1e4f, type: 3}
+  voiceClip: {fileID: 8300000, guid: 6ebed19295226464286630ee4d2f7bd9, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -606,7 +606,7 @@ MonoBehaviour:
     let's face the truth... it's been two months since we contacted with the base...
     No one is coming for us...  We are going to die here all alone, in the middle
     of the fucking nowhere.
-  voiceClip: {fileID: 8300000, guid: 1fe9f3fbbf7b1ae40a73178c7891d6a2, type: 3}
+  voiceClip: {fileID: 8300000, guid: 5d496b9ef66ca3146b7ed6c85c1ef93b, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -672,7 +672,7 @@ MonoBehaviour:
     see again your daughter, but you are going to have more time to think about these
     moments, to think about them and remember that smile that you are always telling
     about. And maybe, with a bit of luck, you will see her again with your own  eyes.\r"
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2b6dfd14a28eb6545812401d8cac5b08, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1361,7 +1361,7 @@ MonoBehaviour:
     finally have reached my goals. After all, this contributed to my personal growth.
     I have faced many issues and I have solved them, I have lived an experience that
     not so many people can. I''ve met great people... just like you... '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7bc88b67501263e48afebb15d2088654, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: "I feel so stupid. \r\n\r\nHow are you holding on so well? "
+  text: "I feel so stupid. \r\n\rHow are you holding on so well? "
   voiceClip: {fileID: 8300000, guid: 83b91a3bed97e744eb1b648ed44b7eb2, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
@@ -1803,7 +1803,7 @@ MonoBehaviour:
   text: 'Why not thinking about the way your husband will kiss you when you  get
     back home? I really believe these are the things that you should comfort in,
     for that''s what is worthy in life... '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2faf29857cc6e904ebd2f8a41a8a0adc, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -1967,7 +1967,7 @@ MonoBehaviour:
     who I am. The typical questions that you ask yourself in the 30s' crisis, although
     I should have thought about them a few years before... The point is that... DAMN,
     WE ARE ASTRONAUTS.
-  voiceClip: {fileID: 8300000, guid: acd33174803df6240b555e6cdaaef1c8, type: 3}
+  voiceClip: {fileID: 8300000, guid: 447c9df4bd5cbf54e950e3723e93bd91, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2028,10 +2028,10 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
-  text: "That was the best part indeed hahahaha \r\n\r\nThose moments have been the
+  text: "That was the best part indeed hahahaha \r\n\rThose moments have been the
     best in my life... Since I entered until... well, not today, but until a few
     months ago. I had wonderful times..."
-  voiceClip: {fileID: 8300000, guid: cc45174dd9740ae48b6cf574534f415d, type: 3}
+  voiceClip: {fileID: 8300000, guid: e1504ef2fd1ecfb4db45d80d8163cd1c, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2380,11 +2380,9 @@ MonoBehaviour:
   text: 'What difference does it make if it will come or not... It doesn''t matter...
     I just want to end this... I want to end this suffering once and for all...
 
-
-
     If
     I was just braver... But I''m not even brave for that... God...GOD! Please...'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7dd2bc936f5a3634c9742ca073496bb8, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2676,7 +2674,7 @@ MonoBehaviour:
     not the right attitude to go to the space...Do you remember that time when Charlotte
     complained about the training and they made her run 1 hour more? Hahaha, the
     way she moved the rest of the week was so funny hahahaha
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: bf976a7b636e4254eb93cde1e3a3aace, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2740,7 +2738,7 @@ MonoBehaviour:
   text: 'I can''t... This has no sense... Our lives don''t make sense anymore...
     Alice, let''s face the truth... it''s been two months since we contacted with
     the base... No one is coming for us... AND IT''S ALL BECAUSE OF YOU! '
-  voiceClip: {fileID: 8300000, guid: da7d53423b6a7374fbef5f796baea17d, type: 3}
+  voiceClip: {fileID: 8300000, guid: 04afe9cc1c8b43e4b850dd7761dbce60, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -2864,9 +2862,9 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Look right in front of you. We have this spacial sight just for the two of
-    us. You can feel all the power of the nature. Cherish all the mysteries of the
-    universe... There is a lot of work for science...hahaha
-  voiceClip: {fileID: 0}
+    us. You can feel all the power of the nature and the mysteries of the universe...
+    There is a lot of work for science...hahaha
+  voiceClip: {fileID: 8300000, guid: 709090333e5cfcf47b8ef2d82f0627ec, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3038,8 +3036,8 @@ MonoBehaviour:
   text: 'all of that inmensity... Makes you feel like nothing. That you are not going
     to make any difference... and then...why? Why are we existing in first place?
     which is our main purpose? Just ourselves. You must live your own life, because
-    this is your moment. It''s now, or it won''t be. '
-  voiceClip: {fileID: 0}
+    this is your moment. It''s now, or never. '
+  voiceClip: {fileID: 8300000, guid: e8b8a3120bc34804c92c90d1dcde46ea, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3164,11 +3162,9 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'That''s a beautiful memory...
 
-
-
     Alice... I don''t know what to do...
     I can''t stand this no more...'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 19446cd883d0ac647b56c5b76cfc0771, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3771,7 +3767,7 @@ MonoBehaviour:
 
     If I was just braver... But I''m not even brave for
     that... God...GOD! Please...'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2853e5384afd0f440950fcd1980e7038, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3836,7 +3832,7 @@ MonoBehaviour:
     those memories are the most valuable possession. Living them is a magic moment.
     And why not think about the trip you will go on with your family? Or think about
     the next birthday parties of your daughter? '
-  voiceClip: {fileID: 8300000, guid: 7144d9f90395e5a40ba6a123789757b0, type: 3}
+  voiceClip: {fileID: 8300000, guid: 0fea27fc2fc628e47bc184dcb57d78e0, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -3899,7 +3895,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'Whatever it takes, you can count on me. We are going to overcome this together
     Lauren. '
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 4b415279683c1444d83b7be9549bd4b1, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4158,11 +4154,9 @@ MonoBehaviour:
   text: 'Ooh... that amusement park... *sad laugh* haha... We had lots of fun on
     that day...
 
-
-
     We dressed our daughter with a Batman costume, and she went
     around with the mask drooping all the time... haha'
-  voiceClip: {fileID: 8300000, guid: 4a90ecc292c9fe345804859abe4dfbd9, type: 3}
+  voiceClip: {fileID: 8300000, guid: f20c8ed6afd021d42939dd0d7300668f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4417,10 +4411,10 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: "I can't... This has no sense... Our lives don't make sense anymore... The
     ship will never come. We'll stay adrift in the middle of the fucking nowhere.
-    \r\n\nWhat difference does it make if it will come or not... It doesn't matter...
+    \r\nWhat difference does it make if it will come or not... It doesn't matter...
     I just want to end this... I want to end this suffering once and for all...\r\nIf
     I was just braver... But I'm not even brave for that... God...GOD! Please..."
-  voiceClip: {fileID: 8300000, guid: 9e953e0fe6c5f114e9267f4fecf35779, type: 3}
+  voiceClip: {fileID: 8300000, guid: 19ac2d5e8e3fafc47ae87995a5ef1e4f, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
@@ -4783,7 +4777,7 @@ MonoBehaviour:
 
     If I was just braver... But I''m not even brave for
     that... God...GOD! Please...'
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b1d34a3b781c6294487ff576bd490c78, type: 3}
   timeBetweenChars: 0.05
   timeUntilNextChat: 0.5
   answers: []
