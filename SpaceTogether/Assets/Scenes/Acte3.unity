@@ -4759,7 +4759,7 @@ MonoBehaviour:
   m_Name: Event
   m_EditorClassIdentifier: 
   graph: {fileID: 1017221046}
-  position: {x: 7848, y: 3448}
+  position: {x: 7896, y: 3128}
   ports:
     keys:
     - input
@@ -4794,7 +4794,27 @@ MonoBehaviour:
       _dynamic: 0
   input: {fileID: 0}
   output: {fileID: 0}
-  trigger: []
+  trigger:
+  - _target: {fileID: 288310137}
+    _methodName: FinishScene
+    _args: []
+    _dynamic: 0
+    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
+  - _target: {fileID: 1280717022}
+    _methodName: LoadNextSceneIn
+    _args:
+    - boolValue: 0
+      intValue: 0
+      floatValue: 5
+      stringValue: 
+      objectValue: {fileID: 0}
+      argType: 3
+    _dynamic: 0
+    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    dirty: 0
 --- !u!114 &1376184244
 MonoBehaviour:
   m_ObjectHideFlags: 0
