@@ -40,9 +40,13 @@ public class OptionsMenu : MonoBehaviour
         mixer.GetFloat("MusicVolume", out value);
         sliders[3].value = value;
     }
+    
+
 
     private void Start()
     {
+        QualitySettings.SetQualityLevel(2);
+
         resolutions = Screen.resolutions;
 
         resolutionDropDown.ClearOptions();
