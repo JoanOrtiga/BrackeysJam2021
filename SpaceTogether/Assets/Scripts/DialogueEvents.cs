@@ -34,11 +34,6 @@ public class DialogueEvents : MonoBehaviour
                 events.Add(item, false);
             }
         }
-
-        foreach (var item in events)
-        {
-            print(item.Key);
-        }
     }
 
     public bool CheckValue(string key)
