@@ -268,12 +268,12 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 21.451567
+  m_FocalLength: 25
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -282,7 +282,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 50.53402
+  field of view: 51.28201
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -387,7 +387,7 @@ MonoBehaviour:
   physicalParameters:
     m_Iso: 200
     m_ShutterSpeed: 0.005
-    m_Aperture: 2
+    m_Aperture: 5.46
     m_BladeCount: 9
     m_Curvature: {x: 2, y: 11}
     m_BarrelClipping: 0.25
@@ -531,7 +531,7 @@ MonoBehaviour:
     m_Bits: 9216
   handCenter: {fileID: 800430958}
   leaveDistance: 3
-  UIPickUp: {fileID: 0}
+  onHand: 0
   pickUpIcon: {fileID: 0}
   interactIcon: {fileID: 0}
 --- !u!114 &1541905410
@@ -548,41 +548,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foot: {fileID: 87616100}
   footSteps:
-  - name: 
-    clip: {fileID: 8300000, guid: fc90441696b851743a117a92d587c930, type: 3}
-    loop: 0
-    isSFX: 0
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 8300000, guid: 2733961c437fe1147987541c8404b232, type: 3}
-    loop: 0
-    isSFX: 0
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 8300000, guid: abcc9bce9bbca4540827fb946cdf2858, type: 3}
-    loop: 0
-    isSFX: 0
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 8300000, guid: 172e1686eb28c4b4e8f3d84fa60dc9da, type: 3}
-    loop: 0
-    isSFX: 0
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 8300000, guid: 89a8c6b2ba0ee1247a4ed88653d6de1c, type: 3}
-    loop: 0
-    isSFX: 0
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
+  - {fileID: 8300000, guid: 98c198ad5d2fef842a359986b0d6a0a8, type: 3}
+  - {fileID: 8300000, guid: 58cffadf0be516e46a9f3b53ec023c88, type: 3}
+  - {fileID: 8300000, guid: 73a85ff91f73b774291f63ffc8ebe7af, type: 3}
+  - {fileID: 8300000, guid: 3dd56de155120f24c90d4f7f80e5719d, type: 3}
+  - {fileID: 8300000, guid: 20c06107cdd782149bc6d634cabcd442, type: 3}
+  - {fileID: 8300000, guid: 81afeb0f45e9e974ba40f9bbc7f56e36, type: 3}
+  - {fileID: 8300000, guid: 92a7625b822076540924422f2372d4bc, type: 3}
+  - {fileID: 8300000, guid: a5d9a90c25d5da649946b1a2158b3932, type: 3}
+  - {fileID: 8300000, guid: 1dd328a0c6299a743b316af96c568eba, type: 3}
+  - {fileID: 8300000, guid: bcac2bc6e3c68ef47a989f49887eeb5e, type: 3}
 --- !u!82 &148977934
 AudioSource:
   m_ObjectHideFlags: 0
@@ -592,7 +567,7 @@ AudioSource:
   m_GameObject: {fileID: 738646681744756154}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7379541980698048873, guid: 3269d952cb15ade4bb5c5c48fbc42103, type: 2}
+  OutputAudioMixerGroup: {fileID: 7609143498651551220, guid: 3269d952cb15ade4bb5c5c48fbc42103, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

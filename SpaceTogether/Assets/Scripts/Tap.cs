@@ -8,12 +8,21 @@ public class Tap : MonoBehaviour , InteractableObject
 
     private bool active = false;
 
+    AudioSource audiosource;
+
+    private void Awake()
+    {
+        audiosource = GetComponent<AudioSource>();
+    }
+
     public void Interact()
     {
         if (!active)
         {
             active = true;
             toActive.SetActive(true);
+
+            audiosource.Play();
 
             StartCoroutine(DeActivate());
         }
