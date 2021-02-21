@@ -8,6 +8,13 @@ public class Ending : MonoBehaviour
 
     public void End()
     {
-       // spaceShip.
+        spaceShip.Play();
+
+        ShowCredits();
+    }
+
+    public void ShowCredits()
+    {
+
     }
 }
