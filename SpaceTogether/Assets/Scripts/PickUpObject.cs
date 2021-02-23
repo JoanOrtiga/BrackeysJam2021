@@ -189,6 +189,7 @@ public class PickUpObject : MonoBehaviour
     }
 }
 
+/*
 
         Ray l_Ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
         RaycastHit l_RaycastHit;
@@ -254,3 +255,5 @@ public class PickUpObject : MonoBehaviour
         }
 
         timer += Time.deltaTime;
+
+*/
