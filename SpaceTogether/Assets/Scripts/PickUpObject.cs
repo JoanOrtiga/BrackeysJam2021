@@ -58,8 +58,6 @@ public class PickUpObject : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                   
-
                     rayCastHit.transform.GetComponent<InteractableObject>().Interact(); 
                 }
                     
@@ -183,10 +181,8 @@ public class PickUpObject : MonoBehaviour
         }
     }
 
-    public void Eliminate(int x)
+    public void Eliminate()
     {
-        print("HOLA");
-
         Destroy(objectPickUp.gameObject);
 
         DropObject();

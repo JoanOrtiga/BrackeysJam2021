@@ -190,7 +190,7 @@ public class DialogueSystem : MonoBehaviour
            interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
     }
 
-    public void FinishScene(int x)
+    public void FinishScene()
     {
         finishedDialogue = true;
         dialogueFinishedEvent.Invoke();

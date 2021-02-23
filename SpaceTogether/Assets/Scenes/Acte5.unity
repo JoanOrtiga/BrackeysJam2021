@@ -1156,7 +1156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &657983109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3816,26 +3816,32 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 288310137}
-    _methodName: FinishScene
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 2
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
-  - _target: {fileID: 2126052783}
-    _methodName: End
-    _args: []
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310137}
+        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
+        m_MethodName: FinishScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2126052783}
+        m_TargetAssemblyTypeName: Ending, Assembly-CSharp
+        m_MethodName: End
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &83149021957038555
 PrefabInstance:
   m_ObjectHideFlags: 0

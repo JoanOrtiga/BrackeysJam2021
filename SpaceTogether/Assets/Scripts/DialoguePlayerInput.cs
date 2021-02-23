@@ -89,7 +89,7 @@ public class DialoguePlayerInput : MonoBehaviour
         return -1;
     }
 
-    public void ForceZone(int x)
+    public void ForceZone()
     {
         inZone = true;
         returnsZone.Invoke();

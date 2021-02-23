@@ -4743,32 +4743,32 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 288310137}
-    _methodName: FinishScene
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 2
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
-  - _target: {fileID: 1280717022}
-    _methodName: LoadNextSceneIn
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 5
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 3
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310137}
+        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
+        m_MethodName: FinishScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1280717022}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadNextSceneIn
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1376184244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6533,25 +6533,20 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 288310136}
-    _methodName: ChangeValue
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: TellAboutMessage
-      objectValue: {fileID: 0}
-      argType: 4
-    - boolValue: 1
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 1
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310136}
+        m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+        m_MethodName: ChangeValueTrue
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TellAboutMessage
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1829477151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7021,7 +7016,7 @@ MonoBehaviour:
   m_Name: Event
   m_EditorClassIdentifier: 
   graph: {fileID: 1017221046}
-  position: {x: 5768, y: 2472}
+  position: {x: 5928, y: 2392}
   ports:
     keys:
     - input
@@ -7051,19 +7046,20 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 109808169}
-    _methodName: ForceZone
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 2
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 109808169}
+        m_TargetAssemblyTypeName: DialoguePlayerInput, Assembly-CSharp
+        m_MethodName: ForceZone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1980852751
 MonoBehaviour:
   m_ObjectHideFlags: 0

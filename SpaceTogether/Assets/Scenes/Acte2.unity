@@ -3430,25 +3430,32 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 288310136}
-    _methodName: CreateTimer
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 3
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 3
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: TimeToGetCode
-      objectValue: {fileID: 0}
-      argType: 4
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310136}
+        m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+        m_MethodName: CreateTimer
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TimeToGetCode
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 288310136}
+        m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+        m_MethodName: SetTime
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 100
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1185335761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4639,7 +4646,7 @@ MonoBehaviour:
   m_Name: Event
   m_EditorClassIdentifier: 
   graph: {fileID: 163199228}
-  position: {x: 5256, y: 1896}
+  position: {x: 5320, y: 2024}
   ports:
     keys:
     - input
@@ -4672,32 +4679,32 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 288310137}
-    _methodName: FinishScene
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 2
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
-  - _target: {fileID: 1280717022}
-    _methodName: LoadNextSceneIn
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 5
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 3
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310137}
+        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
+        m_MethodName: FinishScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1280717022}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadNextSceneIn
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1587786615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4849,13 +4856,20 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 671743790}
-    _methodName: finishRadioWithCode
-    _args: []
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 671743790}
+        m_TargetAssemblyTypeName: ActTwo, Assembly-CSharp
+        m_MethodName: finishRadioWithCode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1639452229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5958,25 +5972,20 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 288310136}
-    _methodName: ChangeValue
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: codeGiven
-      objectValue: {fileID: 0}
-      argType: 4
-    - boolValue: 1
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 1
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310136}
+        m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+        m_MethodName: ChangeValueTrue
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: codeGiven
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1981837432
 MonoBehaviour:
   m_ObjectHideFlags: 0

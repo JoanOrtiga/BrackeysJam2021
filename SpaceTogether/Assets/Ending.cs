@@ -11,10 +11,10 @@ public class Ending : MonoBehaviour
     {
         spaceShip.Play();
 
-        StartCoroutine(finish());
+        StartCoroutine(Finish());
     }
 
-    IEnumerator finish()
+    IEnumerator Finish()
     {
         yield return new WaitForSeconds(20);
 

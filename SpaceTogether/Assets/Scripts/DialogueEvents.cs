@@ -50,6 +50,18 @@ public class DialogueEvents : MonoBehaviour
         }
     }
 
+    public void ChangeValueTrue(string key)
+    {
+        if (events.ContainsKey(key))
+        {
+            events[key] = true;
+        }
+        else
+        {
+            Debug.LogError("WRONG CHANGEVALUE CALL");
+        }
+    }
+
     public void ChangeValue(string key, bool value) 
     {
         if (events.ContainsKey(key))
@@ -62,13 +74,18 @@ public class DialogueEvents : MonoBehaviour
         }
     }
 
-    public void CreateTimer(float timer, string key)
+    public void CreateTimer(string key)
     {
-        timeToEvent = timer;
+       
         activeTimer = true;
         timerKeyName = key;
 
         events.Add(timerKeyName, false);
+    }
+
+    public void SetTime(float timer)
+    {
+        timeToEvent = timer;
     }
 
     private void Update()

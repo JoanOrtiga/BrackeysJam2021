@@ -1754,13 +1754,20 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 5874744568185138996}
-    _methodName: SittingDown
-    _args: []
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5874744568185138996}
+        m_TargetAssemblyTypeName: ActFour, Assembly-CSharp
+        m_MethodName: SittingDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &452209387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4800,19 +4807,32 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 1280717022}
-    _methodName: LoadNextSceneIn
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 5
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 3
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310137}
+        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
+        m_MethodName: FinishScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1280717022}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadNextSceneIn
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1587177243
 MonoBehaviour:
   m_ObjectHideFlags: 0
