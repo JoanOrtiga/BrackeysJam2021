@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: c59ec7e9a5dc9664eb9e3075152aa35c, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 9917714f326ea5647afbabb99c291921, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2f7e27eaef060484fa67d4278a0062aa, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 8ac0d61193866ce4db18692629b0848a, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -475,6 +475,11 @@ PrefabInstance:
       objectReference: {fileID: 1541878119}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+--- !u!82 &210852476 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 148977934, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
+  m_PrefabInstance: {fileID: 210852475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &272981927
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,8 +603,12 @@ MonoBehaviour:
   - {fileID: 920365153}
   - {fileID: 920365152}
   writeNames: 1
-  audioCharacters: []
-  charNames: []
+  audioCharacters:
+  - {fileID: 210852476}
+  - {fileID: 887590284}
+  charNames:
+  - Alice
+  - Lauren
 --- !u!114 &295666824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,10 +666,10 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
-  text: "yeah... we are going home... \r\n\r\nAlice... I wouldn't be here if it wasn't
+  text: "yeah... we are going home... \r\n\rAlice... I wouldn't be here if it wasn't
     because of you. "
   voiceClip: {fileID: 8300000, guid: da9b0c6947eb1f74e82901bace84962f, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &336810365
@@ -828,7 +837,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Lauren, I wouldn't have made it alone...
   voiceClip: {fileID: 8300000, guid: 081755155f6217842b5eb59a175f280f, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &505918462
@@ -890,7 +899,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: FUCK OFF ALICE, YES I HAVE SEEN IT
   voiceClip: {fileID: 8300000, guid: c105e0ce62846674499498344cb71d9b, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1001 &545597800
@@ -900,6 +909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 430516492379663563, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 430516493725413200, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -982,6 +995,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+--- !u!1 &545597801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8091231050090144500, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+  m_PrefabInstance: {fileID: 545597800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &545597802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545597801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019766327, y: 0.02028139, z: 0.022376748}
+  m_Center: {x: -0.0003154552, y: -0.00040439225, z: -0.001067721}
 --- !u!114 &556428535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,7 +1072,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Are you sure of what you have seen?
   voiceClip: {fileID: 8300000, guid: 89e2d93ecea452c4eb9343eabd41e886, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &601784047
@@ -1382,7 +1413,7 @@ MonoBehaviour:
   text: "That... \xA1THAT WAS A FUCKING SPACESHIP! DAMN ALICE, A SPACESHIP! AAAALICE
     ALICE I'VE SEEN IT! ALICE A SPACESHIP! THEY ARE COMING FOR US! DAMN ALICE!!! "
   voiceClip: {fileID: 8300000, guid: 659dc88441da39748b4ef0275fb2bf12, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.01
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &737810586
@@ -1603,6 +1634,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+--- !u!82 &887590284 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7435378831638304372, guid: e0d755944a9a8b74ab051792b04fce39, type: 3}
+  m_PrefabInstance: {fileID: 887590283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &920365151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1879,7 +1915,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'don''t fuck with me... WE ARE GETTING OUT OF HERE '
   voiceClip: {fileID: 8300000, guid: f23c325439c676e45bae2955bdbfc93d, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1069158835
@@ -1941,7 +1977,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: 'After three months... can''t believe it.... Lauren... we are going home... '
   voiceClip: {fileID: 8300000, guid: 1f02874f8be49a64a85cdd06c72493b1, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1105046108
@@ -2166,7 +2202,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: ae5eaaacb6b7a2c4dbff1d981433f1f4, type: 2}
   text: Lauren...
   voiceClip: {fileID: 8300000, guid: 2bf3b8b7622b01545a5bd2a09b9217a3, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1246588509
@@ -2290,7 +2326,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'I just... I can''t believe it... They are here. '
   voiceClip: {fileID: 8300000, guid: 861adf880ebe93f4f8fa50e09dca586a, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.02
   timeUntilNextChat: 0.5
   answers: []
 --- !u!1 &1280717020
@@ -2372,8 +2408,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.393982, y: -3346.1228}
-  m_SizeDelta: {x: 118.6693, y: 6718.054}
+  m_AnchoredPosition: {x: 2, y: -3346.1228}
+  m_SizeDelta: {x: 145.6691, y: 6821.3306}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314772243
 MonoBehaviour:
@@ -3213,12 +3249,9 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e3808f6274a027a4497dae6c56cf0ff9, type: 2}
   text: 'I SWEAR ALICE, FOR GOD''S SAKE, THEY''VE FOUND US!
 
-
-
-    LOOK, THERE IT
-    IS'
+    LOOK, THERE IT IS'
   voiceClip: {fileID: 8300000, guid: 9d5088489afa36a4e9d85c8bf8e0356c, type: 3}
-  timeBetweenChars: 0.05
+  timeBetweenChars: 0.03
   timeUntilNextChat: 0.5
   answers: []
 --- !u!114 &1645060728
@@ -3884,26 +3917,32 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   trigger:
-  - _target: {fileID: 288310137}
-    _methodName: FinishScene
-    _args:
-    - boolValue: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      objectValue: {fileID: 0}
-      argType: 2
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
-  - _target: {fileID: 2126052783}
-    _methodName: End
-    _args: []
-    _dynamic: 0
-    _typeName: SerializableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    dirty: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288310137}
+        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
+        m_MethodName: FinishScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2126052783}
+        m_TargetAssemblyTypeName: Ending, Assembly-CSharp
+        m_MethodName: End
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &83149021957038555
 PrefabInstance:
   m_ObjectHideFlags: 0

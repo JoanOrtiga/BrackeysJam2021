@@ -11,11 +11,18 @@ public class Ending : MonoBehaviour
     {
         spaceShip.Play();
 
+        StartCoroutine(Finish());
+    }
+
+    IEnumerator Finish()
+    {
+        yield return new WaitForSeconds(20);
+
         ShowCredits();
     }
 
     public void ShowCredits()
     {
-
+        credits.SetActive(true);
     }
 }

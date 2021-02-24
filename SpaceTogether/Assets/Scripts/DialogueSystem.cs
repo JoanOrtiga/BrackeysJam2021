@@ -55,6 +55,36 @@ public class DialogueSystem : MonoBehaviour
         StartCoroutine(FindNextInterruption());
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.L) && dialoguePlayerInput.inZone)
+        {
+            if (finishedDialogue)
+                return;
+
+            StopAllCoroutines();
+            screenText.StopAllCoroutines();
+
+
+
+            talking = true;
+
+            if (answering)
+            {
+                StartCoroutine(WaitForOption());
+            }
+            else if (DialogueSystem.IsInAwaitBranch)
+            {
+                StartCoroutine(WaitForAwaitBranch());
+            }
+            else
+            {
+                WriteText();
+            }
+
+        }
+    }
+
     public void LeftZone()
     {
         if (finishedDialogue)
@@ -75,17 +105,13 @@ public class DialogueSystem : MonoBehaviour
 
         talking = true;
 
-        if (answering)
-        {
-            StartCoroutine(WaitForOption());
-        }
-        else if (DialogueSystem.IsInAwaitBranch)
+        if (DialogueSystem.IsInAwaitBranch)
         {
             StartCoroutine(WaitForAwaitBranch());
         }
         else
         {
-            WriteText();
+            StartCoroutine(WaitForOption());
         }
     }
 
@@ -166,12 +192,6 @@ public class DialogueSystem : MonoBehaviour
         yield return null;
     }
 
-    public bool UserChose()
-    {
-        return false;
-    }
-
-
     public int GetRandomPath(int max)
     {
         StopAllCoroutines();
@@ -190,7 +210,7 @@ public class DialogueSystem : MonoBehaviour
            interruptionDialogue.current.character.name, interruptionDialogue.current.timeBetweenChars, interruptionDialogue.current.timeUntilNextChat);
     }
 
-    public void FinishScene(int x)
+    public void FinishScene()
     {
         finishedDialogue = true;
         dialogueFinishedEvent.Invoke();

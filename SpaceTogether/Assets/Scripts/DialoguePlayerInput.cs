@@ -16,7 +16,6 @@ public class DialoguePlayerInput : MonoBehaviour
     public bool selectOption = false;
 
     public float coolDownEvents = 2f;
-    private float coolDownTimer;
 
 
     private void Awake()
@@ -33,22 +32,15 @@ public class DialoguePlayerInput : MonoBehaviour
         {
             dialogueSystem.optionSelected = GetInputOptions();
         }
-
-        if (coolDownTimer >= 0)
-        {
-            coolDownTimer -= Time.deltaTime;
-        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (coolDownTimer <= 0)
-            {
-                inZone = true;
-                returnsZone.Invoke();
-            }
+
+            inZone = true;
+            returnsZone.Invoke();
 
         }
 
@@ -57,12 +49,11 @@ public class DialoguePlayerInput : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (coolDownTimer <= 0)
-                if (!dialogueSystem.talking)
-                {
-                    returnsZone.Invoke();
-                    inZone = true;
-                }
+            if (!dialogueSystem.talking)
+            {
+                returnsZone.Invoke();
+                inZone = true;
+            }
         }
     }
 
@@ -70,13 +61,8 @@ public class DialoguePlayerInput : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (coolDownTimer <= 0)
-            {
-                inZone = false;
-                leavesZone.Invoke();
-                coolDownTimer = coolDownEvents;
-            }
-
+            inZone = false;
+            leavesZone.Invoke();
         }
 
     }
@@ -101,5 +87,11 @@ public class DialoguePlayerInput : MonoBehaviour
         }
 
         return -1;
+    }
+
+    public void ForceZone()
+    {
+        inZone = true;
+        returnsZone.Invoke();
     }
 }

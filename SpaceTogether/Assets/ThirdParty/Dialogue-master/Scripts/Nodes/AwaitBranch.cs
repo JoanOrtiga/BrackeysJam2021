@@ -45,11 +45,30 @@ namespace Dialogue
 
                 for (int i = 0; i < conditions.Length; i++)
                 {
-                    if (conditions[i].condition.Invoke() != conditions[i].check)
+                    if(conditions[i].condition != null)
                     {
-                        success = false;
-                        break;
+                        if (conditions[i].condition.Invoke() != conditions[i].check)
+                        {
+                            success = false;
+                            break;
+                        }
                     }
+               /*     else
+                    {
+                        Debug.Log(conditions[i].checkEventValue.Invoke(conditions[i].checkEventValue.args.ToString()));
+                        Debug.Log(conditions[i].checkEventValue.args.ToString());
+
+                        if (conditions[i].checkEventValue.Invoke(conditions[i].checkEventValue.args.ToString()) != conditions[i].check)
+                        {
+                            
+
+                            success = false;
+                            break;
+                        }
+                    }*/
+
+
+                    
                 }
 
             } while (!success);
@@ -67,15 +86,17 @@ namespace Dialogue
                 return;
             }
 
-            
+            DialogueSystem.IsInAwaitBranch = false;
 
             for (int i = 0; i < port.ConnectionCount; i++)
             {
                 NodePort connection = port.GetConnection(i);
                 (connection.node as DialogueBaseNode).Trigger();
             }
-
-            DialogueSystem.IsInAwaitBranch = false;
         }
     }
+
+
+    [Serializable]
+    public class CheckValue : SerializableCallback<string, bool> { }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DialogueEvents : MonoBehaviour
@@ -19,7 +20,7 @@ public class DialogueEvents : MonoBehaviour
 
     private void Awake()
     {
-        foreach (var item in SaveDialogueEvents.Instance.events)
+        foreach (var item in SaveDialogueEvents.Instance.events.ToList())
         {
             if (!events.ContainsKey(item.Key))
             {
@@ -49,6 +50,18 @@ public class DialogueEvents : MonoBehaviour
         }
     }
 
+    public void ChangeValueTrue(string key)
+    {
+        if (events.ContainsKey(key))
+        {
+            events[key] = true;
+        }
+        else
+        {
+            Debug.LogError("WRONG CHANGEVALUE CALL");
+        }
+    }
+
     public void ChangeValue(string key, bool value) 
     {
         if (events.ContainsKey(key))
@@ -61,13 +74,18 @@ public class DialogueEvents : MonoBehaviour
         }
     }
 
-    public void CreateTimer(float timer, string key)
+    public void CreateTimer(string key)
     {
-        timeToEvent = timer;
+       
         activeTimer = true;
         timerKeyName = key;
 
         events.Add(timerKeyName, false);
+    }
+
+    public void SetTime(float timer)
+    {
+        timeToEvent = timer;
     }
 
     private void Update()
@@ -91,7 +109,7 @@ public class DialogueEvents : MonoBehaviour
 
     private void OnDestroy()
     {
-        foreach (var item in events)
+        foreach (var item in events.ToList())
         {
             if (!SaveDialogueEvents.Instance.events.ContainsKey(item.Key))
             {

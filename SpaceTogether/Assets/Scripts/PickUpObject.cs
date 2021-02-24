@@ -58,8 +58,6 @@ public class PickUpObject : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                   
-
                     rayCastHit.transform.GetComponent<InteractableObject>().Interact(); 
                 }
                     
@@ -183,10 +181,8 @@ public class PickUpObject : MonoBehaviour
         }
     }
 
-    public void Eliminate(int x)
+    public void Eliminate()
     {
-        print("HOLA");
-
         Destroy(objectPickUp.gameObject);
 
         DropObject();
@@ -194,6 +190,7 @@ public class PickUpObject : MonoBehaviour
 }
 
 /*
+
         Ray l_Ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
         RaycastHit l_RaycastHit;
 
@@ -257,4 +254,6 @@ public class PickUpObject : MonoBehaviour
             timer = 0;
         }
 
-        timer += Time.deltaTime;*/
+        timer += Time.deltaTime;
+
+*/
