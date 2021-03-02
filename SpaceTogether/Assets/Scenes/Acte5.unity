@@ -1021,14 +1021,30 @@ PrefabInstance:
       value: SCENARY
       objectReference: {fileID: 0}
     - target: {fileID: 628208689643727016, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 628208689643727016, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 628208689813954035, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628208689813954035, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 628208690033116139, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 628208690033116139, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585372391722601708, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
@@ -3386,6 +3402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2346328412461769525, guid: 94b91c08ddbd75447a955a05897991b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
     - target: {fileID: 2459956450148684764, guid: 94b91c08ddbd75447a955a05897991b2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3446,6 +3466,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lauren Idle Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3353482859603571200, guid: 94b91c08ddbd75447a955a05897991b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
+    - target: {fileID: 4118235980013314389, guid: 94b91c08ddbd75447a955a05897991b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94b91c08ddbd75447a955a05897991b2, type: 3}
 --- !u!114 &1745272775
@@ -3870,7 +3898,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 5e18f690cc51de04d8da876a0eb6642e, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: 5e18f690cc51de04d8da876a0eb6642e, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0

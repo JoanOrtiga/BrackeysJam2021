@@ -1975,15 +1975,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5738480631964403223, guid: 145a46a5f3d85bd4d910b006e050dc3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7742662
+      value: 2.762
       objectReference: {fileID: 0}
     - target: {fileID: 5738480631964403223, guid: 145a46a5f3d85bd4d910b006e050dc3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.86986345
+      value: 0.814
       objectReference: {fileID: 0}
     - target: {fileID: 5738480631964403223, guid: 145a46a5f3d85bd4d910b006e050dc3e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.0866165
+      value: 2.084
       objectReference: {fileID: 0}
     - target: {fileID: 5738480631964403223, guid: 145a46a5f3d85bd4d910b006e050dc3e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6665,10 +6665,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8330317883828784005, guid: 1f5ef82c389d624418adee78ae8b0e51, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
     - target: {fileID: 8393188982724341987, guid: 1f5ef82c389d624418adee78ae8b0e51, type: 3}
       propertyPath: m_Name
       value: Lauren Laying Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 9051417611304852144, guid: 1f5ef82c389d624418adee78ae8b0e51, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
     - target: {fileID: 9165186180863617625, guid: 1f5ef82c389d624418adee78ae8b0e51, type: 3}
       propertyPath: m_RootOrder
       value: 2

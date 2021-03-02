@@ -2140,6 +2140,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3242060353598568122, guid: 19e31791fc424d948b491c7f21796cf6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
+    - target: {fileID: 3843576237952021722, guid: 19e31791fc424d948b491c7f21796cf6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
     - target: {fileID: 4033941176992695347, guid: 19e31791fc424d948b491c7f21796cf6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2196,6 +2204,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4274201505914660335, guid: 19e31791fc424d948b491c7f21796cf6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3b01ec599c228d44a6b339157588136, type: 2}
     - target: {fileID: 4373171762033647241, guid: 19e31791fc424d948b491c7f21796cf6, type: 3}
       propertyPath: m_Name
       value: Lauren Idle Prefab
@@ -5153,12 +5165,24 @@ PrefabInstance:
       value: SCENARY
       objectReference: {fileID: 0}
     - target: {fileID: 628208689643727016, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 628208689643727016, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 628208689813954035, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 628208689813954035, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 628208690033116139, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628208690033116139, guid: 082b87811a65f2446aeaeefd81e4bd90, type: 3}
       propertyPath: m_Materials.Array.data[0]
