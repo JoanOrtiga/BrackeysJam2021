@@ -65,21 +65,15 @@ public class DialogueSystem : MonoBehaviour
             StopAllCoroutines();
             screenText.StopAllCoroutines();
 
-
-
             talking = true;
 
-            if (answering)
-            {
-                StartCoroutine(WaitForOption());
-            }
-            else if (DialogueSystem.IsInAwaitBranch)
+            if (DialogueSystem.IsInAwaitBranch)
             {
                 StartCoroutine(WaitForAwaitBranch());
             }
             else
             {
-                WriteText();
+                StartCoroutine(WaitForOption());
             }
 
         }

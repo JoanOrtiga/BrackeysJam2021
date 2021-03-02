@@ -7,7 +7,6 @@ public abstract class SerializableCallback<TReturn> : SerializableCallbackBase<T
 	public TReturn Invoke() {
 		if (func == null) Cache();
 		if (_dynamic) {
-			Debug.Log("HOLA");
 			InvokableCallback<TReturn> call = func as InvokableCallback<TReturn>;
 			return call.Invoke();
 		} else {
